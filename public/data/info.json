@@ -1,0 +1,87 @@
+{
+  "sobre": [
+    {
+      "id": 1,
+      "year": "2018",
+      "color": "#ADD8E6",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "align": "start"
+    },
+    {
+      "id": 2,
+      "year": "2022",
+      "color": "#90EE90",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "align": "center"
+    },
+    {
+      "id": 3,
+      "year": "2023",
+      "color": "#FFA500",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "align": "center"
+    },
+    {
+      "id": 4,
+      "year": "2024",
+      "color": "#8A2BE2",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "align": "end"
+    }
+  ],
+
+  "habilidades":{
+    "front-end":[
+      {
+        "id": 1,
+        "title": "HTML",
+        "img": "./src/assets/Front-End/html5.svg",
+        "knowledge": "Avançado"
+      },
+      {
+        "id": 2,
+        "title": "CSS",
+        "img": "./src/assets/Front-End/css3.svg",
+        "knowledge": "Avançado"
+      },
+      {
+        "id": 3,
+        "title": "JavaScript",
+        "img": "./src/assets/Front-End/javascript.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 4,
+        "title": "Bootstrap",
+        "img": "./src/assets/Front-End/bootstrap.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 5,
+        "title": "React",
+        "img": "./src/assets/Front-End/react.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 6,
+        "title": "Redux",
+        "img": "./src/assets/Front-End/redux.svg",
+        "knowledge": "Básico"
+      },
+      {
+        "id": 7,
+        "title": "Typescript",
+        "img": "./src/assets/Front-End/typescript.svg",
+        "knowledge": "Básico"
+      },
+      {
+        "id": 8,
+        "title": "Next.js",
+        "img": "./src/assets/Front-End/nextjs.svg",
+        "knowledge": "Básico"
+      }
+    ],
+
+    "back-end":[]
+  }
+}
