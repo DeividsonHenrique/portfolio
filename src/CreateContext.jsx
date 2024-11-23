@@ -4,6 +4,14 @@ import { createGlobalStyle } from "styled-components";
 import { HeaderContainer, Links } from "./components/Header/style";
 import { Title, Subtitle } from "./pages/Home/style";
 import { AnoTitle, Text, Ball } from "./pages/Sobre/style";
+import {
+  Icons,
+  ModuloBall,
+  ModuloTitle,
+  Details,
+} from "./pages/Habilidades/style";
+import { Title as TitleProjetos } from "./pages/Projetos/style";
+import dados from "/public/data/info.json";
 
 const ChangeTheme = createContext();
 
@@ -19,6 +27,9 @@ const lightTheme = {
   color_Text: "#333333",
   color_Ano: "#4A148C",
   color_Ball: "#4A148C",
+
+  color_Icons: "#333333",
+  color_details: "#4A148C",
 };
 
 const darkTheme = {
@@ -33,6 +44,9 @@ const darkTheme = {
   color_Text: "#C0C0C0",
   color_Ano: "#fff",
   color_Ball: "#fff",
+
+  color_Icons: "#fff",
+  color_details: "#C0C0C0",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -92,22 +106,61 @@ body{
         color: ${(props) => props.theme.color_Text};
     }
 
-    ${AnoTitle}{
+    ${AnoTitle}, ${ModuloTitle}{
         color: ${(props) => props.theme.color_Ano};
     }
 
-    ${Ball}{
+    ${Ball}, ${ModuloBall}{
         background-color: ${(props) => props.theme.color_Ball};
+    }
+
+    ${Icons}{
+        p{
+            color: ${(props) => props.theme.color_Icons};
+        }
+    }
+
+    ${Details}{
+        h1{
+            color: ${(props) => props.theme.color_details};
+        }
+        p{
+            color: ${(props) => props.theme.color_Text};
+        }
+    }
+
+    ${TitleProjetos}{
+        color: ${(props) => props.theme.color_details};
     }
   `;
 
 export function ChangeThemeProvider({ children }) {
   const [theme, setTheme] = useState("dark");
-  const [info, setInfo] = useState([]);
 
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
+
+  return (
+    <ChangeTheme.Provider
+      value={{ theme, toggleTheme, lightTheme, darkTheme, GlobalStyle }}
+    >
+      {children}
+    </ChangeTheme.Provider>
+  );
+}
+
+export const UseTheme = () => {
+  return useContext(ChangeTheme);
+};
+
+// configs adicionais e API json ---------------------------------------------------------------------
+
+const GlobalConfig = createContext();
+
+export const GlobalConfigProvider = ({ children }) => {
+  const [info, setInfo] = useState([]);
+  const [habilidades] = useState(dados.habilidades);
 
   useEffect(() => {
     const fetchInfo = async () => {
@@ -122,15 +175,14 @@ export function ChangeThemeProvider({ children }) {
     fetchInfo();
   }, []);
 
-  return (
-    <ChangeTheme.Provider
-      value={{ theme, toggleTheme, lightTheme, darkTheme, GlobalStyle, info }}
-    >
-      {children}
-    </ChangeTheme.Provider>
-  );
-}
 
-export const UseTheme = () => {
-  return useContext(ChangeTheme);
+  return (
+    <GlobalConfig.Provider value={{ info, habilidades }}>
+      {children}
+    </GlobalConfig.Provider>
+  );
+};
+
+export const UseConfig = () => {
+  return useContext(GlobalConfig);
 };

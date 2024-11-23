@@ -30,8 +30,16 @@
     }
   ],
 
-  "habilidades":{
-    "front-end":[
+  "habilidades": {
+    "frontEndgeral": [
+      {
+        "id": 1,
+        "category": "Front-End",
+        "color": "#FFA500"
+      }
+    ],
+
+    "frontEnd": [
       {
         "id": 1,
         "title": "HTML",
@@ -82,6 +90,129 @@
       }
     ],
 
-    "back-end":[]
-  }
+    "backEndgeral": [
+      {
+        "id": 1,
+        "category": "Back-End",
+        "color": "#1E3A8A"
+      }
+    ],
+
+    "backEnd": [
+      {
+        "id": 1,
+        "title": "Node.js",
+        "img": "./src/assets/Back-End/nodejs.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 2,
+        "title": "MySQL",
+        "img": "./src/assets/Back-End/mysql.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 3,
+        "title": "Json",
+        "img": "./src/assets/Back-End/json.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 4,
+        "title": "Express",
+        "filter": "invert(100%)",
+        "img": "./src/assets/Back-End/express.svg",
+        "knowledge": "Básico"
+      },
+      {
+        "id": 5,
+        "title": "Python",
+        "img": "./src/assets/Back-End/python.svg",
+        "knowledge": "Básico"
+      }
+    ],
+
+    "outrosgeral": [
+      {
+        "id": 1,
+        "category": "Outros",
+        "color": "#6A0DAD"
+      }
+    ],
+
+    "outros": [
+      {
+        "id": 1,
+        "title": "Vscode",
+        "img": "./src/assets/Other/vscode.svg",
+        "knowledge": "Avançado"
+      },
+      {
+        "id": 2,
+        "title": "GitHub",
+        "filter": "invert(100%)",
+        "img": "./src/assets/Other/github.svg",
+        "knowledge": "Avançado"
+      },
+      {
+        "id": 3,
+        "title": "Git",
+        "img": "./src/assets/Other/git.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 4,
+        "title": "Canva",
+        "img": "./src/assets/Other/canva.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 5,
+        "title": "Insomnia",
+        "img": "./src/assets/Other/insomnia.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 6,
+        "title": "Adobe XD",
+        "img": "./src/assets/Other/xd.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 7,
+        "title": "Photoshop",
+        "img": "./src/assets/Other/photoshop.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 8,
+        "title": "Premiere Pro",
+        "img": "./src/assets/Other/premiere.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 9,
+        "title": "After Effects",
+        "img": "./src/assets/Other/After Effects.svg",
+        "knowledge": "Intermediário"
+      },
+      {
+        "id": 10,
+        "title": "Autodesk Maya",
+        "img": "./src/assets/Other/maya.svg",
+        "knowledge": "Básico"
+      }
+    ]
+  },
+
+  "Projetos": [
+    {
+      "id": 1,
+      "logo": "./src/assets/Front-End/react.svg",
+      "img": "./src/assets/Projects/Projeto1.png",
+      "title": "Projeto",
+      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "link": "https://www.google.com/"
+    }
+  ]
 }

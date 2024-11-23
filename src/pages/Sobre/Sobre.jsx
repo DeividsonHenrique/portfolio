@@ -1,7 +1,7 @@
 import { SobreContainer, Card, Ano, Ball, Text, AnoTitle } from "./style";
-import { UseTheme } from "../../CreateContext";
+import { UseConfig } from "../../CreateContext";
 function Sobre() {
-  const { info } = UseTheme();
+  const { info } = UseConfig();
 
   return (
     <SobreContainer>
