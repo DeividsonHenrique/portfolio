@@ -4,35 +4,47 @@ import {
   Conatiner,
   Cards,
   ImgDiv,
+  Logos,
   InfoDiv,
+  ImgCard,
   Button,
+  ImgContainer,
 } from "./style";
+import { UseConfig } from "../../CreateContext";
+
 
 function Projetos() {
+  const { projetos, logosFrontEnd } = UseConfig();
+  
+
   return (
     <ProjectsContainer>
       <Title>Principais Projetos</Title>
 
       <Conatiner>
-        <Cards>
-          <ImgDiv>
-            <img src="./src/assets/Front-End/react.svg" alt="" />
-            <img
-              src="https://github.com/user-attachments/assets/ebde5a38-4eec-485e-b82f-8a60f3416504"
-              alt=""
-            />
-          </ImgDiv>
-          <InfoDiv>
-            <h2>Logo</h2>
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters
-            </p>
-            <Button>Repositorio Github</Button>
-          </InfoDiv>
-        </Cards>
+        {projetos.map((p, index) => (
+          <Cards key={index}>
+            <ImgContainer>
+              <ImgDiv>
+                {p.logo.map((logo, index) => (
+                  <Logos key={index}>
+                    <abbr title={logo}>
+                      <img src={logosFrontEnd[logo]} alt="" className={logo} />
+                    </abbr>
+                  </Logos>
+                ))}
+              </ImgDiv>
+              <ImgCard src={p.img} alt="" />
+            </ImgContainer>
+            <InfoDiv>
+              <h2>{p.title}</h2>
+              <p>{p.subtitle}</p>
+              <Button onClick={() => window.open(p.link, "_blank")}>
+                Repositorio Github
+              </Button>
+            </InfoDiv>
+          </Cards>
+        ))}
       </Conatiner>
     </ProjectsContainer>
   );

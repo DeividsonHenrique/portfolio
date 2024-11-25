@@ -7,6 +7,7 @@ import Sobre from "./pages/Sobre/Sobre"
 import Habilidades from "./pages/Habilidades/Habilidades"
 
 import Projetos from "./pages/Projetos/Projetos"
+import Contato from "./pages/Contato/Contato"
 
 
 function Router() {
@@ -19,7 +20,7 @@ function Router() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/habilidades" element={<Habilidades />} />
           <Route path="/projetos" element={<Projetos />} />
-          <Route path="/contato" element={<h1>Contato</h1>} />
+          <Route path="/contato" element={<Contato/>} />
         </Routes>
       </BrowserRouter>
     </>

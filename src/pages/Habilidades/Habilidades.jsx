@@ -12,10 +12,12 @@ import {
 
 import { UseTheme, UseConfig } from "../../CreateContext";
 
+
 function Habilidades() {
   const { theme } = UseTheme();
   const { habilidades } = UseConfig();
 
+  
   return (
     <SkillsContainer>
       <Details>

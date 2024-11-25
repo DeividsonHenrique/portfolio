@@ -26,7 +26,8 @@ export const Conatiner = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: start;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px 40px;
 `;
 
 export const Cards = styled.div`
@@ -42,27 +43,43 @@ export const Cards = styled.div`
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 `;
 
-export const ImgDiv = styled.div`
-  height: 270px;
-  width: 350px;
+export const ImgContainer = styled.div`
+  height: 260px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
   overflow: hidden;
+`;
+
+export const ImgDiv = styled.div`
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+`;
+
+export const ImgCard = styled.img`
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+`;
+
+export const Logos = styled.div`
+  width: auto;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 
   img {
-    &:first-child {
-      width: 100%;
-      height: 40px;
-      border-bottom: 1px solid red;
-      broder-radius: 10px;
-      padding-bottom: 5px;
-    }
-
-    &:last-child {
-      width: 100%;
-    }
+    width: 30px;
+    height: 30px;
+    margin-inline: 5px;
   }
 `;
 

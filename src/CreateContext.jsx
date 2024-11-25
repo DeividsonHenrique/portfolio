@@ -4,14 +4,10 @@ import { createGlobalStyle } from "styled-components";
 import { HeaderContainer, Links } from "./components/Header/style";
 import { Title, Subtitle } from "./pages/Home/style";
 import { AnoTitle, Text, Ball } from "./pages/Sobre/style";
-import {
-  Icons,
-  ModuloBall,
-  ModuloTitle,
-  Details,
-} from "./pages/Habilidades/style";
+import { Icons, ModuloBall, ModuloTitle, Details,} from "./pages/Habilidades/style";
 import { Title as TitleProjetos } from "./pages/Projetos/style";
-import dados from "/public/data/info.json";
+import { Title as TitleContato, Cards } from "./pages/Contato/style";
+
 
 const ChangeTheme = createContext();
 
@@ -74,8 +70,12 @@ body{
         margin: 0 auto;
         max-width: 1400px;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         background: ${(props) => props.theme.background};
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-y: auto;
         transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
     }
 
@@ -114,7 +114,7 @@ body{
         background-color: ${(props) => props.theme.color_Ball};
     }
 
-    ${Icons}{
+    ${Icons}, ${Cards}{
         p{
             color: ${(props) => props.theme.color_Icons};
         }
@@ -129,7 +129,7 @@ body{
         }
     }
 
-    ${TitleProjetos}{
+    ${TitleProjetos}, ${TitleContato}{
         color: ${(props) => props.theme.color_details};
     }
   `;
@@ -154,13 +154,33 @@ export const UseTheme = () => {
   return useContext(ChangeTheme);
 };
 
+
+
 // configs adicionais e API json ---------------------------------------------------------------------
+
+import dados from "/public/data/info.json";
+import html5 from "./assets/Front-End/html5.svg";
+import css3 from "./assets/Front-End/css3.svg";
+import react from "./assets/Front-End/react.svg";
+import bootstrap from "./assets/Front-End/bootstrap.svg";
+import javascript from "./assets/Front-End/javascript.svg";
 
 const GlobalConfig = createContext();
 
 export const GlobalConfigProvider = ({ children }) => {
   const [info, setInfo] = useState([]);
   const [habilidades] = useState(dados.habilidades);
+  const [projetos] = useState(dados.Projetos);
+  const [contato] = useState(dados.Contato);
+
+
+  const logosFrontEnd = {
+    html5: html5,
+    css3: css3,
+    react: react,
+    bootstrap: bootstrap,
+    javascript: javascript,
+  };
 
   useEffect(() => {
     const fetchInfo = async () => {
@@ -177,7 +197,7 @@ export const GlobalConfigProvider = ({ children }) => {
 
 
   return (
-    <GlobalConfig.Provider value={{ info, habilidades }}>
+    <GlobalConfig.Provider value={{ info, habilidades, projetos, contato, logosFrontEnd }}>
       {children}
     </GlobalConfig.Provider>
   );

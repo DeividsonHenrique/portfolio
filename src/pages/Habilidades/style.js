@@ -130,8 +130,8 @@ export const Icons = styled.div`
     }
 
     p{
-        font-family: var(--fonte1)
-        font-size: 15px;
+        font-family: var(--fonte1);
+        font-size: 13px;
         font-weight: 500;
         color: white;
     }
