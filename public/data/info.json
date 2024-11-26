@@ -219,7 +219,7 @@
       "logo": ["react", "bootstrap"],
       "img": "https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e",
       "title": "DashBoard",
-      "subtitle":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
       "link": "https://github.com/DeividsonHenrique/Dashboard"
     },
     {
@@ -227,7 +227,7 @@
       "logo": ["react"],
       "img": "https://github.com/user-attachments/assets/8785f647-8ff4-4485-b858-ad9ed953d624",
       "title": "Pokemon API",
-      "subtitle":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
       "link": "https://github.com/DeividsonHenrique/Pokemon"
     },
     {
@@ -235,7 +235,7 @@
       "logo": ["react"],
       "img": "https://github.com/user-attachments/assets/cf0d4091-d109-4638-8c3b-987210d842e9",
       "title": "Dog API",
-      "subtitle":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
       "link": "https://github.com/DeividsonHenrique/Dog-Api"
     },
     {
@@ -243,15 +243,15 @@
       "logo": ["react"],
       "img": "https://github.com/DeividsonHenrique/softwares-stores/assets/109252541/9c7e67a3-c0c0-4896-8089-56dfb9fa9541",
       "title": "Softwares Stores",
-      "subtitle":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
       "link": "https://github.com/DeividsonHenrique/softwares-stores"
     },
     {
       "id": 6,
-      "logo": ["html5","css3", "javascript"],
+      "logo": ["html5", "css3", "javascript"],
       "img": "https://github.com/DeividsonHenrique/Login/assets/109252541/123bd251-2ba5-476f-9d9f-93037c1aa068",
       "title": "Tela de Login",
-      "subtitle":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
       "link": "https://github.com/DeividsonHenrique/Login"
     },
     {
@@ -259,7 +259,7 @@
       "logo": ["react"],
       "img": "https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e",
       "title": "DashBoard",
-      "subtitle":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
       "link": "https://github.com/DeividsonHenrique/Pokedex"
     },
     {
@@ -267,7 +267,7 @@
       "logo": ["react"],
       "img": "https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e",
       "title": "DashBoard",
-      "subtitle":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
       "link": "https://github.com/DeividsonHenrique/Pokedex"
     },
     {
@@ -275,48 +275,48 @@
       "logo": ["react"],
       "img": "https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e",
       "title": "DashBoard",
-      "subtitle":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
       "link": "https://github.com/DeividsonHenrique/Pokedex"
     }
   ],
 
   "Contato": [
     {
-    "id": 1,
-    "img": "./src/assets/Contacts/github.svg",
-    "title": "Github",
-    "filter": "invert(100%)",
-    "link": "https://github.com/DeividsonHenrique"
+      "id": 1,
+      "img": "./src/assets/Contacts/github.svg",
+      "title": "Github",
+      "filter": "invert(100%)",
+      "link": "https://github.com/DeividsonHenrique"
     },
     {
-    "id": 2,
-    "img": "./src/assets/Contacts/linkedin.svg",
-    "title": "Linkedin",
-    "link": "https://www.linkedin.com/in/deividsonhenrique/"
+      "id": 2,
+      "img": "./src/assets/Contacts/linkedin.svg",
+      "title": "Linkedin",
+      "link": "https://www.linkedin.com/in/deividsonhenrique/"
     },
     {
-    "id": 3,
-    "img": "./src/assets/Contacts/instagram.svg",
-    "title": "Instagram",
-    "link": "https://www.instagram.com/deividsonhenry_/"
+      "id": 3,
+      "img": "./src/assets/Contacts/instagram.svg",
+      "title": "Instagram",
+      "link": "https://www.instagram.com/deividsonhenry_/"
     },
     {
-    "id": 4,
-    "img": "./src/assets/Contacts/tiktok.svg",
-    "title": "TikTok",
-    "link": "https://www.tiktok.com/@henryross_"
+      "id": 4,
+      "img": "./src/assets/Contacts/tiktok.svg",
+      "title": "TikTok",
+      "link": "https://www.tiktok.com/@henryross_"
     },
     {
-    "id": 5,
-    "img": "./src/assets/Contacts/discord.svg",
-    "title": "Discord",
-    "link": ""
+      "id": 5,
+      "img": "./src/assets/Contacts/discord.svg",
+      "title": "Discord",
+      "link": ""
     },
     {
-    "id": 3,
-    "img": "./src/assets/Contacts/E-Mail.svg",
-    "title": "E-Mail",
-    "link": ""
-    }    
+      "id": 3,
+      "img": "./src/assets/Contacts/E-Mail.svg",
+      "title": "E-Mail",
+      "link": ""
+    }
   ]
 }

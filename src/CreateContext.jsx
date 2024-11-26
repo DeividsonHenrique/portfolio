@@ -12,7 +12,7 @@ import { Title as TitleContato, Cards } from "./pages/Contato/style";
 const ChangeTheme = createContext();
 
 const lightTheme = {
-  background: "linear-gradient(120deg, #E4E8ED 0%, #F5F7FA 100%)",
+  background: "linear-gradient(120deg, #E4E8ED 90%, #F5F7FA 100%)",
   color_link_header: "#191970",
   color_link_active: "#FF0000",
   color_line: "#FFFFFF",
@@ -52,6 +52,7 @@ const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 
+
         --cor-fonte1: #C0C0C0;
         --cor-fonte2: #FFD700;
         --cor-black: #000000;
@@ -67,18 +68,35 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body{
+        position: relative;
         margin: 0 auto;
         max-width: 1400px;
         width: 100%;
         min-height: 100vh;
         background: ${(props) => props.theme.background};
+        background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-size: cover;
         background-attachment: fixed;
         overflow-y: auto;
-        transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-    }
+        transition: background 0.6s ease-in-out;
 
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: ${props => props.theme.color_Ano};
+            border-radius: 20px;
+            transition: background 0.6s ease-in-out;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: ${props => props.theme.background};
+            transition: background 0.6s ease-in-out;
+        }
+}
+    
     ${HeaderContainer}{
         border-color: ${(props) => props.theme.color_line};
     }

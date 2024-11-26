@@ -105,40 +105,38 @@ export const ModuloBall = styled.span`
 `;
 
 export const Icons = styled.div`
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+
+  div {
+    width: 100px;
+    height: 125px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 50px;
-    
-    
+    justify-content: space-between;
+  }
 
-    div{
-        width: 100px;
-        height: 125px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
+  img {
+    width: 90px;
+    height: 90px;
+  }
 
-    img{
-        width: 90px;
-        height: 90px;
-    }
+  p {
+    font-family: var(--fonte1);
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+  }
 
-    p{
-        font-family: var(--fonte1);
-        font-size: 13px;
-        font-weight: 500;
-        color: white;
-    }
-
-    abbr{
-        text-decoration: none;
-    }
+  abbr {
+    text-decoration: none;
+  }
 `;
 
 export const Line = styled.div`

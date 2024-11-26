@@ -66,6 +66,12 @@ export const ImgDiv = styled.div`
 export const ImgCard = styled.img`
   width: 100%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+      transform: scale(1.01);
+    }
 `;
 
 export const Logos = styled.div`
