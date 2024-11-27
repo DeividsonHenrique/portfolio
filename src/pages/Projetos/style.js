@@ -70,8 +70,8 @@ export const ImgCard = styled.img`
   cursor: pointer;
 
   &:hover {
-      transform: scale(1.01);
-    }
+    transform: scale(1.01);
+  }
 `;
 
 export const Logos = styled.div`

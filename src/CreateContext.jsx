@@ -7,6 +7,7 @@ import { AnoTitle, Text, Ball } from "./pages/Sobre/style";
 import { Icons, ModuloBall, ModuloTitle, Details,} from "./pages/Habilidades/style";
 import { Title as TitleProjetos } from "./pages/Projetos/style";
 import { Title as TitleContato, Cards } from "./pages/Contato/style";
+import { Title as TitleSobre } from "./pages/Sobre/style";
 
 
 const ChangeTheme = createContext();
@@ -95,6 +96,12 @@ body{
             background: ${props => props.theme.background};
             transition: background 0.6s ease-in-out;
         }
+
+
+
+        @media (max-width: 480px) {
+            width: 85%;
+        }
 }
     
     ${HeaderContainer}{
@@ -124,7 +131,7 @@ body{
         color: ${(props) => props.theme.color_Text};
     }
 
-    ${AnoTitle}, ${ModuloTitle}{
+    ${AnoTitle}, ${ModuloTitle}, ${TitleSobre}{
         color: ${(props) => props.theme.color_Ano};
     }
 

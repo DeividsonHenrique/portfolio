@@ -8,14 +8,28 @@ import {
   Ball,
   DarkMode,
   LightMode,
+  MenuMobile,
+  ContainerMobile,
+  LinksContainerMobile,
+  LinksMobile
 } from "./style";
 import { UseTheme } from "../../CreateContext";
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
 function Header() {
   const { theme, toggleTheme } = UseTheme();
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
 
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+ 
   return (
     <HeaderContainer>
       <Logo>
@@ -49,6 +63,20 @@ function Header() {
         >
           Contato
         </Links>
+
+        <MenuMobile onClick={handleToggle}/>
+
+        {isOpen && (
+          <ContainerMobile>
+            <LinksContainerMobile>
+                <LinksMobile to="/" className={location.pathname === "/" ? "active" : ""} onClick={handleClose}>Início</LinksMobile>
+                <LinksMobile to="/sobre" className={location.pathname === "/sobre" ? "active" : ""} onClick={handleClose}>Sobre</LinksMobile>
+                <LinksMobile to="/habilidades" className={location.pathname === "/habilidades" ? "active" : ""} onClick={handleClose}>Habilidades</LinksMobile>
+                <LinksMobile to="/projetos" className={location.pathname === "/projetos" ? "active" : ""} onClick={handleClose}>Projetos</LinksMobile>
+                <LinksMobile to="/contato" className={location.pathname === "/contato" ? "active" : ""} onClick={handleClose}>Contato</LinksMobile>
+            </LinksContainerMobile>
+          </ContainerMobile>
+        )}
 
         <Input
           type="checkbox"

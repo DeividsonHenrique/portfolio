@@ -1,9 +1,11 @@
-import { SobreContainer, Card, Ano, Ball, Text, AnoTitle } from "./style";
+import { SobreContainer, Title, Card, Ano, Ball, Text, AnoTitle } from "./style";
 import { UseConfig } from "../../CreateContext";
 function Sobre() {
   const { info } = UseConfig();
-
+ 
   return (
+    <>
+      <Title>Sobre mim</Title>
     <SobreContainer>
       {info.map((info) => (
         <Card key={info.id}>
@@ -15,11 +17,14 @@ function Sobre() {
             <span style={{ background: info.color }}></span>
             <span style={{ background: info.color }}></span>
           </Ano>
-          <Text style={{ textAlign: info.align }}>{info.text}</Text>
+          <Text>{info.text}</Text>
         </Card>
       ))}
     </SobreContainer>
+    </>
   );
 }
 
 export default Sobre;
+
+// <Text style={{ textAlign: info.align }}>{info.text}</Text>
