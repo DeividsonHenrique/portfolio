@@ -32,15 +32,41 @@ export const Details = styled.div`
     font-weight: 500;
     transition: all 0.5s ease-in-out;
   }
+
+
+  @media (max-width: 480px) {
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+
+    h1{
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
 `;
 
 export const CardSkills = styled.div`
   height: 600px;
   width: 460px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: auto;
+
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 export const Container = styled.div`
@@ -49,6 +75,13 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 `;
 
 export const Modulo = styled.div`
@@ -73,6 +106,10 @@ export const Modulo = styled.div`
       height: 85px;
       background-color: black;
       border-radius: 50%;
+
+      @media (max-width: 480px) {
+        display: none;
+      }
     }
 
     &:nth-child(3) {
@@ -81,6 +118,12 @@ export const Modulo = styled.div`
       background-color: aqua;
       display: block;
       border-radius: 5px;
+
+
+      @media (max-width: 480px) {
+        height: 5px;
+        width: 95%;
+      }
     }
   }
 `;
@@ -93,6 +136,12 @@ export const ModuloTitle = styled.h1`
   text-align: center;
   width: 100%;
   transition: all 0.5s ease-in-out;
+
+
+  @media (max-width: 480px) {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const ModuloBall = styled.span`
@@ -102,6 +151,11 @@ export const ModuloBall = styled.span`
   display: block;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
+
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const Icons = styled.div`
@@ -112,6 +166,7 @@ export const Icons = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 50px;
+  
 
   div {
     width: 100px;
@@ -137,6 +192,31 @@ export const Icons = styled.div`
   abbr {
     text-decoration: none;
   }
+
+
+  @media (max-width: 480px) {
+    margin-top: 20px;
+    width: 90%;
+    
+    div{
+      width: 50px;
+      height: 80px;
+    }
+
+    img{
+      width: 50px;
+      height: 50px;
+    }
+
+    p{
+      text-align: center;
+      font-size: 10px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 50px;
+    }
+  }
 `;
 
 export const Line = styled.div`
@@ -145,4 +225,9 @@ export const Line = styled.div`
   background-color: #770000;
   margin-top: 150px;
   margin-inline: 1px;
+
+
+  @media (max-width: 480px) {
+  display: none;
+  }
 `;

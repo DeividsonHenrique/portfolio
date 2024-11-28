@@ -26,9 +26,27 @@ export const HeaderContainer = styled.div`
 
 
   @media (max-width: 480px) {
-    height: 80px;
-    
+    justify-content: space-around;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    border: none;
+    // background: linear-gradient(120deg, #181C27, #000000);
+
+    &::after {
+      display: none;
+    }
+
+    &.scrolled{
+    background-color: #181C27;
   }
+  }
+
+  
 `;
 
 export const Logo = styled.div`

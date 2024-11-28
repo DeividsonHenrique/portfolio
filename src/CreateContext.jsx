@@ -101,6 +101,8 @@ body{
 
         @media (max-width: 480px) {
             width: 85%;
+            margin-top: 80px;
+            min-height: 85vh;
         }
 }
     

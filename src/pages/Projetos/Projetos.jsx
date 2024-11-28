@@ -11,7 +11,7 @@ import {
   ImgContainer,
 } from "./style";
 import { UseConfig } from "../../CreateContext";
-
+ 
 function Projetos() {
   const { projetos, logosFrontEnd } = UseConfig();
 

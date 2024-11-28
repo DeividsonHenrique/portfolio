@@ -17,6 +17,10 @@ export const Title = styled.h1`
   font-weight: 400;
   margin: 50px 0px 30px 0px;
   transition: all 0.5s ease-in-out;
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+  }
 `;
 
 export const Conatiner = styled.div`
@@ -41,6 +45,11 @@ export const Cards = styled.div`
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 400px;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -114,6 +123,20 @@ export const InfoDiv = styled.div`
     font-weight: 400;
     color: #333333;
   }
+
+
+  @media (max-width: 480px) {
+  
+    h2{
+      font-size: 15px;\
+      text-align: center;
+    }
+
+    p{
+      font-size: 10px;
+      text-align: center;
+    }
+  }
 `;
 
 export const Button = styled.button`
@@ -134,5 +157,11 @@ export const Button = styled.button`
 
   &:hover {
     background-color: #07d100;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 10px;
+    right: 50%;
+    transform: translateX(50%);
   }
 `;

@@ -14,13 +14,31 @@ import {
   LinksMobile
 } from "./style";
 import { UseTheme } from "../../CreateContext";
-import { useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function Header() {
   const { theme, toggleTheme } = UseTheme();
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const [scrolled, setScrolled] = useState(false); // Estado para controle do scroll
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Define a mudança de estado com base na posição do scroll
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll); // Adiciona o listener de scroll
+
+    return () => window.removeEventListener('scroll', handleScroll); // Remove o listener ao desmontar o componente
+  }, []);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -29,10 +47,14 @@ function Header() {
   const handleClose = () => {
     setIsOpen(false);
   };
+
+  const goToHome = () => {
+    navigate("/");
+  };
  
   return (
-    <HeaderContainer>
-      <Logo>
+    <HeaderContainer className={scrolled ? "scrolled" : ""}>
+      <Logo onClick={goToHome}>
         <img src="./src/assets/Front-End/react.svg" alt="" />
       </Logo>
       <LinksContainer>

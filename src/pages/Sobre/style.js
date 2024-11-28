@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SobreContainer = styled.div`
   max-width: 1400px;
   width: 100%;
-  height: 87vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -13,6 +13,7 @@ export const SobreContainer = styled.div`
   @media (max-width: 480px) {
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100vh;
   }
 `;
 
@@ -35,7 +36,6 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
 
 
   @media (max-width: 480px) {
