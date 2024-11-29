@@ -24,7 +24,6 @@ export const HeaderContainer = styled.div`
     box-shadow: 0 2px 4px 0 #ff0000;
   }
 
-
   @media (max-width: 480px) {
     justify-content: space-around;
     height: 70px;
@@ -41,18 +40,15 @@ export const HeaderContainer = styled.div`
       display: none;
     }
 
-    &.scrolled{
-    background-color: #181C27;
+    &.scrolled {
+      background-color: #181c27;
+    }
   }
-  }
-
-  
 `;
 
 export const Logo = styled.div`
   width: 50px;
   height: 50px;
-
 
   @media (max-width: 480px) {
     width: 30px;
@@ -103,7 +99,6 @@ export const Links = styled(Link)`
     }
   }
 
-
   @media (max-width: 480px) {
     display: none;
   }
@@ -120,7 +115,6 @@ export const Label = styled.label`
   width: 60px;
   margin-left: 10px;
   transition: all 0.3s ease;
-
 
   @media (max-width: 480px) {
     margin-left: 0px;
@@ -139,7 +133,6 @@ export const Ball = styled.div`
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
-
 
   @media (max-width: 480px) {
     height: 17px;
@@ -169,7 +162,6 @@ export const Input = styled.input`
   &:checked + ${Label} ${Ball} {
     transform: translateX(-35px);
 
-
     @media (max-width: 480px) {
       transform: translateX(-30px);
     }
@@ -188,7 +180,6 @@ export const Input = styled.input`
   }
 `;
 
-
 // menu hamburguer
 
 export const MenuMobile = styled(IoIosMenu)`
@@ -199,12 +190,10 @@ export const MenuMobile = styled(IoIosMenu)`
   margin-right: 10px;
   transition: all 0.3s ease;
 
-
   @media (max-width: 480px) {
     display: block;
   }
 `;
-
 
 export const ContainerMobile = styled.div`
   position: fixed;
@@ -212,8 +201,8 @@ export const ContainerMobile = styled.div`
   right: 0;
   width: 0%;
   height: 80vh;
-  background: linear-gradient(120deg, #181C27, #000000);
-  opacity: .9;
+  background: linear-gradient(120deg, #181c27, #000000);
+  opacity: 0.9;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,11 +212,10 @@ export const ContainerMobile = styled.div`
   z-index: 1;
   transition: width 0.3s ease;
 
-
   @media (max-width: 480px) {
     width: 80%;
   }
-`
+`;
 
 export const LinksContainerMobile = styled.div`
   display: flex;
@@ -235,7 +223,7 @@ export const LinksContainerMobile = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 80%;
-`	
+`;
 
 export const LinksMobile = styled(Link)`
   font-family: var(--fonte1);
@@ -248,7 +236,7 @@ export const LinksMobile = styled(Link)`
   position: relative;
   transition: all 0.5s ease-in-out;
 
- &:hover {
+  &:hover {
     color: #ffd700;
   }
-`
+`;

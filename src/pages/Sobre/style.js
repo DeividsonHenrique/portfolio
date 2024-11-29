@@ -9,7 +9,6 @@ export const SobreContainer = styled.div`
   align-items: start;
   justify-content: space-between;
 
-
   @media (max-width: 480px) {
     flex-direction: column;
     justify-content: space-evenly;
@@ -26,6 +25,11 @@ export const Title = styled.h1`
   transition: all 0.5s ease-in-out;
   width: 100%;
   text-align: center;
+
+  @media (max-width: 480px) {
+    font-size: 20px;
+    margin-top: 100px;
+  }
 `;
 
 export const Card = styled.div`
@@ -37,13 +41,12 @@ export const Card = styled.div`
   align-items: center;
   justify-content: space-between;
 
-
   @media (max-width: 480px) {
     width: 100%;
     flex-direction: row;
     align-items: start;
-    
-    height: auto;
+    height: 100%;
+    padding-bottom: 50px;
   }
 `;
 
@@ -55,11 +58,14 @@ export const Text = styled.p`
   line-height: 25px;
   transition: all 0.5s ease-in-out;
 
-
   @media (max-width: 480px) {
     font-size: 12px;
     line-height: 20px;
     text-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 `;
 
@@ -96,7 +102,6 @@ export const Ano = styled.div`
       display: block;
       border-radius: 5px;
 
-
       @media (max-width: 480px) {
         width: 5px;
         height: 100%;
@@ -105,9 +110,8 @@ export const Ano = styled.div`
     }
   }
 
-
   @media (max-width: 480px) {
-    height: 80%;
+    height: 100%;
     display: flex;
   }
 `;
@@ -118,7 +122,6 @@ export const AnoTitle = styled.h1`
   font-family: var(--fonte1);
   margin-left: 5px;
   transition: all 0.5s ease-in-out;
-
 
   @media (max-width: 480px) {
     font-size: 15px;
@@ -132,7 +135,6 @@ export const Ball = styled.span`
   display: block;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
-
 
   @media (max-width: 480px) {
     display: none;

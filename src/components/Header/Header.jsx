@@ -11,7 +11,7 @@ import {
   MenuMobile,
   ContainerMobile,
   LinksContainerMobile,
-  LinksMobile
+  LinksMobile,
 } from "./style";
 import { UseTheme } from "../../CreateContext";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -35,9 +35,9 @@ function Header() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll); // Adiciona o listener de scroll
+    window.addEventListener("scroll", handleScroll); // Adiciona o listener de scroll
 
-    return () => window.removeEventListener('scroll', handleScroll); // Remove o listener ao desmontar o componente
+    return () => window.removeEventListener("scroll", handleScroll); // Remove o listener ao desmontar o componente
   }, []);
 
   const handleToggle = () => {
@@ -51,7 +51,7 @@ function Header() {
   const goToHome = () => {
     navigate("/");
   };
- 
+
   return (
     <HeaderContainer className={scrolled ? "scrolled" : ""}>
       <Logo onClick={goToHome}>
@@ -86,16 +86,46 @@ function Header() {
           Contato
         </Links>
 
-        <MenuMobile onClick={handleToggle}/>
+        <MenuMobile onClick={handleToggle} />
 
         {isOpen && (
           <ContainerMobile>
             <LinksContainerMobile>
-                <LinksMobile to="/" className={location.pathname === "/" ? "active" : ""} onClick={handleClose}>Início</LinksMobile>
-                <LinksMobile to="/sobre" className={location.pathname === "/sobre" ? "active" : ""} onClick={handleClose}>Sobre</LinksMobile>
-                <LinksMobile to="/habilidades" className={location.pathname === "/habilidades" ? "active" : ""} onClick={handleClose}>Habilidades</LinksMobile>
-                <LinksMobile to="/projetos" className={location.pathname === "/projetos" ? "active" : ""} onClick={handleClose}>Projetos</LinksMobile>
-                <LinksMobile to="/contato" className={location.pathname === "/contato" ? "active" : ""} onClick={handleClose}>Contato</LinksMobile>
+              <LinksMobile
+                to="/"
+                className={location.pathname === "/" ? "active" : ""}
+                onClick={handleClose}
+              >
+                Início
+              </LinksMobile>
+              <LinksMobile
+                to="/sobre"
+                className={location.pathname === "/sobre" ? "active" : ""}
+                onClick={handleClose}
+              >
+                Sobre
+              </LinksMobile>
+              <LinksMobile
+                to="/habilidades"
+                className={location.pathname === "/habilidades" ? "active" : ""}
+                onClick={handleClose}
+              >
+                Habilidades
+              </LinksMobile>
+              <LinksMobile
+                to="/projetos"
+                className={location.pathname === "/projetos" ? "active" : ""}
+                onClick={handleClose}
+              >
+                Projetos
+              </LinksMobile>
+              <LinksMobile
+                to="/contato"
+                className={location.pathname === "/contato" ? "active" : ""}
+                onClick={handleClose}
+              >
+                Contato
+              </LinksMobile>
             </LinksContainerMobile>
           </ContainerMobile>
         )}

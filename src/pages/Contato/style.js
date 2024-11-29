@@ -18,7 +18,6 @@ export const Title = styled.h1`
   margin-top: 50px;
   transition: all 0.5s ease-in-out;
 
-
   @media (max-width: 480px) {
     font-size: 20px;
   }
@@ -31,7 +30,6 @@ export const DivCards = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  
 
   @media (max-width: 480px) {
     flex-wrap: wrap;

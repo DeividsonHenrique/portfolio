@@ -8,6 +8,7 @@ import { Icons, ModuloBall, ModuloTitle, Details,} from "./pages/Habilidades/sty
 import { Title as TitleProjetos } from "./pages/Projetos/style";
 import { Title as TitleContato, Cards } from "./pages/Contato/style";
 import { Title as TitleSobre } from "./pages/Sobre/style";
+import { Box } from "./components/GotoTop";
 
 
 const ChangeTheme = createContext();
@@ -27,6 +28,8 @@ const lightTheme = {
 
   color_Icons: "#333333",
   color_details: "#4A148C",
+
+  color_arrow: "#fff",
 };
 
 const darkTheme = {
@@ -44,6 +47,8 @@ const darkTheme = {
 
   color_Icons: "#fff",
   color_details: "#C0C0C0",
+
+  color_arrow: "#000000",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -158,6 +163,11 @@ body{
 
     ${TitleProjetos}, ${TitleContato}{
         color: ${(props) => props.theme.color_details};
+    }
+
+    ${Box}{
+        background: ${(props) => props.theme.color_details};
+        color: ${(props) => props.theme.color_arrow};
     }
   `;
 

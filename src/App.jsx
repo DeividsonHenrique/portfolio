@@ -1,5 +1,6 @@
 import Router from "./Router.jsx";
 import { UseTheme } from "./CreateContext.jsx";
+import GotoTop from "./components/GotoTop.jsx";
 
 function App() {
   const { theme, lightTheme, darkTheme, GlobalStyle } = UseTheme();
@@ -9,6 +10,7 @@ function App() {
     <>
       <GlobalStyle theme={currentTheme} />
       <Router />
+      <GotoTop />
     </>
   );
 }

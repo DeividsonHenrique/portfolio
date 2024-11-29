@@ -4,7 +4,7 @@ import { DivContatos, Cards, DivCards, Title } from "./style";
 function Contato() {
   const { contato } = UseConfig();
   const { theme } = UseTheme();
- 
+
   return (
     <DivContatos>
       <Title>Contato</Title>
