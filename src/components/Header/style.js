@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { IoIosMenu } from "react-icons/io";
+import { IoIosClose } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 
 export const HeaderContainer = styled.div`
   position: relative;
@@ -188,7 +190,7 @@ export const MenuMobile = styled(IoIosMenu)`
   font-size: 30px;
   color: #e30606;
   margin-right: 10px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease-in-out;
 
   @media (max-width: 480px) {
     display: block;
@@ -197,22 +199,29 @@ export const MenuMobile = styled(IoIosMenu)`
 
 export const ContainerMobile = styled.div`
   position: fixed;
-  top: 85px;
+  top: 71px;
   right: 0;
   width: 0%;
   height: 80vh;
   background: linear-gradient(120deg, #181c27, #000000);
   opacity: 0.9;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 10px 0px 0px 10px;
   box-shadow: 0 0 10px 0 #000000;
   z-index: 1;
-  transition: width 0.3s ease;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-left: 2px solid lightblue; 
+  background-color: lightblue;
 
   @media (max-width: 480px) {
+    display: flex;
+  }
+  
+  &.open{
     width: 80%;
   }
 `;
@@ -221,22 +230,64 @@ export const LinksContainerMobile = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 80%;
+  width: 100%;
 `;
 
 export const LinksMobile = styled(Link)`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  height: 42px;
   font-family: var(--fonte1);
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
   margin: 0 15px;
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  img{
+    width: 20px;
+    height: 20px;     
+    mix-blend-mode: lighten;
+  }
 
   &:hover {
-    color: #ffd700;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
   }
+
+`;
+
+export const Line = styled.div`
+  width: 70%;
+  height: 1px;
+  background: linear-gradient(120deg, #181c27, #4A148C, #181c27);
+`;
+
+export const CloseBtn = styled(IoIosClose)`
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 40px;
+  color: lightblue;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: aqua;
+  }
+`;
+
+export const Arrow = styled(IoIosArrowForward)`
+  font-size: 20px;
 `;

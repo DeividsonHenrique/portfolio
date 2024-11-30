@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { createContext, useContext, useEffect, useState } from "react";
 import { createGlobalStyle } from "styled-components";
-import { HeaderContainer, Links } from "./components/Header/style";
+import { HeaderContainer, Links, MenuMobile } from "./components/Header/style";
 import { Title, Subtitle } from "./pages/Home/style";
 import { AnoTitle, Text, Ball } from "./pages/Sobre/style";
 import { Icons, ModuloBall, ModuloTitle, Details,} from "./pages/Habilidades/style";
@@ -30,6 +30,7 @@ const lightTheme = {
   color_details: "#4A148C",
 
   color_arrow: "#fff",
+  color_menu: "#4A148C",
 };
 
 const darkTheme = {
@@ -49,6 +50,7 @@ const darkTheme = {
   color_details: "#C0C0C0",
 
   color_arrow: "#000000",
+  color_menu: "#e30606",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -169,6 +171,10 @@ body{
         background: ${(props) => props.theme.color_details};
         color: ${(props) => props.theme.color_arrow};
     }
+
+    ${MenuMobile}{
+        color: ${(props) => props.theme.color_menu};
+    }
   `;
 
 export function ChangeThemeProvider({ children }) {
@@ -202,6 +208,7 @@ import react from "./assets/Front-End/react.svg";
 import bootstrap from "./assets/Front-End/bootstrap.svg";
 import javascript from "./assets/Front-End/javascript.svg";
 
+
 const GlobalConfig = createContext();
 
 export const GlobalConfigProvider = ({ children }) => {
@@ -209,7 +216,8 @@ export const GlobalConfigProvider = ({ children }) => {
   const [habilidades] = useState(dados.habilidades);
   const [projetos] = useState(dados.Projetos);
   const [contato] = useState(dados.Contato);
-
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const logosFrontEnd = {
     html5: html5,
@@ -233,8 +241,32 @@ export const GlobalConfigProvider = ({ children }) => {
   }, []);
 
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
+
   return (
-    <GlobalConfig.Provider value={{ info, habilidades, projetos, contato, logosFrontEnd }}>
+    <GlobalConfig.Provider value={{ info, habilidades, projetos, contato, logosFrontEnd, isOpen, handleToggle, handleClose, scrolled }}>
       {children}
     </GlobalConfig.Provider>
   );

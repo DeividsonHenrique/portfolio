@@ -12,41 +12,20 @@ import {
   ContainerMobile,
   LinksContainerMobile,
   LinksMobile,
+  CloseBtn,
+  Line,
+  Arrow,
 } from "./style";
-import { UseTheme } from "../../CreateContext";
+import { UseTheme, UseConfig } from "../../CreateContext.jsx";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+
 
 function Header() {
   const { theme, toggleTheme } = UseTheme();
+  const { handleToggle, handleClose, isOpen, scrolled } = UseConfig();
   const location = useLocation();
-  const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
-  const [scrolled, setScrolled] = useState(false); // Estado para controle do scroll
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Define a mudança de estado com base na posição do scroll
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll); // Adiciona o listener de scroll
-
-    return () => window.removeEventListener("scroll", handleScroll); // Remove o listener ao desmontar o componente
-  }, []);
-
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const handleClose = () => {
-    setIsOpen(false);
-  };
 
   const goToHome = () => {
     navigate("/");
@@ -55,7 +34,7 @@ function Header() {
   return (
     <HeaderContainer className={scrolled ? "scrolled" : ""}>
       <Logo onClick={goToHome}>
-        <img src="./src/assets/Front-End/react.svg" alt="" />
+        <img src="/src/assets/Front-End/react.svg" alt="" />
       </Logo>
       <LinksContainer>
         <Links to="/" className={location.pathname === "/" ? "active" : ""}>
@@ -88,47 +67,67 @@ function Header() {
 
         <MenuMobile onClick={handleToggle} />
 
-        {isOpen && (
-          <ContainerMobile>
+        
+          <ContainerMobile className={isOpen ? "open" : ""}>
             <LinksContainerMobile>
-              <LinksMobile
-                to="/"
-                className={location.pathname === "/" ? "active" : ""}
-                onClick={handleClose}
-              >
-                Início
-              </LinksMobile>
-              <LinksMobile
-                to="/sobre"
-                className={location.pathname === "/sobre" ? "active" : ""}
-                onClick={handleClose}
-              >
-                Sobre
-              </LinksMobile>
-              <LinksMobile
-                to="/habilidades"
-                className={location.pathname === "/habilidades" ? "active" : ""}
-                onClick={handleClose}
-              >
-                Habilidades
-              </LinksMobile>
-              <LinksMobile
-                to="/projetos"
-                className={location.pathname === "/projetos" ? "active" : ""}
-                onClick={handleClose}
-              >
-                Projetos
-              </LinksMobile>
-              <LinksMobile
-                to="/contato"
-                className={location.pathname === "/contato" ? "active" : ""}
-                onClick={handleClose}
-              >
-                Contato
-              </LinksMobile>
+            <CloseBtn onClick={handleClose} />
+
+                <LinksMobile
+                  to="/"
+                  className={location.pathname === "/" ? "active" : ""}
+                  onClick={handleClose}
+                >
+                  <img src="./src/assets/Menu-Mobile/home.svg" alt="Inicio" />
+                  Início
+                  <Arrow />
+                </LinksMobile>
+              <Line/>
+              
+                <LinksMobile
+                  to="/sobre"
+                  className={location.pathname === "/sobre" ? "active" : ""}
+                  onClick={handleClose}
+                >
+                  <img src="./src/assets/Menu-Mobile/sobre.svg" alt="Sobre" />
+                  Sobre
+                  <Arrow />
+                </LinksMobile>
+              <Line/>
+              
+                <LinksMobile
+                  to="/habilidades"
+                  className={location.pathname === "/habilidades" ? "active" : ""}
+                  onClick={handleClose}
+                >
+                  <img
+                    src="./src/assets/Menu-Mobile/habilidades.svg" alt="Habilidades" />
+                  Habilidades
+                  <Arrow />
+                </LinksMobile>
+              <Line/>
+                <LinksMobile
+                  to="/projetos"
+                  className={location.pathname === "/projetos" ? "active" : ""}
+                  onClick={handleClose}
+                >
+                  <img src="./src/assets/Menu-Mobile/projetos.svg" alt="Projetos" />
+                  Projetos
+                  <Arrow />
+                </LinksMobile>
+              <Line/>
+                <LinksMobile
+                  to="/contato"
+                  className={location.pathname === "/contato" ? "active" : ""}
+                  onClick={handleClose}
+                >
+                  <img src="./src/assets/Menu-Mobile/contato.svg" alt="Contato" />
+                  Contato
+                  <Arrow />
+                </LinksMobile>
+                <Line/>
             </LinksContainerMobile>
           </ContainerMobile>
-        )}
+        
 
         <Input
           type="checkbox"
