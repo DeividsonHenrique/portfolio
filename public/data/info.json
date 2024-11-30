@@ -43,49 +43,49 @@
       {
         "id": 1,
         "title": "HTML",
-        "img": "/src/assets/Front-End/html5.svg",
+        "img": "/assets/Front-End/html5.svg",
         "knowledge": "Avançado"
       },
       {
         "id": 2,
         "title": "CSS",
-        "img": "/src/assets/Front-End/css3.svg",
+        "img": "/assets/Front-End/css3.svg",
         "knowledge": "Avançado"
       },
       {
         "id": 3,
         "title": "JavaScript",
-        "img": "/src/assets/Front-End/javascript.svg",
+        "img": "/assets/Front-End/javascript.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 4,
         "title": "Bootstrap",
-        "img": "/src/assets/Front-End/bootstrap.svg",
+        "img": "/assets/Front-End/bootstrap.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 5,
         "title": "React",
-        "img": "/src/assets/Front-End/react.svg",
+        "img": "/assets/Front-End/react.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 6,
         "title": "Redux",
-        "img": "/src/assets/Front-End/redux.svg",
+        "img": "/assets/Front-End/redux.svg",
         "knowledge": "Básico"
       },
       {
         "id": 7,
         "title": "Typescript",
-        "img": "/src/assets/Front-End/typescript.svg",
+        "img": "/assets/Front-End/typescript.svg",
         "knowledge": "Básico"
       },
       {
         "id": 8,
         "title": "Next.js",
-        "img": "/src/assets/Front-End/nextjs.svg",
+        "img": "/assets/Front-End/nextjs.svg",
         "knowledge": "Básico"
       }
     ],
@@ -102,32 +102,32 @@
       {
         "id": 1,
         "title": "Node.js",
-        "img": "/src/assets/Back-End/nodejs.svg",
+        "img": "/assets/Back-End/nodejs.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 2,
         "title": "MySQL",
-        "img": "/src/assets/Back-End/mysql.svg",
+        "img": "/assets/Back-End/mysql.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 3,
         "title": "Json",
-        "img": "/src/assets/Back-End/json.svg",
+        "img": "/assets/Back-End/json.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 4,
         "title": "Express",
         "filter": "invert(100%)",
-        "img": "/src/assets/Back-End/express.svg",
+        "img": "/assets/Back-End/express.svg",
         "knowledge": "Básico"
       },
       {
         "id": 5,
         "title": "Python",
-        "img": "/src/assets/Back-End/python.svg",
+        "img": "/assets/Back-End/python.svg",
         "knowledge": "Básico"
       }
     ],
@@ -144,62 +144,62 @@
       {
         "id": 1,
         "title": "Vscode",
-        "img": "/src/assets/Other/vscode.svg",
+        "img": "/assets/Other/vscode.svg",
         "knowledge": "Avançado"
       },
       {
         "id": 2,
         "title": "GitHub",
         "filter": "invert(100%)",
-        "img": "/src/assets/Other/github.svg",
+        "img": "/assets/Other/github.svg",
         "knowledge": "Avançado"
       },
       {
         "id": 3,
         "title": "Git",
-        "img": "/src/assets/Other/git.svg",
+        "img": "/assets/Other/git.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 4,
         "title": "Canva",
-        "img": "/src/assets/Other/canva.svg",
+        "img": "/assets/Other/canva.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 5,
         "title": "Insomnia",
-        "img": "/src/assets/Other/insomnia.svg",
+        "img": "/assets/Other/insomnia.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 6,
         "title": "Adobe XD",
-        "img": "/src/assets/Other/xd.svg",
+        "img": "/assets/Other/xd.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 7,
         "title": "Photoshop",
-        "img": "/src/assets/Other/photoshop.svg",
+        "img": "/assets/Other/photoshop.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 8,
         "title": "Premiere Pro",
-        "img": "/src/assets/Other/premiere.svg",
+        "img": "/assets/Other/premiere.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 9,
         "title": "After Effects",
-        "img": "/src/assets/Other/After Effects.svg",
+        "img": "/assets/Other/After Effects.svg",
         "knowledge": "Intermediário"
       },
       {
         "id": 10,
         "title": "Autodesk Maya",
-        "img": "/src/assets/Other/maya.svg",
+        "img": "/assets/Other/maya.svg",
         "knowledge": "Básico"
       }
     ]
@@ -283,38 +283,38 @@
   "Contato": [
     {
       "id": 1,
-      "img": "./src/assets/Contacts/github.svg",
+      "img": "/assets/Contacts/github.svg",
       "title": "Github",
       "filter": "invert(100%)",
       "link": "https://github.com/DeividsonHenrique"
     },
     {
       "id": 2,
-      "img": "./src/assets/Contacts/linkedin.svg",
+      "img": "/assets/Contacts/linkedin.svg",
       "title": "Linkedin",
       "link": "https://www.linkedin.com/in/deividsonhenrique/"
     },
     {
       "id": 3,
-      "img": "./src/assets/Contacts/instagram.svg",
+      "img": "/assets/Contacts/instagram.svg",
       "title": "Instagram",
       "link": "https://www.instagram.com/deividsonhenry_/"
     },
     {
       "id": 4,
-      "img": "./src/assets/Contacts/tiktok.svg",
+      "img": "/assets/Contacts/tiktok.svg",
       "title": "TikTok",
       "link": "https://www.tiktok.com/@henryross_"
     },
     {
       "id": 5,
-      "img": "./src/assets/Contacts/discord.svg",
+      "img": "/assets/Contacts/discord.svg",
       "title": "Discord",
       "link": ""
     },
     {
       "id": 3,
-      "img": "./src/assets/Contacts/E-Mail.svg",
+      "img": "/assets/Contacts/E-Mail.svg",
       "title": "E-Mail",
       "link": ""
     }

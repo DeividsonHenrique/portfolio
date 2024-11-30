@@ -30,7 +30,7 @@ function Home() {
         <Button onClick={handleClick}>Saiba Mais</Button>
       </Intro>
       <Perfil>
-        <img src="./src/assets/Front-End/react.svg" alt="" />
+        <img src="/assets/Front-End/react.svg" alt="" />
       </Perfil>
     </HomeContainer>
   );

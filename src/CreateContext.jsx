@@ -202,11 +202,11 @@ export const UseTheme = () => {
 // configs adicionais e API json ---------------------------------------------------------------------
 
 import dados from "/public/data/info.json";
-import html5 from "./assets/Front-End/html5.svg";
-import css3 from "./assets/Front-End/css3.svg";
-import react from "./assets/Front-End/react.svg";
-import bootstrap from "./assets/Front-End/bootstrap.svg";
-import javascript from "./assets/Front-End/javascript.svg";
+import html5 from "/assets/Front-End/html5.svg";
+import css3 from "/assets/Front-End/css3.svg";
+import react from "/assets/Front-End/react.svg";
+import bootstrap from "/assets/Front-End/bootstrap.svg";
+import javascript from "/assets/Front-End/javascript.svg";
 
 
 const GlobalConfig = createContext();

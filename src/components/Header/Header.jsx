@@ -34,7 +34,7 @@ function Header() {
   return (
     <HeaderContainer className={scrolled ? "scrolled" : ""}>
       <Logo onClick={goToHome}>
-        <img src="/src/assets/Front-End/react.svg" alt="" />
+        <img src="/assets/Front-End/react.svg" alt="Logo" />
       </Logo>
       <LinksContainer>
         <Links to="/" className={location.pathname === "/" ? "active" : ""}>
@@ -77,7 +77,7 @@ function Header() {
                   className={location.pathname === "/" ? "active" : ""}
                   onClick={handleClose}
                 >
-                  <img src="./src/assets/Menu-Mobile/home.svg" alt="Inicio" />
+                  <img src="/assets/Menu-Mobile/home.svg" alt="Inicio" />
                   Início
                   <Arrow />
                 </LinksMobile>
@@ -88,7 +88,7 @@ function Header() {
                   className={location.pathname === "/sobre" ? "active" : ""}
                   onClick={handleClose}
                 >
-                  <img src="./src/assets/Menu-Mobile/sobre.svg" alt="Sobre" />
+                  <img src="/assets/Menu-Mobile/sobre.svg" alt="Sobre" />
                   Sobre
                   <Arrow />
                 </LinksMobile>
@@ -100,7 +100,7 @@ function Header() {
                   onClick={handleClose}
                 >
                   <img
-                    src="./src/assets/Menu-Mobile/habilidades.svg" alt="Habilidades" />
+                    src="/assets/Menu-Mobile/habilidades.svg" alt="Habilidades" />
                   Habilidades
                   <Arrow />
                 </LinksMobile>
@@ -110,7 +110,7 @@ function Header() {
                   className={location.pathname === "/projetos" ? "active" : ""}
                   onClick={handleClose}
                 >
-                  <img src="./src/assets/Menu-Mobile/projetos.svg" alt="Projetos" />
+                  <img src="/assets/Menu-Mobile/projetos.svg" alt="Projetos" />
                   Projetos
                   <Arrow />
                 </LinksMobile>
@@ -120,7 +120,7 @@ function Header() {
                   className={location.pathname === "/contato" ? "active" : ""}
                   onClick={handleClose}
                 >
-                  <img src="./src/assets/Menu-Mobile/contato.svg" alt="Contato" />
+                  <img src="/assets/Menu-Mobile/contato.svg" alt="Contato" />
                   Contato
                   <Arrow />
                 </LinksMobile>
