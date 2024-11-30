@@ -55,6 +55,8 @@ const darkTheme = {
 
 const GlobalStyle = createGlobalStyle`
     #root {
+        max-width: 1400px;
+        margin: 0 auto;
         font-synthesis: none;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
@@ -76,9 +78,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body{
-        position: relative;
-        margin: 0 auto;
-        max-width: 1400px;
+        position: relative; 
         width: 100%;
         min-height: 100vh;
         background: ${(props) => props.theme.background};
