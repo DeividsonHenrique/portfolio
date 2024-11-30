@@ -79,13 +79,9 @@ const GlobalStyle = createGlobalStyle`
 
 body{
         position: relative; 
-        width: 100%;
-        min-height: 100vh;
+        margin: 0 auto;
         background: ${(props) => props.theme.background};
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
         background-attachment: fixed;
-        overflow-y: auto;
         transition: background 0.6s ease-in-out;
 
 

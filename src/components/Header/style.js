@@ -8,7 +8,7 @@ import { IoIosArrowForward } from "react-icons/io";
 export const HeaderContainer = styled.div`
   position: relative;
   height: 125px;
-  max-width: 1400px;
+  
   width: 100%;
   display: flex;
   justify-content: space-between;
