@@ -55,7 +55,7 @@ const darkTheme = {
 
 const GlobalStyle = createGlobalStyle`
     #root {
-        max-width: 1400px;
+        max-width: 1260px;
         margin: 0 auto;
         font-synthesis: none;
         text-rendering: optimizeLegibility;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const SobreContainer = styled.div`
-  max-width: 1400px;
   width: 100%;
   height: auto;
   display: flex;
@@ -19,9 +18,9 @@ export const SobreContainer = styled.div`
 export const Title = styled.h1`
   color: var(--cor-fonte1);
   font-family: var(--fonte1);
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 400;
-  margin: 50px 0px 30px 0px;
+  margin: 40px 0px 25px 0px;
   transition: all 0.5s ease-in-out;
   width: 100%;
   text-align: center;
@@ -33,8 +32,8 @@ export const Title = styled.h1`
 `;
 
 export const Card = styled.div`
-  height: 566px;
-  width: 345px;
+  height: 545px;
+  width: 310px;
 
   display: flex;
   flex-direction: column;
@@ -54,8 +53,8 @@ export const Text = styled.p`
   height: 390px;
   color: var(--cor-fonte1);
   font-family: arial;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 14px;
+  line-height: 22px;
   transition: all 0.5s ease-in-out;
 
   @media (max-width: 480px) {
@@ -84,11 +83,11 @@ export const Ano = styled.div`
   span {
     &:nth-child(2) {
       width: 2px;
-      height: 75px;
+      height: 70px;
       background-color: aqua;
       display: block;
       border-radius: 50%;
-      margin-left: 7px;
+      margin-left: 6px;
 
       @media (max-width: 480px) {
         display: none;
@@ -118,7 +117,7 @@ export const Ano = styled.div`
 
 export const AnoTitle = styled.h1`
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--fonte1);
   margin-left: 5px;
   transition: all 0.5s ease-in-out;
@@ -129,8 +128,8 @@ export const AnoTitle = styled.h1`
 `;
 
 export const Ball = styled.span`
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   background-color: #fff;
   display: block;
   border-radius: 50%;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-  max-width: 1400px;
   width: 100%;
   height: 87vh;
   display: flex;
@@ -20,7 +19,7 @@ export const Intro = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  width: 527px;
+  width: 520px;
 
   @media (max-width: 480px) {
     margin-top: 30px;
@@ -31,7 +30,7 @@ export const Intro = styled.div`
 
 export const Title = styled.h1`
   font-family: var(--fonte1);
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
   width: 100%;
   color: var(--cor-fonte1);
@@ -50,13 +49,13 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.p`
   font-family: var(--fonte1);
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   width: 100%;
   color: var(--cor-fonte1);
   margin-top: 30px;
   margin-bottom: 30px;
-  line-height: 25px;
+  line-height: 22px;
   transition: all 0.5s ease-in-out;
 
   @media (max-width: 480px) {
@@ -74,12 +73,12 @@ export const Subtitle = styled.p`
 
 export const Button = styled.button`
   background-color: var(--cor-fonte2);
-  height: 50px;
-  width: 250px;
+  height: 45px;
+  width: 220px;
   border-radius: 50px;
   text-align: center;
   font-family: arial;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   cursor: pointer;
   outline: none;
@@ -98,8 +97,8 @@ export const Button = styled.button`
 `;
 
 export const Perfil = styled.div`
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 
   @media (max-width: 480px) {
     width: 150px;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  max-width: 1400px;
   width: 100%;
   height: 87vh;
   display: flex;
@@ -13,7 +12,7 @@ export const ProjectsContainer = styled.div`
 export const Title = styled.h1`
   color: var(--cor-fonte1);
   font-family: var(--fonte1);
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 400;
   margin: 50px 0px 30px 0px;
   transition: all 0.5s ease-in-out;
@@ -31,12 +30,12 @@ export const Conatiner = styled.div`
   flex-wrap: wrap;
   align-items: start;
   justify-content: center;
-  gap: 30px 40px;
+  gap: 25px 35px;
 `;
 
 export const Cards = styled.div`
-  width: 400px;
-  height: 400px;
+  width: 360px;
+  height: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,8 +91,8 @@ export const Logos = styled.div`
   margin-top: 10px;
 
   img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-inline: 5px;
   }
 `;
@@ -111,7 +110,7 @@ export const InfoDiv = styled.div`
     width: 90%;
     margin: 5px 0px 10px 0px;
     font-family: arial;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #333333;
   }
@@ -119,7 +118,7 @@ export const InfoDiv = styled.div`
   p {
     width: 90%;
     font-family: arial;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     color: #333333;
   }
@@ -141,8 +140,8 @@ export const InfoDiv = styled.div`
 
 export const Button = styled.button`
   position: absolute;
-  width: 120px;
-  height: 30px;
+  width: 110px;
+  height: 25px;
   bottom: 5px;
   right: 5px;
   background-color: #25e600;
@@ -151,7 +150,7 @@ export const Button = styled.button`
   cursor: pointer;
   color: #fff;
   font-family: arial;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
-  max-width: 1400px;
   width: 100%;
   height: 87vh;
   display: flex;
@@ -12,7 +11,7 @@ export const SkillsContainer = styled.div`
 
 export const Details = styled.div`
   width: 100%;
-  height: 85px;
+  height: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,25 +20,24 @@ export const Details = styled.div`
   h1 {
     color: var(--cor-fonte1);
     font-family: var(--fonte1);
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 400;
     transition: all 0.5s ease-in-out;
   }
 
   p {
     font-family: arial;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     transition: all 0.5s ease-in-out;
   }
-
 
   @media (max-width: 480px) {
     text-align: center;
     height: auto;
     margin-top: 20px;
 
-    h1{
+    h1 {
       font-size: 20px;
       margin-bottom: 10px;
     }
@@ -51,17 +49,15 @@ export const Details = styled.div`
 `;
 
 export const CardSkills = styled.div`
-  height: 600px;
-  width: 460px;
+  height: 590px;
+  width: 415px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 
   @media (max-width: 480px) {
     width: 100%;
     height: auto;
-
 
     &:last-child {
       padding-bottom: 50px;
@@ -76,7 +72,6 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: center;
 
-
   @media (max-width: 480px) {
     flex-direction: column;
     align-items: center;
@@ -85,7 +80,7 @@ export const Container = styled.div`
 `;
 
 export const Modulo = styled.div`
-  height: 120px;
+  height: 110px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -102,8 +97,8 @@ export const Modulo = styled.div`
 
   span {
     &:nth-child(2) {
-      width: 2px;
-      height: 85px;
+      width: 1px;
+      height: 80px;
       background-color: black;
       border-radius: 50%;
 
@@ -114,11 +109,10 @@ export const Modulo = styled.div`
 
     &:nth-child(3) {
       width: 100%;
-      height: 7px;
+      height: 6px;
       background-color: aqua;
       display: block;
       border-radius: 5px;
-
 
       @media (max-width: 480px) {
         height: 5px;
@@ -130,13 +124,12 @@ export const Modulo = styled.div`
 
 export const ModuloTitle = styled.h1`
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--fonte1);
   margin-left: 5px;
   text-align: center;
   width: 100%;
   transition: all 0.5s ease-in-out;
-
 
   @media (max-width: 480px) {
     font-size: 15px;
@@ -145,13 +138,12 @@ export const ModuloTitle = styled.h1`
 `;
 
 export const ModuloBall = styled.span`
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   background-color: #fff;
   display: block;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
-
 
   @media (max-width: 480px) {
     display: none;
@@ -166,11 +158,10 @@ export const Icons = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 50px;
-  
 
   div {
-    width: 100px;
-    height: 125px;
+    width: 85px;
+    height: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,13 +169,13 @@ export const Icons = styled.div`
   }
 
   img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
 
   p {
     font-family: var(--fonte1);
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     color: white;
   }
@@ -193,22 +184,21 @@ export const Icons = styled.div`
     text-decoration: none;
   }
 
-
   @media (max-width: 480px) {
     margin-top: 20px;
     width: 90%;
-    
-    div{
+
+    div {
       width: 50px;
       height: 80px;
     }
 
-    img{
+    img {
       width: 50px;
       height: 50px;
     }
 
-    p{
+    p {
       text-align: center;
       font-size: 10px;
       text-overflow: ellipsis;
@@ -220,14 +210,13 @@ export const Icons = styled.div`
 `;
 
 export const Line = styled.div`
-  height: 400px;
+  height: 350px;
   width: 2px;
   background-color: #770000;
   margin-top: 150px;
   margin-inline: 1px;
 
-
   @media (max-width: 480px) {
-  display: none;
+    display: none;
   }
 `;

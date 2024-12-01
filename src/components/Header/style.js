@@ -7,8 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 export const HeaderContainer = styled.div`
   position: relative;
-  height: 125px;
-  
+  height: 113px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -49,8 +48,8 @@ export const HeaderContainer = styled.div`
 `;
 
 export const Logo = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 
   
   @media (max-width: 480px) {
@@ -67,9 +66,9 @@ export const LinksContainer = styled.div`
 
 export const Links = styled(Link)`
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  margin: 0 15px;
+  margin: 0 13px;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -115,7 +114,8 @@ export const Label = styled.label`
   border-radius: 50px;
   padding: 0px 7px;
   position: relative;
-  width: 60px;
+  width: 55px;
+  height: 22px;
   margin-left: 10px;
   transition: all 0.3s ease;
 
@@ -129,10 +129,10 @@ export const Label = styled.label`
 export const Ball = styled.div`
   background-color: #fff;
   position: absolute;
-  top: 2px;
+  top: 1px;
   right: 2px;
-  height: 22px;
-  width: 22px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -163,7 +163,7 @@ export const Input = styled.input`
   display: none;
 
   &:checked + ${Label} ${Ball} {
-    transform: translateX(-35px);
+    transform: translateX(-32px);
 
     @media (max-width: 480px) {
       transform: translateX(-30px);
