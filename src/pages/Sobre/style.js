@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SobreContainer = styled.div`
   width: 100%;
-  height: auto;
+  height: 87vh;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -11,7 +11,7 @@ export const SobreContainer = styled.div`
   @media (max-width: 480px) {
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100vh;
+    
   }
 `;
 
@@ -71,7 +71,7 @@ export const Text = styled.p`
 export const Ano = styled.div`
   height: 85px;
   width: 100%;
-
+ 
   div {
     display: flex;
     flex-direction: row;

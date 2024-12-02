@@ -32,7 +32,7 @@ export const Conatiner = styled.div`
   justify-content: center;
   gap: 25px 35px;
 `;
-
+ 
 export const Cards = styled.div`
   width: 360px;
   height: 360px;
