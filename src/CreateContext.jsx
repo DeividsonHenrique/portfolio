@@ -209,7 +209,7 @@ const GlobalConfig = createContext();
 
 export const GlobalConfigProvider = ({ children }) => {
   const [info, setInfo] = useState([]);
-  const [habilidades, setHabilidades] = useState([]);
+  const [habilidades] = useState(dados.habilidades);
   const [projetos] = useState(dados.Projetos);
   const [contato] = useState(dados.Contato);
   const [isOpen, setIsOpen] = useState(false);
@@ -229,9 +229,9 @@ export const GlobalConfigProvider = ({ children }) => {
   useEffect(() => {
     const fetchInfo = async () => {
       try {
-        const response = await fetch("/data/info.json");
+        const response = await fetch("https://raw.githubusercontent.com/DeividsonHenrique/portfolio/refs/heads/main/public/data/info.json");
         const data = await response.json();
-        setHabilidades(data.habilidades);
+        setInfo(data.habilidades);
       } catch (error) {
         console.error(error);
       }
