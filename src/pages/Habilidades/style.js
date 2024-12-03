@@ -11,6 +11,7 @@ export const SkillsContainer = styled.div`
 
   @media (max-width: 480px) {
     height: 100vh;
+    margin-top: 100px;
   }
 `;
 

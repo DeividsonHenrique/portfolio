@@ -215,8 +215,6 @@ export const GlobalConfigProvider = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // https://raw.githubusercontent.com/DeividsonHenrique/portfolio/refs/heads/main/public/data/info.json
-
   const logosFrontEnd = {
     html5: html5,
     css3: css3,
@@ -225,24 +223,10 @@ export const GlobalConfigProvider = ({ children }) => {
     javascript: javascript,
   };
 
-
   useEffect(() => {
     const fetchInfo = async () => {
       try {
-        const response = await fetch("https://raw.githubusercontent.com/DeividsonHenrique/portfolio/refs/heads/main/public/data/info.json");
-        const data = await response.json();
-        setInfo(data.habilidades);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchInfo();
-  }, []);
-
-  useEffect(() => {
-    const fetchInfo = async () => {
-      try {
-        const response = await fetch("https://raw.githubusercontent.com/DeividsonHenrique/portfolio/refs/heads/main/public/data/info.json");
+        const response = await fetch("/data/info.json");
         const data = await response.json();
         setInfo(data.sobre);
       } catch (error) {
