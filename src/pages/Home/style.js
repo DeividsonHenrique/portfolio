@@ -12,6 +12,11 @@ export const HomeContainer = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 `;
 
 export const Intro = styled.div`
@@ -22,6 +27,12 @@ export const Intro = styled.div`
   width: 520px;
 
   @media (max-width: 480px) {
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
     margin-top: 30px;
     width: 100%;
     align-items: center;
@@ -45,6 +56,16 @@ export const Title = styled.h1`
     font-size: 20px;
     width: 80%;
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+
+    span {
+      font-size: 21px;
+    }
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -67,6 +88,18 @@ export const Subtitle = styled.p`
 
     br {
       display: none;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    br {
+      display: block;
     }
   }
 `;
@@ -94,6 +127,12 @@ export const Button = styled.button`
     width: 120px;
     font-size: 12px;
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 35px;
+    width: 130px;
+    font-size: 13px;
+  }
 `;
 
 export const Perfil = styled.div`
@@ -103,5 +142,10 @@ export const Perfil = styled.div`
   @media (max-width: 480px) {
     width: 150px;
     height: 150px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 200px;
+    height: 200px;
   }
 `;

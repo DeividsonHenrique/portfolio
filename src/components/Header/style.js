@@ -45,16 +45,41 @@ export const HeaderContainer = styled.div`
       background-color: #181c27;
     }
   }
+
+  @media (max-width: 767px) {
+    justify-content: space-around;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    border: none;
+    // background: linear-gradient(120deg, #181C27, #000000);
+
+    &::after {
+      display: none;
+    }
+
+    &.scrolled {
+      background-color: #181c27;
+    }
+  }
 `;
 
 export const Logo = styled.div`
   width: 45px;
   height: 45px;
 
-  
   @media (max-width: 480px) {
     width: 30px;
     height: 30px;
+  }
+
+  @media (max-width: 767px) {
+    width: 35px;
+    height: 35px;
   }
 `;
 
@@ -101,7 +126,7 @@ export const Links = styled(Link)`
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     display: none;
   }
 `;
@@ -119,7 +144,7 @@ export const Label = styled.label`
   margin-left: 10px;
   transition: all 0.3s ease;
 
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     margin-left: 0px;
     width: 50px;
     height: 20px;
@@ -129,7 +154,7 @@ export const Label = styled.label`
 export const Ball = styled.div`
   background-color: #fff;
   position: absolute;
-  top: 1px;
+  top: 1.49px;
   right: 2px;
   height: 20px;
   width: 20px;
@@ -137,7 +162,7 @@ export const Ball = styled.div`
   cursor: pointer;
   transition: all 0.3s ease;
 
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     height: 17px;
     width: 17px;
   }
@@ -165,7 +190,7 @@ export const Input = styled.input`
   &:checked + ${Label} ${Ball} {
     transform: translateX(-32px);
 
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       transform: translateX(-30px);
     }
   }
@@ -193,7 +218,7 @@ export const MenuMobile = styled(IoIosMenu)`
   margin-right: 10px;
   transition: all 0.5s ease-in-out;
 
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
     display: block;
   }
 `;
@@ -215,15 +240,31 @@ export const ContainerMobile = styled.div`
   z-index: 1;
   overflow: hidden;
   transition: all 0.3s ease;
-  border-left: 2px solid lightblue; 
+  border-left: 2px solid lightblue;
   background-color: lightblue;
+
+  &.open {
+    width: 80%;
+  }
 
   @media (max-width: 480px) {
     display: flex;
   }
-  
-  &.open{
-    width: 80%;
+
+  @media (min-width: 481px) and (max-width: 600px) {
+    display: flex;
+
+    &.open {
+      width: 70%;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 767px) {
+    display: flex;
+
+    &.open {
+      width: 55%;
+    }
   }
 `;
 
@@ -253,9 +294,9 @@ export const LinksMobile = styled(Link)`
   position: relative;
   transition: all 0.3s ease-in-out;
 
-  img{
+  img {
     width: 20px;
-    height: 20px;     
+    height: 20px;
     mix-blend-mode: lighten;
   }
 
@@ -264,13 +305,12 @@ export const LinksMobile = styled(Link)`
     transition: background-color 0.3s ease;
     border-radius: 5px;
   }
-
 `;
 
 export const Line = styled.div`
   width: 70%;
   height: 1px;
-  background: linear-gradient(120deg, #181c27, #4A148C, #181c27);
+  background: linear-gradient(120deg, #181c27, #4a148c, #181c27);
 `;
 
 export const CloseBtn = styled(IoIosClose)`

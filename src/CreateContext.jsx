@@ -14,7 +14,7 @@ import { Box } from "./components/GotoTop";
 const ChangeTheme = createContext();
 
 const lightTheme = {
-  background: "linear-gradient(120deg, #E4E8ED 90%, #F5F7FA 100%)",
+  background: "#E4E8ED",
   color_link_header: "#191970",
   color_link_active: "#FF0000",
   color_line: "#FFFFFF",
@@ -34,7 +34,7 @@ const lightTheme = {
 };
 
 const darkTheme = {
-  background: "linear-gradient(120deg, #500000 0%, #000000 100%)",
+  background: "#120000",
   color_link_header: "#C0C0C0",
   color_link_active: "#FFD700",
   color_line: "#e30606",
@@ -77,13 +77,67 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;        
 }
 
+  
+
 body{
         position: relative; 
         margin: 0 auto;
         background: ${(props) => props.theme.background};
         background-attachment: fixed;
-        transition: background 0.6s ease-in-out;
+        transition: background 0.4s ease-in-out;
 
+
+         @keyframes toRight {
+            0% {
+                transform: translateX(-100%) rotate(0deg);
+            }
+            100% {
+                transform: translateX(100%) rotate(360deg);
+            }
+        }
+
+        @keyframes toLeft {
+            0% {
+                transform: translateX(100%) rotate(0deg);
+            }
+            100% {
+                transform: translateX(-100%) rotate(360deg);
+            }
+        }
+
+
+        &::after{
+            content: "";
+            position: fixed;
+            top: -50%;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            border-radius: 50%;
+            background: red;
+            z-index: -1;
+            filter: blur(50px);
+            animation: toRight 16s linear infinite alternate;
+            
+            opacity: 0.02;
+            }
+
+        &::before{
+            content: "";
+            position: fixed;
+            top: -50%;
+            right: 0;
+            width: 100%;
+            height: 200%;
+            border-radius: 50%;
+            background: blue;
+            z-index: -1;
+            filter: blur(50px);
+            animation: toLeft 16s linear infinite alternate;
+            opacity: 0.02;
+            }
+
+            
 
         &::-webkit-scrollbar {
             width: 5px;
@@ -108,6 +162,7 @@ body{
             min-height: 85vh;
         }
 }
+        
     
     ${HeaderContainer}{
         border-color: ${(props) => props.theme.color_line};

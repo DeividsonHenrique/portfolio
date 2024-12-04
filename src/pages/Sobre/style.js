@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SobreContainer = styled.div`
   width: 100%;
-  height: 80vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -11,7 +11,16 @@ export const SobreContainer = styled.div`
   @media (max-width: 480px) {
     flex-direction: column;
     justify-content: space-evenly;
-    
+    height: 100vh;
+    margin-top: 80px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin-top: 80px;
   }
 `;
 
@@ -27,7 +36,12 @@ export const Title = styled.h1`
 
   @media (max-width: 480px) {
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 120px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 20px;
+    margin-top: 120px;
   }
 `;
 
@@ -44,8 +58,13 @@ export const Card = styled.div`
     width: 100%;
     flex-direction: row;
     align-items: start;
-    height: 100%;
+    height: auto;
     padding-bottom: 50px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 50%;
+    margin: 10px;
   }
 `;
 
@@ -66,18 +85,33 @@ export const Text = styled.p`
     align-items: center;
     height: 100%;
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    margin-top: 20px;
+  }
 `;
 
 export const Ano = styled.div`
   height: 85px;
   width: 100%;
- 
+
   div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
     margin-bottom: -10px;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
   }
 
   span {
@@ -91,6 +125,11 @@ export const Ano = styled.div`
 
       @media (max-width: 480px) {
         display: none;
+      }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        height: 50px;
+        margin-left: 50%;
       }
     }
 
@@ -106,6 +145,10 @@ export const Ano = styled.div`
         height: 100%;
         margin: 0px 5px 0px 5px;
       }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+        height: 5px;
+      }
     }
   }
 
@@ -119,10 +162,15 @@ export const AnoTitle = styled.h1`
   color: #fff;
   font-size: 18px;
   font-family: var(--fonte1);
-  margin-left: 5px;
   transition: all 0.5s ease-in-out;
 
   @media (max-width: 480px) {
+    font-size: 15px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
     font-size: 15px;
   }
 `;
@@ -137,5 +185,11 @@ export const Ball = styled.span`
 
   @media (max-width: 480px) {
     display: none;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 10px;
+    height: 10px;
+    margin: 0px 0px 0px 2px;
   }
 `;

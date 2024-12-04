@@ -32,7 +32,7 @@ export const DivCards = styled.div`
 
   @media (max-width: 480px) {
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     height: 50%;
     margin-top: 20px;
   }

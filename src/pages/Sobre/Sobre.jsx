@@ -5,7 +5,7 @@ function Sobre() {
  
   return (
     <>
-      <Title>Sobre mim</Title>
+      <Title>Minha História</Title>
     <SobreContainer>
       {info.map((info) => (
         <Card key={info.id}>
