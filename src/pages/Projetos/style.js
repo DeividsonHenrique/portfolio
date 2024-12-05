@@ -7,6 +7,10 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    padding-top: 100px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -20,6 +24,10 @@ export const Title = styled.h1`
   @media (max-width: 480px) {
     font-size: 20px;
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 20px;
+  }
 `;
 
 export const Conatiner = styled.div`
@@ -31,8 +39,13 @@ export const Conatiner = styled.div`
   align-items: start;
   justify-content: center;
   gap: 25px 35px;
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    gap: 20px 5px;
+    width: 95%;
+  }
 `;
- 
+
 export const Cards = styled.div`
   width: 360px;
   height: 360px;
@@ -48,6 +61,12 @@ export const Cards = styled.div`
   @media (max-width: 480px) {
     width: 100%;
     height: 400px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 320px;
+    height: 380px;
+    margin: 0px 5px;
   }
 `;
 
@@ -136,6 +155,18 @@ export const InfoDiv = styled.div`
       text-align: center;
     }
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    h2{
+      font-size: 15px;
+      text-align: center;
+    }
+
+    p{
+      font-size: 10px;
+      text-align: center;
+    }
 `;
 
 export const Button = styled.button`
@@ -159,6 +190,12 @@ export const Button = styled.button`
   }
 
   @media (max-width: 480px) {
+    font-size: 10px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
     font-size: 10px;
     right: 50%;
     transform: translateX(50%);

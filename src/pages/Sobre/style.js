@@ -174,7 +174,7 @@ export const AnoTitle = styled.h1`
     font-size: 15px;
   }
 `;
-
+ 
 export const Ball = styled.span`
   width: 14px;
   height: 14px;

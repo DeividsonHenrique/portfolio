@@ -7,11 +7,15 @@ export const SkillsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  
 
   @media (max-width: 480px) {
     height: 100vh;
     padding-top: 50px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 100vh;
+    padding-top: 100px;
   }
 `;
 
@@ -52,6 +56,21 @@ export const Details = styled.div`
       font-size: 12px;
     }
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
 `;
 
 export const CardSkills = styled.div`
@@ -64,6 +83,17 @@ export const CardSkills = styled.div`
   @media (max-width: 480px) {
     width: 100%;
     height: auto;
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 300px;
+    height: auto;
+    margin: 0 5px;
+    padding-top: 20px;
 
     &:last-child {
       padding-bottom: 50px;
@@ -83,6 +113,13 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-around;
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Modulo = styled.div`
@@ -99,6 +136,10 @@ export const Modulo = styled.div`
     justify-content: space-between;
     width: 100%;
     height: 100%;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+      height: auto;
+    }
   }
 
   span {
@@ -141,6 +182,11 @@ export const ModuloTitle = styled.h1`
     font-size: 15px;
     margin-bottom: 10px;
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const ModuloBall = styled.span`
@@ -153,6 +199,11 @@ export const ModuloBall = styled.span`
 
   @media (max-width: 480px) {
     display: none;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 11px;
+    height: 11px;
   }
 `;
 
@@ -213,6 +264,30 @@ export const Icons = styled.div`
       width: 50px;
     }
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    margin-top: 20px;
+    width: 90%;
+
+    div {
+      width: 50px;
+      height: 80px;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 10px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 50px;
+    }
+  }
 `;
 
 export const Line = styled.div`
@@ -222,7 +297,15 @@ export const Line = styled.div`
   margin-top: 150px;
   margin-inline: 1px;
 
-  @media (max-width: 480px) {
+  @media (max-width: 623px) {
     display: none;
+  }
+
+  @media (min-width: 624px) and (max-width: 767px) {
+    height: 300px;
+
+    &:nth-child(4) {
+      display: none;
+    }
   }
 `;

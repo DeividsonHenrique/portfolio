@@ -7,6 +7,10 @@ export const DivContatos = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: start;
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    padding-top: 100px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -18,6 +22,10 @@ export const Title = styled.h1`
   transition: all 0.5s ease-in-out;
 
   @media (max-width: 480px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
     font-size: 20px;
   }
 `;
@@ -34,6 +42,13 @@ export const DivCards = styled.div`
     flex-wrap: wrap;
     width: 90%;
     height: 50%;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    flex-wrap: wrap;
+    width: 70%;
+    height: 300px;
     margin-top: 20px;
   }
 `;
@@ -105,4 +120,24 @@ export const Cards = styled.div`
       font-size: 12px;
     }
   }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 80px
+    height: auto;  
+    justify-content: space-around;
+    align-items: center;
+
+    &::before{
+      bottom: 0;
+    }
+
+    img{
+      height: 50px;
+      width: 50px;
+    }
+
+    p{
+      font-size: 12px;
+    }
+    }
 `;
