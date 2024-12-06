@@ -46,7 +46,7 @@ export const HeaderContainer = styled.div`
     }
   }
 
-  @media (max-width: 767px) {
+  @media (min-width: 481px) and (max-width: 767px) {
     justify-content: space-around;
     height: 70px;
     position: fixed;
@@ -60,6 +60,27 @@ export const HeaderContainer = styled.div`
 
     &::after {
       display: none;
+    }
+
+    &.scrolled {
+      background-color: #181c27;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    justify-content: space-around;
+    height: 70px;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    border: none;
+    // background: linear-gradient(120deg, #181C27, #000000);
+
+    &::after {
+      display: flex;
     }
 
     &.scrolled {
@@ -80,6 +101,11 @@ export const Logo = styled.div`
   @media (max-width: 767px) {
     width: 35px;
     height: 35px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 40px;
+    height: 40px;
   }
 `;
 
@@ -129,6 +155,10 @@ export const Links = styled(Link)`
   @media (max-width: 767px) {
     display: none;
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 15px;
+  }
 `;
 
 export const Label = styled.label`
@@ -149,8 +179,14 @@ export const Label = styled.label`
     width: 50px;
     height: 20px;
   }
-`;
 
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-left: 0px;
+    width: 50px;
+    height: 20px;
+  }
+`;
+ 
 export const Ball = styled.div`
   background-color: #fff;
   position: absolute;
@@ -163,6 +199,11 @@ export const Ball = styled.div`
   transition: all 0.3s ease;
 
   @media (max-width: 767px) {
+    height: 17px;
+    width: 17px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
     height: 17px;
     width: 17px;
   }
@@ -191,6 +232,10 @@ export const Input = styled.input`
     transform: translateX(-32px);
 
     @media (max-width: 767px) {
+      transform: translateX(-30px);
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
       transform: translateX(-30px);
     }
   }

@@ -21,6 +21,14 @@ export const SobreContainer = styled.div`
     justify-content: space-evenly;
     height: 100vh;
     margin-top: 80px;
+  } 
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin-top: 50px;
   }
 `;
 
@@ -40,6 +48,11 @@ export const Title = styled.h1`
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 20px;
+    margin-top: 120px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
     font-size: 20px;
     margin-top: 120px;
   }
@@ -65,6 +78,11 @@ export const Card = styled.div`
   @media (min-width: 481px) and (max-width: 767px) {
     height: 50%;
     margin: 10px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    height: 50%;
+    margin: 5px;
   }
 `;
 
@@ -96,6 +114,17 @@ export const Text = styled.p`
     height: 100%;
     margin-top: 20px;
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    margin-top: 20px;
+  }
 `;
 
 export const Ano = styled.div`
@@ -109,7 +138,7 @@ export const Ano = styled.div`
     justify-content: start;
     margin-bottom: -10px;
 
-    @media (min-width: 481px) and (max-width: 767px) {
+    @media (min-width: 481px) and (max-width: 991px) {
       flex-direction: column-reverse;
     }
   }
@@ -131,6 +160,10 @@ export const Ano = styled.div`
         height: 50px;
         margin-left: 50%;
       }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        display: none;
+      }
     }
 
     &:nth-child(3) {
@@ -146,7 +179,7 @@ export const Ano = styled.div`
         margin: 0px 5px 0px 5px;
       }
 
-      @media (min-width: 481px) and (max-width: 767px) {
+      @media (min-width: 481px) and (max-width: 991px) {
         height: 5px;
       }
     }
@@ -172,6 +205,13 @@ export const AnoTitle = styled.h1`
     width: 100%;
     text-align: center;
     font-size: 15px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 5px;
   }
 `;
  

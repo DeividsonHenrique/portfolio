@@ -17,6 +17,12 @@ export const HomeContainer = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
 `;
 
 export const Intro = styled.div`
@@ -36,6 +42,12 @@ export const Intro = styled.div`
     margin-top: 30px;
     width: 100%;
     align-items: center;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-top: 30px;
+    width: 100%;
+    align-items: start;
   }
 `;
 
@@ -59,8 +71,18 @@ export const Title = styled.h1`
 
   @media (min-width: 481px) and (max-width: 767px) {
     font-size: 20px;
-    width: 90%;
+    width: 100%;
     text-align: center;
+
+    span {
+      font-size: 21px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 20px;
+    width: 100%;
+    text-align: start;
 
     span {
       font-size: 21px;
@@ -102,6 +124,15 @@ export const Subtitle = styled.p`
       display: block;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+    width: 100%;
+  }
 `;
 
 export const Button = styled.button`
@@ -133,6 +164,12 @@ export const Button = styled.button`
     width: 130px;
     font-size: 13px;
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    height: 35px;
+    width: 130px;
+    font-size: 13px;
+  }
 `;
 
 export const Perfil = styled.div`
@@ -147,5 +184,10 @@ export const Perfil = styled.div`
   @media (min-width: 481px) and (max-width: 767px) {
     width: 200px;
     height: 200px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 250px;
+    height: 250px;
   }
 `;
