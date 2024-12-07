@@ -9,11 +9,16 @@ export const SkillsContainer = styled.div`
   justify-content: space-around;
 
   @media (max-width: 480px) {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 50px;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
+    height: 100vh;
+    padding-top: 100px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
     height: 100vh;
     padding-top: 100px;
   }
@@ -46,6 +51,7 @@ export const Details = styled.div`
     text-align: center;
     height: auto;
     margin-top: 20px;
+    
 
     h1 {
       font-size: 20px;
@@ -71,6 +77,20 @@ export const Details = styled.div`
       font-size: 12px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 12px;
+    }
 `;
 
 export const CardSkills = styled.div`
@@ -87,7 +107,7 @@ export const CardSkills = styled.div`
     &:last-child {
       padding-bottom: 50px;
     }
-  }
+  } 
 
   @media (min-width: 481px) and (max-width: 767px) {
     width: 300px;
@@ -99,11 +119,21 @@ export const CardSkills = styled.div`
       padding-bottom: 50px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 300px;
+    height: auto;
+    margin: 0 5px;
+    padding-top: 20px;
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
 `;
 
 export const Container = styled.div`
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -111,7 +141,7 @@ export const Container = styled.div`
   @media (max-width: 480px) {
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -119,6 +149,17 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: 768px) and (max-width: 930px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 931px) and (max-width: 991px) {
+    align-items: start;
   }
 `;
 
@@ -138,6 +179,10 @@ export const Modulo = styled.div`
     height: 100%;
 
     @media (min-width: 481px) and (max-width: 767px) {
+      height: auto;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
       height: auto;
     }
   }
@@ -187,6 +232,11 @@ export const ModuloTitle = styled.h1`
     font-size: 15px;
     margin-bottom: 10px;
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const ModuloBall = styled.span`
@@ -202,6 +252,11 @@ export const ModuloBall = styled.span`
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
+    width: 11px;
+    height: 11px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
     width: 11px;
     height: 11px;
   }
@@ -288,6 +343,30 @@ export const Icons = styled.div`
       width: 50px;
     }
   }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-top: 20px;
+    width: 90%;
+
+    div {
+      width: 50px;
+      height: 80px;
+    }
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 10px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 50px;
+    }
+  }
 `;
 
 export const Line = styled.div`
@@ -307,5 +386,18 @@ export const Line = styled.div`
     &:nth-child(4) {
       display: none;
     }
+  }
+
+  @media (min-width: 768px) and (max-width: 930px) {
+    height: 300px;
+    margin-top: 100px;
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 931px) and (max-width: 991px) {
+    height: 300px;
+    display: flex;
   }
 `;

@@ -10,24 +10,23 @@ export const SobreContainer = styled.div`
 
   @media (max-width: 480px) {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     height: 100vh;
-    margin-top: 80px;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 100vh;
-    margin-top: 80px;
-  } 
+    min-height: 70vh;
+    margin-top: 50px;
+  }
 
   @media (min-width: 768px) and (max-width: 991px) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 100vh;
+    min-height: 70vh;
     margin-top: 50px;
   }
 `;
@@ -45,6 +44,7 @@ export const Title = styled.h1`
   @media (max-width: 480px) {
     font-size: 20px;
     margin-top: 120px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -73,16 +73,30 @@ export const Card = styled.div`
     align-items: start;
     height: auto;
     padding-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
-    height: 50%;
-    margin: 10px;
+    height: 350px;
+    margin: 5px;
+    padding-bottom: 0px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
-    height: 50%;
+    height: 350px;
     margin: 5px;
+    padding-bottom: 0px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 `;
 
@@ -123,7 +137,7 @@ export const Text = styled.p`
     justify-content: center;
     align-items: start;
     height: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 `;
 
@@ -214,7 +228,7 @@ export const AnoTitle = styled.h1`
     padding-bottom: 5px;
   }
 `;
- 
+
 export const Ball = styled.span`
   width: 14px;
   height: 14px;

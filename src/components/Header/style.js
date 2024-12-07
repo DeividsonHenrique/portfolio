@@ -71,7 +71,7 @@ export const HeaderContainer = styled.div`
     justify-content: space-around;
     height: 70px;
     position: fixed;
-    width: 90%;
+    width: 100%;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -81,6 +81,9 @@ export const HeaderContainer = styled.div`
 
     &::after {
       display: flex;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     &.scrolled {
@@ -186,7 +189,7 @@ export const Label = styled.label`
     height: 20px;
   }
 `;
- 
+
 export const Ball = styled.div`
   background-color: #fff;
   position: absolute;
