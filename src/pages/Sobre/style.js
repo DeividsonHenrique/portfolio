@@ -29,6 +29,14 @@ export const SobreContainer = styled.div`
     min-height: 70vh;
     margin-top: 50px;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 70vh;
+    margin-top: 50px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -55,6 +63,16 @@ export const Title = styled.h1`
   @media (min-width: 768px) and (max-width: 991px) {
     font-size: 20px;
     margin-top: 120px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    font-size: 20px;
+    margin-top: 50px;
   }
 `;
 
@@ -91,6 +109,26 @@ export const Card = styled.div`
 
   @media (min-width: 768px) and (max-width: 991px) {
     height: 350px;
+    margin: 5px;
+    padding-bottom: 0px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    height: 350px;
+    margin: 5px;
+    padding-bottom: 0px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    width: 95%px;
     margin: 5px;
     padding-bottom: 0px;
 
@@ -139,6 +177,28 @@ export const Text = styled.p`
     height: 100%;
     margin-top: 0px;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 95%;
+    height: 100%;
+    padding-top: 20px;
+  }
 `;
 
 export const Ano = styled.div`
@@ -153,6 +213,10 @@ export const Ano = styled.div`
     margin-bottom: -10px;
 
     @media (min-width: 481px) and (max-width: 991px) {
+      flex-direction: column-reverse;
+    }
+
+    @media (min-width: 992px) and (max-width: 1260px) {
       flex-direction: column-reverse;
     }
   }
@@ -178,6 +242,14 @@ export const Ano = styled.div`
       @media (min-width: 768px) and (max-width: 991px) {
         display: none;
       }
+
+      @media (min-width: 992px) and (max-width: 1260px) {
+        display: none;
+      }
+
+      @media (min-width: 1261px) and (max-width: 1440px) {
+        height: 50px;
+      }
     }
 
     &:nth-child(3) {
@@ -194,6 +266,14 @@ export const Ano = styled.div`
       }
 
       @media (min-width: 481px) and (max-width: 991px) {
+        height: 5px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1260px) {
+        height: 5px;
+      }
+
+      @media (min-width: 1261px) and (max-width: 1440px) {
         height: 5px;
       }
     }
@@ -226,6 +306,18 @@ export const AnoTitle = styled.h1`
     text-align: center;
     font-size: 15px;
     padding-bottom: 5px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    margin: 0px 0px 0px 5px;
+    font-size: 15px;
   }
 `;
 

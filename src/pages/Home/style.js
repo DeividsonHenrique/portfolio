@@ -23,6 +23,18 @@ export const HomeContainer = styled.div`
     margin: 0 auto;
     justify-content: space-around;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+  }
 `;
 
 export const Intro = styled.div`
@@ -45,6 +57,18 @@ export const Intro = styled.div`
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
+    margin-top: 30px;
+    width: 100%;
+    align-items: start;
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    margin-top: 30px;
+    width: 100%;
+    align-items: start;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
     margin-top: 30px;
     width: 100%;
     align-items: start;
@@ -86,6 +110,26 @@ export const Title = styled.h1`
 
     span {
       font-size: 21px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    font-size: 22px;
+    width: 100%;
+    text-align: start;
+
+    span {
+      font-size: 22px;
+    }
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    font-size: 22px;
+    width: 100%;
+    text-align: start;
+
+    span {
+      font-size: 22px;
     }
   }
 `;
@@ -133,6 +177,24 @@ export const Subtitle = styled.p`
     text-align: start;
     width: 100%;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+    width: 100%;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: start;
+    width: 100%;
+  }
 `;
 
 export const Button = styled.button`
@@ -170,6 +232,18 @@ export const Button = styled.button`
     width: 130px;
     font-size: 13px;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    height: 40px;
+    width: 170px;
+    font-size: 15px;
+  }
 `;
 
 export const Perfil = styled.div`
@@ -189,5 +263,15 @@ export const Perfil = styled.div`
   @media (min-width: 768px) and (max-width: 991px) {
     width: 250px;
     height: 250px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    width: 300px;
+    height: 300px;
   }
 `;

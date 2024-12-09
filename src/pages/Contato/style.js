@@ -15,6 +15,14 @@ export const DivContatos = styled.div`
   @media (min-width: 768px) and (max-width: 991px) {
     padding-top: 100px;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    padding-top: 0px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    padding-top: 0px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -34,6 +42,14 @@ export const Title = styled.h1`
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
     font-size: 20px;
   }
 `;
@@ -63,6 +79,14 @@ export const DivCards = styled.div`
   @media (min-width: 768px) and (max-width: 991px) {
     flex-wrap: wrap;
     width: 70%;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
     height: 300px;
     margin-top: 20px;
   }
@@ -174,5 +198,37 @@ export const Cards = styled.div`
     p{
       font-size: 12px;
     }
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    width: 100px
+    height: auto;  
+    justify-content: space-around;
+    align-items: center;
+
+    &::before{
+      bottom: 0;
     }
+
+    img{
+      height: 70px;
+      width: 70px;
+    }
+
+    p{
+      font-size: 13px;
+    }
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    
+    img{
+      height: 75px;
+      width: 75px;
+    }
+
+    p{
+      font-size: 14px;
+    }
+  }
 `;

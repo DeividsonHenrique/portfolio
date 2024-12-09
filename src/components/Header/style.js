@@ -40,10 +40,6 @@ export const HeaderContainer = styled.div`
     &::after {
       display: none;
     }
-
-    &.scrolled {
-      background-color: #181c27;
-    }
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -61,14 +57,10 @@ export const HeaderContainer = styled.div`
     &::after {
       display: none;
     }
-
-    &.scrolled {
-      background-color: #181c27;
-    }
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 70px;
     position: fixed;
     width: 100%;
@@ -85,9 +77,45 @@ export const HeaderContainer = styled.div`
       left: 50%;
       transform: translateX(-50%);
     }
+  }
 
-    &.scrolled {
-      background-color: #181c27;
+  @media (min-width: 992px) and (max-width: 1260px) {
+    justify-content: space-around;
+    height: 90px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    border: none;
+    // background: linear-gradient(120deg, #181C27, #000000);
+
+    &::after {
+      display: flex;
+      width: 85%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: 1260px) and (max-width: 1440px) {
+    justify-content: space-around;
+    height: 100px;
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    border: none;
+    // background: linear-gradient(120deg, #181C27, #000000);
+
+    &::after {
+      display: flex;
+      width: 85%;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 `;
@@ -106,7 +134,7 @@ export const Logo = styled.div`
     height: 35px;
   }
 
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 768px) and (max-width: 1440px) {
     width: 40px;
     height: 40px;
   }
@@ -162,6 +190,16 @@ export const Links = styled(Link)`
   @media (min-width: 768px) and (max-width: 991px) {
     font-size: 15px;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+  @media (min-width: 1260px) and (max-width: 1440px) {
+    margin: 0 10px;
+    font-size: 16px;
+  }
 `;
 
 export const Label = styled.label`
@@ -188,6 +226,18 @@ export const Label = styled.label`
     width: 50px;
     height: 20px;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    margin-left: 5px;
+    width: 50px;
+    height: 20px;
+  }
+
+  @media (min-width: 1260px) and (max-width: 1440px) {
+    margin-left: 5px;
+    width: 50px;
+    height: 20px;
+  }
 `;
 
 export const Ball = styled.div`
@@ -207,6 +257,11 @@ export const Ball = styled.div`
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
+    height: 17px;
+    width: 17px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1440px) {
     height: 17px;
     width: 17px;
   }
@@ -239,6 +294,14 @@ export const Input = styled.input`
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
+      transform: translateX(-30px);
+    }
+
+    @media (min-width: 992px) and (max-width: 1260px) {
+      transform: translateX(-30px);
+    }
+
+    @media (min-width: 1260px) and (max-width: 1440px) {
       transform: translateX(-30px);
     }
   }

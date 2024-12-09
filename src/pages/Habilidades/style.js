@@ -22,6 +22,16 @@ export const SkillsContainer = styled.div`
     height: 100vh;
     padding-top: 100px;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    height: 100vh;
+    padding-top: 30px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    height: 100vh;
+    padding-top: 30px;
+  }
 `;
 
 export const Details = styled.div`
@@ -51,7 +61,6 @@ export const Details = styled.div`
     text-align: center;
     height: auto;
     margin-top: 20px;
-    
 
     h1 {
       font-size: 20px;
@@ -91,6 +100,37 @@ export const Details = styled.div`
     p {
       font-size: 12px;
     }
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
 `;
 
 export const CardSkills = styled.div`
@@ -107,7 +147,7 @@ export const CardSkills = styled.div`
     &:last-child {
       padding-bottom: 50px;
     }
-  } 
+  }
 
   @media (min-width: 481px) and (max-width: 767px) {
     width: 300px;
@@ -129,6 +169,29 @@ export const CardSkills = styled.div`
     &:last-child {
       padding-bottom: 50px;
     }
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    width: 300px;
+    height: auto;
+    margin: 0 5px;
+    padding-top: 20px;
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    width: 350px;
+    height: auto;
+    margin: 0 5px;
+    padding-top: 20px;
+
+    &:last-child {
+      padding-bottom: 50px;
+    }
+  }
 `;
 
 export const Container = styled.div`
@@ -161,6 +224,16 @@ export const Container = styled.div`
   @media (min-width: 931px) and (max-width: 991px) {
     align-items: start;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    align-items: start;
+    padding-top: 20px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    align-items: start;
+    padding-top: 20px;
+  }
 `;
 
 export const Modulo = styled.div`
@@ -185,6 +258,14 @@ export const Modulo = styled.div`
     @media (min-width: 768px) and (max-width: 991px) {
       height: auto;
     }
+
+    @media (min-width: 992px) and (max-width: 1260px) {
+      height: auto;
+    }
+
+    @media (min-width: 1261px) and (max-width: 1440px) {
+      height: auto;
+    }
   }
 
   span {
@@ -196,6 +277,16 @@ export const Modulo = styled.div`
 
       @media (max-width: 480px) {
         display: none;
+      }
+
+      @media (min-width: 768px) and (max-width: 1260px) {
+        height: 50px;
+        width: 2px;
+      }
+
+      @media (min-width: 1261px) and (max-width: 1440px) {
+        height: 50px;
+        width: 2px;
       }
     }
 
@@ -237,6 +328,16 @@ export const ModuloTitle = styled.h1`
     font-size: 15px;
     margin-bottom: 10px;
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const ModuloBall = styled.span`
@@ -257,6 +358,11 @@ export const ModuloBall = styled.span`
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
+    width: 11px;
+    height: 11px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
     width: 11px;
     height: 11px;
   }
@@ -367,6 +473,46 @@ export const Icons = styled.div`
       width: 50px;
     }
   }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    margin-top: 20px;
+    width: 100%;
+
+    div {
+      width: 60px;
+      height: 90px;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    margin-top: 20px;
+    width: 100%;
+
+    div {
+      width: 70px;
+      height: 100px;
+    }
+
+    img {
+      width: 65px;
+      height: 65px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 11px;
+    }
+  }
 `;
 
 export const Line = styled.div`
@@ -399,5 +545,10 @@ export const Line = styled.div`
   @media (min-width: 931px) and (max-width: 991px) {
     height: 300px;
     display: flex;
+  }
+
+  @media (min-width: 992px) and (max-width: 1440px) {
+    height: 300px;
+    margin-inline: 5px;
   }
 `;

@@ -31,6 +31,8 @@ const lightTheme = {
 
   color_arrow: "#fff",
   color_menu: "#4A148C",
+
+  header_color: "#E4E8ED",
 };
 
 const darkTheme = {
@@ -51,6 +53,8 @@ const darkTheme = {
 
   color_arrow: "#000000",
   color_menu: "#e30606",
+
+  header_color: "#181c27",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -166,6 +170,14 @@ body{
     
     ${HeaderContainer}{
         border-color: ${(props) => props.theme.color_line};
+
+        
+
+        @media (max-width: 991px) {
+          &.scrolled{
+            background-color: ${(props) => props.theme.header_color};
+        }
+        }
     }
 
     ${Links}{
