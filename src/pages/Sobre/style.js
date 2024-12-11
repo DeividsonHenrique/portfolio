@@ -145,6 +145,8 @@ export const Text = styled.p`
   font-size: 14px;
   line-height: 22px;
   transition: all 0.5s ease-in-out;
+  letter-spacing: .5px;
+  text-indent: 10px;
 
   @media (max-width: 480px) {
     font-size: 12px;

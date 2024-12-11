@@ -4,28 +4,28 @@
       "id": 1,
       "year": "2018",
       "color": "#ADD8E6",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "text": "Resolvi destacar o ano de 2018 pois foi onde eu decidi iniciar meus estudos na formação na Uninove em sistemas de informações, onde eu pude ter conhecimento, ideias e algumas experiencias com oque eu gostaria de fazer futuramente. Desde então foi o que se tornou a base para meus estudos e foco como um desenvolvedor Front-End. Que na época pra mim era ser apenas um desenvolvedor de sites, porem com o tempo pude ver que ia além do que só criar simples sites e aplicações web e sim envolviar mais da criatividade, conhecimento, soluções e muito mais!",
       "align": "start"
     },
     {
       "id": 2,
       "year": "2022",
       "color": "#90EE90",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "text": "Apesar de eu ter iniciado minha formação em 2018 e finalizado no final de 2021. Eu só fui de fato dedicar meu empenho na área em 2022. Foi o ano que me senti uma pessoa que estava iniciando do zero, pratiquei muito, assisti vídeos aulas, li alguns artigos, ideias sobre tudo que envolvia área do front. Pra muitos pode ser simples, mas pra mim foi o ano que foquei em aprender a semântica no HTML e os estilos mais avançados em CSS. Pude criar varias ideias, coisas que achava interessante com o proposito de mesclar com os próximos aprendizados. Resumidamente 2022 foi o inicio até o momento onde estou agora!",
       "align": "center"
     },
     {
       "id": 3,
       "year": "2023",
       "color": "#FFA500",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "text": "Foi o segundo ano consecutivo com mais praticas e desenvolvimentos onde eu pude colocar mais ideias em meus projetos, aprendizados e conhecimentos. Acredito que não foi exatamente o ano onde eu mais aprendi pois o ano anterior já tinha aprendido muita coisa, já o ano de 2023 foi mais manter as praticas e tornar tudo de uma forma mais fácil ao solucionar problemas, criar interações e desenvolver ideias. Diria eu que foi mais pra treinar o raciocínio durante essa fase porém, eu considero muito pelas constância que tive. ",
       "align": "center"
     },
     {
       "id": 4,
       "year": "2024",
       "color": "#8A2BE2",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "text": "Eu consideraria o ano que eu mais aprendi, mais realizei projetos mais elaborados e complexos. O ano que criei meu primeiro portfolio, ano que passei horas estudando e praticando Javascript que logo em seguida passei a dedicar mais meus estudos em React que desde então estou aqui usando, comecei a trabalhar com requisições, API, Banco de dados pra juntar um pouco de Back-End com node js, Mysql e um pouco de python. Mudei a forma de criações de projetos com styled-components, trabalhar com componentes diretos e separar cada detalhes e funções. Além disso venho praticando sempre sem pausas pois eu curto aprender novas funcionalidades. ",
       "align": "end"
     }
   ],
@@ -211,7 +211,7 @@
       "logo": ["react"],
       "img": "https://github.com/user-attachments/assets/ebde5a38-4eec-485e-b82f-8a60f3416504",
       "title": "Jordan Shoes",
-      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "O Jordan Shoes é uma aplicação desenvolvida para destacar a linha de tênis da marca Jordan. O projeto foca em uma interface moderna e responsiva, com detalhes minimalistas que destacam a qualidade do produto.",
       "link": "https://github.com/DeividsonHenrique/Jordan-Shoes"
     },
     {
@@ -219,7 +219,7 @@
       "logo": ["react", "bootstrap"],
       "img": "https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e",
       "title": "DashBoard",
-      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "O Dashboard é uma aplicação desenvolvida para exibir um conjunto de informações relevantes de graficos, cartões e noticias.",
       "link": "https://github.com/DeividsonHenrique/Dashboard"
     },
     {
@@ -227,7 +227,7 @@
       "logo": ["react"],
       "img": "https://github.com/user-attachments/assets/8785f647-8ff4-4485-b858-ad9ed953d624",
       "title": "Pokemon API",
-      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "O Pokemon é uma aplicação desenvolvida para exibir informações e características dos Pokémon com base na API The pokemon API",
       "link": "https://github.com/DeividsonHenrique/Pokemon"
     },
     {
@@ -235,7 +235,7 @@
       "logo": ["react"],
       "img": "https://github.com/user-attachments/assets/cf0d4091-d109-4638-8c3b-987210d842e9",
       "title": "Dog API",
-      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "O Dog API e uma aplicação web que utiliza a API do Dog API para exibir informações sobre diferentes raças de cachorros inspirado no site de imagens Pexels",
       "link": "https://github.com/DeividsonHenrique/Dog-Api"
     },
     {
@@ -243,7 +243,7 @@
       "logo": ["react"],
       "img": "https://github.com/DeividsonHenrique/softwares-stores/assets/109252541/9c7e67a3-c0c0-4896-8089-56dfb9fa9541",
       "title": "Softwares Stores",
-      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "O Softwares Stores é uma aplicação desenvolvida para exibir um conjunto de informações como um e-commerce de software para comprar programas e ferramentas.",
       "link": "https://github.com/DeividsonHenrique/softwares-stores"
     },
     {
@@ -251,32 +251,16 @@
       "logo": ["html5", "css3", "javascript"],
       "img": "https://github.com/DeividsonHenrique/Login/assets/109252541/123bd251-2ba5-476f-9d9f-93037c1aa068",
       "title": "Tela de Login",
-      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
+      "subtitle": "projeto criado com HTML, CSS e um toque de JavaScript sá pra criar um efeito onclick e onblur. Desta vez uma simples tela de login, mantendo as praticas em css e css responsivo",
       "link": "https://github.com/DeividsonHenrique/Login"
     },
     {
       "id": 7,
-      "logo": ["react"],
-      "img": "https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e",
-      "title": "DashBoard",
-      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
-      "link": "https://github.com/DeividsonHenrique/Pokedex"
-    },
-    {
-      "id": 8,
-      "logo": ["react"],
-      "img": "https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e",
-      "title": "DashBoard",
-      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
-      "link": "https://github.com/DeividsonHenrique/Pokedex"
-    },
-    {
-      "id": 9,
-      "logo": ["react"],
-      "img": "https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e",
-      "title": "DashBoard",
-      "subtitle": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters",
-      "link": "https://github.com/DeividsonHenrique/Pokedex"
+      "logo": ["html5", "css3", "javascript"],
+      "img": "https://github.com/DeividsonHenrique/Area-de-Calculos/assets/109252541/a95e82e3-76aa-4442-bd4f-8611234dd55c",
+      "title": "Área de Cálculos Matemáticos",
+      "subtitle": "Uma aplicação desenvolvida para exibir uma area que contêm as principais formas de cálculos como (Soma, Divisão, Múltiplicação, Subtração e Resto da Divisão ou Modulo).",
+      "link": "https://github.com/DeividsonHenrique/Area-de-Calculos"
     }
   ],
 
