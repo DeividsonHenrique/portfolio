@@ -29,8 +29,12 @@ export const SkillsContainer = styled.div`
   }
 
   @media (min-width: 1261px) and (max-width: 1440px) {
-    height: 100vh;
+    height: auto;
     padding-top: 30px;
+  }
+
+  @media (min-width: 1441px) {
+    padding-top: 50px;
   }
 `;
 
@@ -130,6 +134,10 @@ export const Details = styled.div`
     p {
       font-size: 12px;
     }
+  }
+    
+  @media (min-width: 1441px) {
+    padding-bottom: 50px;
   }
 `;
 
@@ -234,6 +242,8 @@ export const Container = styled.div`
     align-items: start;
     padding-top: 20px;
   }
+
+  
 `;
 
 export const Modulo = styled.div`

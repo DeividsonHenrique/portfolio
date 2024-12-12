@@ -201,6 +201,10 @@ export const Text = styled.p`
     height: 100%;
     padding-top: 20px;
   }
+
+  @media (min-width: 1441px) {
+    margin-top: 50px;
+  }
 `;
 
 export const Ano = styled.div`
