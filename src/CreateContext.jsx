@@ -81,6 +81,13 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;        
 }
 
+
+
+
+[data-rmiz-modal-overlay="visible"] {
+  background-color: black;
+}
+
   
 
 body{
@@ -91,55 +98,55 @@ body{
         transition: background 0.4s ease-in-out;
 
 
-         @keyframes toRight {
-            0% {
-                transform: translateX(-100%) rotate(0deg);
-            }
-            100% {
-                transform: translateX(100%) rotate(360deg);
-            }
-        }
+        //  @keyframes toRight {
+        //     0% {
+        //         transform: translateX(-100%) rotate(0deg);
+        //     }
+        //     100% {
+        //         transform: translateX(100%) rotate(360deg);
+        //     }
+        // }
 
-        @keyframes toLeft {
-            0% {
-                transform: translateX(100%) rotate(0deg);
-            }
-            100% {
-                transform: translateX(-100%) rotate(360deg);
-            }
-        }
+        // @keyframes toLeft {
+        //     0% {
+        //         transform: translateX(100%) rotate(0deg);
+        //     }
+        //     100% {
+        //         transform: translateX(-100%) rotate(360deg);
+        //     }
+        // }
 
 
-        &::after{
-            content: "";
-            position: fixed;
-            top: -50%;
-            left: 0;
-            width: 100%;
-            height: 200%;
-            border-radius: 50%;
-            background: red;
-            z-index: -1;
-            filter: blur(50px);
-            animation: toRight 16s linear infinite alternate;
+        // &::after{
+        //     content: "";
+        //     position: fixed;
+        //     top: -50%;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 200%;
+        //     border-radius: 50%;
+        //     background: red;
+        //     z-index: -1;
+        //     filter: blur(50px);
+        //     animation: toRight 16s linear infinite alternate;
             
-            opacity: 0.02;
-            }
+        //     opacity: 0.02;
+        //     }
 
-        &::before{
-            content: "";
-            position: fixed;
-            top: -50%;
-            right: 0;
-            width: 100%;
-            height: 200%;
-            border-radius: 50%;
-            background: blue;
-            z-index: -1;
-            filter: blur(50px);
-            animation: toLeft 16s linear infinite alternate;
-            opacity: 0.02;
-            }
+        // &::before{
+        //     content: "";
+        //     position: fixed;
+        //     top: -50%;
+        //     right: 0;
+        //     width: 100%;
+        //     height: 200%;
+        //     border-radius: 50%;
+        //     background: blue;
+        //     z-index: -1;
+        //     filter: blur(50px);
+        //     animation: toLeft 16s linear infinite alternate;
+        //     opacity: 0.02;
+        //     }
 
             
 

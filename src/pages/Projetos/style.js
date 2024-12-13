@@ -2,22 +2,30 @@ import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
   width: 100%;
-  height: 87vh;
+  min-height: 87vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 50px;
+
+  @media (max-width: 480px) {
+    height: auto;
+  }
 
   @media (min-width: 481px) and (max-width: 767px) {
     padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
     padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: 992px) and (max-width: 1440px) {
     padding-top: 20px;
+    padding-bottom: 50px;
   }
 `;
 

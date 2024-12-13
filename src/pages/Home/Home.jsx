@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { HomeContainer, Intro, Perfil, Title, Subtitle, Button } from "./style";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade, Bounce } from "react-awesome-reveal";
 
 function Home() {
   const navigate = useNavigate();
@@ -33,11 +33,11 @@ function Home() {
             <Button onClick={handleClick}>Saiba Mais</Button>
           </Fade>
         </Intro>
-        <Zoom triggerOnce>
+        <Bounce triggerOnce duration={1200}>
           <Perfil triggerOnce>
             <img src="/assets/Front-End/react.svg" alt="" />
           </Perfil>
-        </Zoom>
+        </Bounce>
       </HomeContainer>
     </Fade>
   );

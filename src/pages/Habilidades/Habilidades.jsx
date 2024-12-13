@@ -18,7 +18,7 @@ function Habilidades() {
 
   return (
     <SkillsContainer>
-      <Zoom triggerOnce cascade>
+      <Fade triggerOnce cascade>
         <Details>
           <h1>Habilidades / Conhecimentos</h1>
           <p>
@@ -26,7 +26,7 @@ function Habilidades() {
             e estudos!
           </p>
         </Details>
-      </Zoom>
+      </Fade>
 
       <Container>
         {/* Front-End */}

@@ -18,6 +18,7 @@ import {
 } from "./style";
 import { UseTheme, UseConfig } from "../../CreateContext.jsx";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Bounce, Fade } from "react-awesome-reveal";
 
 
 function Header() {
@@ -33,10 +34,13 @@ function Header() {
 
   return (
     <HeaderContainer className={scrolled ? "scrolled" : ""}>
+      <Bounce triggerOnce duration={1000}>
       <Logo onClick={goToHome}>
         <img src="/assets/Front-End/react.svg" alt="Logo" />
       </Logo>
+      </Bounce>
       <LinksContainer>
+      <Fade triggerOnce duration={500} cascade>
         <Links to="/" className={location.pathname === "/" ? "active" : ""}>
           Início
         </Links>
@@ -64,7 +68,8 @@ function Header() {
         >
           Contato
         </Links>
-
+        
+        </Fade>
         <MenuMobile onClick={handleToggle} />
 
         
@@ -129,17 +134,21 @@ function Header() {
           </ContainerMobile>
         
 
-        <Input
-          type="checkbox"
-          value={theme === "light" ? "Modo Escuro" : "Modo Claro"}
-          onClick={toggleTheme}
-          id="check"
-        />
-        <Label htmlFor="check">
-          <LightMode />
-          <DarkMode />
-          <Ball></Ball>
-        </Label>
+          <Bounce triggerOnce duration={1000}>
+        <div>
+          <Input
+            type="checkbox"
+            value={theme === "light" ? "Modo Escuro" : "Modo Claro"}
+            onClick={toggleTheme}
+            id="check"
+          />
+          <Label htmlFor="check">
+            <LightMode />
+            <DarkMode />
+            <Ball></Ball>
+          </Label>
+        </div>
+        </Bounce>
       </LinksContainer>
     </HeaderContainer>
   );

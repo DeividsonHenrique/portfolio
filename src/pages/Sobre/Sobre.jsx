@@ -8,15 +8,15 @@ import {
   AnoTitle,
 } from "./style";
 import { UseConfig } from "../../CreateContext";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 function Sobre() {
   const { info } = UseConfig();
 
   return (
     <>
-      <Zoom triggerOnce duration={1000} delay={500}>
+      <Fade triggerOnce duration={1000} delay={500}>
         <Title>Minha História</Title>
-      </Zoom>
+      </Fade>
       <Fade direction="down" triggerOnce>
         <SobreContainer>
           {info.map((info) => (
