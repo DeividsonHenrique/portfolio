@@ -4,12 +4,17 @@ import { createGlobalStyle } from "styled-components";
 import { HeaderContainer, Links, MenuMobile } from "./components/Header/style";
 import { Title, Subtitle } from "./pages/Home/style";
 import { AnoTitle, Text, Ball } from "./pages/Sobre/style";
-import { Icons, ModuloBall, ModuloTitle, Details,} from "./pages/Habilidades/style";
+import {
+  Icons,
+  ModuloBall,
+  ModuloTitle,
+  Details,
+} from "./pages/Habilidades/style";
 import { Title as TitleProjetos } from "./pages/Projetos/style";
 import { Title as TitleContato, Cards } from "./pages/Contato/style";
 import { Title as TitleSobre } from "./pages/Sobre/style";
+import { Title as TitleFooter } from "./components/Footer/style";
 import { Box } from "./components/GotoTop";
-
 
 const ChangeTheme = createContext();
 
@@ -60,6 +65,7 @@ const darkTheme = {
 const GlobalStyle = createGlobalStyle`
     #root {
         max-width: 1260px;
+        min-height: 100vh;
         margin: 0 auto;
         font-synthesis: none;
         text-rendering: optimizeLegibility;
@@ -81,73 +87,17 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;        
 }
 
-
-
-
 [data-rmiz-modal-overlay="visible"] {
   background-color: black;
 }
 
-  
-
 body{
         position: relative; 
         margin: 0 auto;
+        
         background: ${(props) => props.theme.background};
         background-attachment: fixed;
         transition: background 0.4s ease-in-out;
-
-
-        //  @keyframes toRight {
-        //     0% {
-        //         transform: translateX(-100%) rotate(0deg);
-        //     }
-        //     100% {
-        //         transform: translateX(100%) rotate(360deg);
-        //     }
-        // }
-
-        // @keyframes toLeft {
-        //     0% {
-        //         transform: translateX(100%) rotate(0deg);
-        //     }
-        //     100% {
-        //         transform: translateX(-100%) rotate(360deg);
-        //     }
-        // }
-
-
-        // &::after{
-        //     content: "";
-        //     position: fixed;
-        //     top: -50%;
-        //     left: 0;
-        //     width: 100%;
-        //     height: 200%;
-        //     border-radius: 50%;
-        //     background: red;
-        //     z-index: -1;
-        //     filter: blur(50px);
-        //     animation: toRight 16s linear infinite alternate;
-            
-        //     opacity: 0.02;
-        //     }
-
-        // &::before{
-        //     content: "";
-        //     position: fixed;
-        //     top: -50%;
-        //     right: 0;
-        //     width: 100%;
-        //     height: 200%;
-        //     border-radius: 50%;
-        //     background: blue;
-        //     z-index: -1;
-        //     filter: blur(50px);
-        //     animation: toLeft 16s linear infinite alternate;
-        //     opacity: 0.02;
-        //     }
-
             
 
         &::-webkit-scrollbar {
@@ -155,30 +105,26 @@ body{
         }
 
         &::-webkit-scrollbar-thumb {
-            background: ${props => props.theme.color_Ano};
+            background: ${(props) => props.theme.color_Ano};
             border-radius: 20px;
             transition: background 0.6s ease-in-out;
         }
 
         &::-webkit-scrollbar-track {
-            background: ${props => props.theme.background};
+            background: ${(props) => props.theme.background};
             transition: background 0.6s ease-in-out;
         }
 
-
-
         @media (max-width: 480px) {
             width: 85%;
-            margin-top: 80px;
-            min-height: 85vh;
+            // marin-top: 80px;
+            // min-height: 85vh;
         }
 }
         
     
     ${HeaderContainer}{
         border-color: ${(props) => props.theme.color_line};
-
-        
 
         @media (max-width: 991px) {
           &.scrolled{
@@ -210,7 +156,7 @@ body{
         color: ${(props) => props.theme.color_Text};
     }
 
-    ${AnoTitle}, ${ModuloTitle}, ${TitleSobre}{
+    ${AnoTitle}, ${ModuloTitle}, ${TitleSobre}, ${TitleFooter}{
         color: ${(props) => props.theme.color_Ano};
     }
 
@@ -267,8 +213,6 @@ export const UseTheme = () => {
   return useContext(ChangeTheme);
 };
 
-
-
 // configs adicionais e API json ---------------------------------------------------------------------
 
 import dados from "/public/data/info.json";
@@ -277,7 +221,6 @@ import css3 from "/assets/Front-End/css3.svg";
 import react from "/assets/Front-End/react.svg";
 import bootstrap from "/assets/Front-End/bootstrap.svg";
 import javascript from "/assets/Front-End/javascript.svg";
-
 
 const GlobalConfig = createContext();
 
@@ -310,7 +253,6 @@ export const GlobalConfigProvider = ({ children }) => {
     fetchInfo();
   }, []);
 
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -325,7 +267,6 @@ export const GlobalConfigProvider = ({ children }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
@@ -334,9 +275,20 @@ export const GlobalConfigProvider = ({ children }) => {
     setIsOpen(false);
   };
 
-
   return (
-    <GlobalConfig.Provider value={{ info, habilidades, projetos, contato, logosFrontEnd, isOpen, handleToggle, handleClose, scrolled }}>
+    <GlobalConfig.Provider
+      value={{
+        info,
+        habilidades,
+        projetos,
+        contato,
+        logosFrontEnd,
+        isOpen,
+        handleToggle,
+        handleClose,
+        scrolled,
+      }}
+    >
       {children}
     </GlobalConfig.Provider>
   );

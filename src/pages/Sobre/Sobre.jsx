@@ -1,6 +1,7 @@
 import {
   SobreContainer,
   Title,
+  Tags,
   Card,
   Ano,
   Ball,
@@ -14,41 +15,43 @@ function Sobre() {
 
   return (
     <>
-      <Fade triggerOnce duration={1000} delay={500}>
-        <Title>Minha História</Title>
-      </Fade>
       <Fade direction="down" triggerOnce>
         <SobreContainer>
-          {info.map((info) => (
-            <Card key={info.id}>
-              <Ano>
+          <Fade triggerOnce duration={1000} delay={500}>
+            <Title>Minha História</Title>
+          </Fade>
+          <Tags>
+            {info.map((info) => (
+              <Card key={info.id}>
+                <Ano>
+                  <Fade
+                    cascade
+                    triggerOnce
+                    direction="up"
+                    delay={1000}
+                    duration={1000}
+                  >
+                    <div>
+                      <Ball></Ball>
+                      <AnoTitle>{info.year}</AnoTitle>
+                    </div>
+                  </Fade>
+                  <span style={{ background: info.color }}></span>
+                  <span style={{ background: info.color }}></span>
+                </Ano>
                 <Fade
-                  cascade
                   triggerOnce
-                  direction="up"
-                  delay={1000}
+                  cascade
+                  direction="left"
                   duration={1000}
+                  delay={500}
+                  style={{ height: "100%" }}
                 >
-                  <div>
-                    <Ball></Ball>
-                    <AnoTitle>{info.year}</AnoTitle>
-                  </div>
+                  <Text>{info.text}</Text>
                 </Fade>
-                <span style={{ background: info.color }}></span>
-                <span style={{ background: info.color }}></span>
-              </Ano>
-              <Fade
-                triggerOnce
-                cascade
-                direction="left"
-                duration={1000}
-                delay={500}
-                style={{ height: "100%" }}
-              >
-                <Text>{info.text}</Text>
-              </Fade>
-            </Card>
-          ))}
+              </Card>
+            ))}
+          </Tags>
         </SobreContainer>
       </Fade>
     </>

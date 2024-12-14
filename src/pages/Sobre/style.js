@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
 export const SobreContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+`;
+
+export const Tags = styled.div`
   width: 100%;
-  min-height: 76.2vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -11,31 +19,25 @@ export const SobreContainer = styled.div`
   @media (max-width: 480px) {
     flex-direction: column;
     justify-content: start;
-    height: 100vh;
+    height: auto;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    min-height: 70vh;
-    margin-top: 50px;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    min-height: 70vh;
-    margin-top: 50px;
   }
 
   @media (min-width: 992px) and (max-width: 1260px) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    min-height: 70vh;
-    margin-top: 50px;
   }
 `;
 
@@ -57,22 +59,20 @@ export const Title = styled.h1`
 
   @media (min-width: 481px) and (max-width: 767px) {
     font-size: 20px;
-    margin-top: 120px;
+    padding-top: 100px;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
     font-size: 20px;
-    margin-top: 120px;
+    padding-top: 100px;
   }
 
   @media (min-width: 992px) and (max-width: 1260px) {
     font-size: 20px;
-    margin-top: 50px;
   }
 
   @media (min-width: 1261px) and (max-width: 1440px) {
     font-size: 20px;
-    margin-top: 50px;
   }
 `;
 
@@ -89,8 +89,20 @@ export const Card = styled.div`
     width: 100%;
     flex-direction: row;
     align-items: start;
-    height: auto;
+    max-height: 350px;
     padding-bottom: 50px;
+
+    &:nth-child(1) {
+      height: 310px;
+    }
+
+    &:nth-child(2) {
+      height: 325px;
+    }
+
+    &:nth-child(3) {
+      height: 290px;
+    }
 
     &:last-child {
       margin-bottom: 50px;
@@ -100,7 +112,7 @@ export const Card = styled.div`
   @media (min-width: 481px) and (max-width: 767px) {
     height: 350px;
     margin: 5px;
-    padding-bottom: 0px;
+    margin-bottom: 50px;
 
     &:last-child {
       margin-bottom: 0px;

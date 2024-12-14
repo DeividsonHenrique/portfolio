@@ -7,25 +7,23 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 
   @media (max-width: 480px) {
     height: auto;
+    padding-top: 70px;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
     padding-top: 100px;
-    padding-bottom: 50px;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
     padding-top: 100px;
-    padding-bottom: 50px;
   }
 
   @media (min-width: 992px) and (max-width: 1440px) {
     padding-top: 20px;
-    padding-bottom: 50px;
   }
 `;
 
@@ -38,7 +36,7 @@ export const Title = styled.h1`
   transition: all 0.5s ease-in-out;
 
   @media (max-width: 480px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -67,6 +65,7 @@ export const Conatiner = styled.div`
   align-items: start;
   justify-content: center;
   gap: 25px 35px;
+  margin: 0 auto;
 
   @media (min-width: 481px) and (max-width: 767px) {
     gap: 20px 5px;

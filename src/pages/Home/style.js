@@ -11,6 +11,8 @@ export const HomeContainer = styled.div`
   @media (max-width: 480px) {
     flex-direction: column;
     justify-content: space-evenly;
+    padding-top: 80px;
+    min-height: 95vh;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {

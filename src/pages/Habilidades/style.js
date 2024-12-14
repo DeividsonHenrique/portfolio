@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
   width: 100%;
-  height: 87vh;
+  min-height: 87vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,27 +10,29 @@ export const SkillsContainer = styled.div`
 
   @media (max-width: 480px) {
     min-height: 100vh;
-    padding-top: 50px;
+    padding-top: 100px;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 100px;
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 100px;
   }
 
   @media (min-width: 992px) and (max-width: 1260px) {
-    height: 100vh;
+    min-height: auto;
     padding-top: 30px;
+    justify-content: start;
   }
 
   @media (min-width: 1261px) and (max-width: 1440px) {
-    height: auto;
+    min-height: auto;
     padding-top: 30px;
+    justify-content: start;
   }
 
   @media (min-width: 1441px) {
@@ -64,10 +66,10 @@ export const Details = styled.div`
   @media (max-width: 480px) {
     text-align: center;
     height: auto;
-    margin-top: 20px;
+    padding-top: 50px;
 
     h1 {
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 10px;
     }
 
@@ -156,7 +158,7 @@ export const CardSkills = styled.div`
     height: auto;
 
     &:last-child {
-      padding-bottom: 50px;
+      padding-bottom: 100px;
     }
   }
 
@@ -175,10 +177,10 @@ export const CardSkills = styled.div`
     width: 300px;
     height: auto;
     margin: 0 5px;
-    padding-top: 20px;
+    padding-top: 30px;
 
     &:last-child {
-      padding-bottom: 50px;
+      padding-bottom: 70px;
     }
   }
 
@@ -189,7 +191,7 @@ export const CardSkills = styled.div`
     padding-top: 20px;
 
     &:last-child {
-      padding-bottom: 50px;
+      padding-bottom: 0px;
     }
   }
 
@@ -200,7 +202,7 @@ export const CardSkills = styled.div`
     padding-top: 20px;
 
     &:last-child {
-      padding-bottom: 50px;
+      padding-bottom: 0px;
     }
   }
 `;
@@ -220,14 +222,14 @@ export const Container = styled.div`
 
   @media (min-width: 481px) and (max-width: 767px) {
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-wrap: wrap;
   }
 
   @media (min-width: 768px) and (max-width: 930px) {
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-wrap: wrap;
   }

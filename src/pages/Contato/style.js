@@ -8,6 +8,10 @@ export const DivContatos = styled.div`
   align-items: center;
   justify-content: start;
 
+  @media (max-width: 480px) {
+    padding-top: 100px;
+  }
+
   @media (min-width: 481px) and (max-width: 767px) {
     padding-top: 100px;
   }
@@ -34,7 +38,7 @@ export const Title = styled.h1`
   transition: all 0.5s ease-in-out;
 
   @media (max-width: 480px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
@@ -51,6 +55,10 @@ export const Title = styled.h1`
 
   @media (min-width: 1261px) and (max-width: 1440px) {
     font-size: 20px;
+  }
+
+  @media (min-width: 1441px) {
+    font-size: 24px;
   }
 `;
 
@@ -78,7 +86,7 @@ export const DivCards = styled.div`
 
   @media (min-width: 768px) and (max-width: 991px) {
     flex-wrap: wrap;
-    width: 70%;
+    width: 60%;
     height: 300px;
     margin-top: 20px;
   }
@@ -88,7 +96,7 @@ export const DivCards = styled.div`
     max-width: 800px;
     width: 100%;
     height: 300px;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 `;
 
@@ -201,7 +209,7 @@ export const Cards = styled.div`
   }
 
   @media (min-width: 992px) and (max-width: 1260px) {
-    width: 100px
+    width: 100px;
     height: auto;  
     justify-content: space-around;
     align-items: center;

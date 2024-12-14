@@ -1,14 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
-
 import Sobre from "./pages/Sobre/Sobre";
 import Habilidades from "./pages/Habilidades/Habilidades";
-
 import Projetos from "./pages/Projetos/Projetos";
 import Contato from "./pages/Contato/Contato";
-// import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 
 function Router() {
   return (
@@ -22,7 +19,7 @@ function Router() {
           <Route path="/projetos" element={<Projetos />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );

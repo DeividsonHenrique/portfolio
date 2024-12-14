@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   position: fixed;
-  bottom: 10px;
+  bottom: 30px;
   right: 10px;
   width: 50px;
   height: 50px;
@@ -35,6 +35,18 @@ export const Box = styled.div`
   @media (max-width: 480px) {
     width: 40px;
     height: 40px;
+    font-size: 20px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 45px;
+    height: 45px;
     font-size: 20px;
   }
 `;
