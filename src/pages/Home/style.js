@@ -250,6 +250,22 @@ export const Perfil = styled.div`
   width: 350px;
   height: 350px;
 
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+  img {
+    animation: float 6s ease-in-out infinite alternate;
+  }
+
   @media (max-width: 480px) {
     width: 150px;
     height: 150px;

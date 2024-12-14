@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SobreContainer = styled.div`
   width: 100%;
-  height: auto;
+  min-height: 76.2vh;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -145,7 +145,7 @@ export const Text = styled.p`
   font-size: 14px;
   line-height: 22px;
   transition: all 0.5s ease-in-out;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   text-indent: 10px;
 
   @media (max-width: 480px) {
@@ -216,7 +216,7 @@ export const Ano = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
 
     @media (min-width: 481px) and (max-width: 991px) {
       flex-direction: column-reverse;
@@ -230,7 +230,7 @@ export const Ano = styled.div`
   span {
     &:nth-child(2) {
       width: 2px;
-      height: 70px;
+      height: 65px;
       background-color: aqua;
       display: block;
       border-radius: 50%;

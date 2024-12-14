@@ -135,9 +135,12 @@ export const Details = styled.div`
       font-size: 12px;
     }
   }
-    
+
   @media (min-width: 1441px) {
-    padding-bottom: 50px;
+    margin-bottom: 20px;
+    h1 {
+      margin-bottom: 10px;
+    }
   }
 `;
 
@@ -242,8 +245,6 @@ export const Container = styled.div`
     align-items: start;
     padding-top: 20px;
   }
-
-  
 `;
 
 export const Modulo = styled.div`
@@ -399,6 +400,12 @@ export const Icons = styled.div`
   img {
     width: 80px;
     height: 80px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
   }
 
   p {

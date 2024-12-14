@@ -22,10 +22,18 @@ function Sobre() {
           {info.map((info) => (
             <Card key={info.id}>
               <Ano>
-                <div>
-                  <Ball></Ball>
-                  <AnoTitle>{info.year}</AnoTitle>
-                </div>
+                <Fade
+                  cascade
+                  triggerOnce
+                  direction="up"
+                  delay={1000}
+                  duration={1000}
+                >
+                  <div>
+                    <Ball></Ball>
+                    <AnoTitle>{info.year}</AnoTitle>
+                  </div>
+                </Fade>
                 <span style={{ background: info.color }}></span>
                 <span style={{ background: info.color }}></span>
               </Ano>

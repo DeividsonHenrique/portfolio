@@ -35,7 +35,7 @@ function Home() {
         </Intro>
         <Bounce triggerOnce duration={1200}>
           <Perfil triggerOnce>
-            <img src="/assets/Front-End/react.svg" alt="" />
+            <img src="/assets/Front-End/react.svg" alt="logo-react" />
           </Perfil>
         </Bounce>
       </HomeContainer>

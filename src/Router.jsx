@@ -8,6 +8,7 @@ import Habilidades from "./pages/Habilidades/Habilidades";
 
 import Projetos from "./pages/Projetos/Projetos";
 import Contato from "./pages/Contato/Contato";
+// import Footer from "./components/Footer/Footer";
 
 function Router() {
   return (
@@ -21,6 +22,7 @@ function Router() {
           <Route path="/projetos" element={<Projetos />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );

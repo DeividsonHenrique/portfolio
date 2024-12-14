@@ -294,13 +294,13 @@
       "id": 5,
       "img": "/assets/Contacts/discord.svg",
       "title": "Discord",
-      "link": ""
+      "link": "https://discordapp.com/users/845688180409237524"
     },
     {
-      "id": 3,
+      "id": 6,
       "img": "/assets/Contacts/E-Mail.svg",
       "title": "E-Mail",
-      "link": ""
+      "link": "https://www.linkedin.com/in/deividsonhenrique/"
     }
   ]
 }

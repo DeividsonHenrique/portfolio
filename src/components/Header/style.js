@@ -12,7 +12,6 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e30606;
   transition: all 0.5s ease-in-out;
 
   &::after {
@@ -22,6 +21,7 @@ export const HeaderContainer = styled.div`
     left: 0;
     width: 100%;
     height: 1px;
+    background-color: #e30606;
     box-shadow: 0 2px 4px 0 #ff0000;
   }
 
@@ -123,6 +123,15 @@ export const HeaderContainer = styled.div`
 export const Logo = styled.div`
   width: 45px;
   height: 45px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
 
   @media (max-width: 480px) {
     width: 30px;
@@ -137,6 +146,11 @@ export const Logo = styled.div`
   @media (min-width: 768px) and (max-width: 1440px) {
     width: 40px;
     height: 40px;
+  }
+
+  &:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 0 15px 1px #4a148c;
   }
 `;
 
