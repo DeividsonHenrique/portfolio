@@ -1,4 +1,4 @@
-import { FooterContainer, Title } from "./style";
+import { FooterContainer, Title } from "./Style";
 import { Fade } from "react-awesome-reveal";
 
 function Footer() {
