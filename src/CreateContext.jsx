@@ -13,7 +13,7 @@ import {
 import { Title as TitleProjetos } from "./pages/Projetos/style";
 import { Title as TitleContato, Cards } from "./pages/Contato/style";
 import { Title as TitleSobre } from "./pages/Sobre/style";
-import { Title as TitleFooter } from "./components/Footer/style";
+import { Title as TitleFooter } from "./components/Footer/Style";
 import { Box } from "./components/GotoTop";
 
 const ChangeTheme = createContext();
