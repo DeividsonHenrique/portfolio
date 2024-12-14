@@ -1,114 +1,233 @@
+# **Portfolio**
 
-# **Jordan Shoes**
+📅 Data: 14/12/2024
 
-![Jordan Shoes](link-para-imagem-ou-screenshot)
-
-> Um projeto estiloso e responsivo para exibir os icônicos tênis Jordan.
+> Meu novo portfolio atualizado utilizando React e Styled-Components.
 
 ---
 
 ## **📌 Sobre o Projeto**
 
-O **Jordan Shoes** é uma aplicação desenvolvida para destacar a linha de tênis da marca Jordan. O projeto foca em uma interface moderna e responsiva, com detalhes minimalistas que destacam a qualidade do produto.
+Este projeto foi desenvolvido primeiramente com **Adobe XD** para criar o layout com o objetivo de demonstrar minhas habilidades em desenvolvimento web, seguido de uma implementação utilizando ReactJS.
 
 ---
 
 ## **🎨 Funcionalidades**
 
-- **Lista de Produtos:** Exibe os modelos de tênis Jordan em um layout atraente e organizado.  
-- **"Ver Mais":** Detalhamento de cada tênis, incluindo imagens, tamanho, peso e descrição.  
-- **Navegação Suave:** Implementação de rolagem suave para melhorar a experiência do usuário.  
-- **Responsividade:** Compatível com dispositivos móveis, tablets e desktops.  
+- **Lista Dinâmicas:** Exibe o Sobre, Habilidades, Projetos com informações dinâmicas atraves de uma requisição JSON.
+- **"Paginas":** Cada página identifica um tema diferente com base na informação que o usuário clica.
+- **Navegação Suave:** Implementação de rolagem suave para melhorar a experiência do usuário em caso de dispositivos móveis.
+- **Responsividade:** Compatível com dispositivos móveis, tablets e desktops.
 - **Acessibilidade:** Botão "Voltar ao topo" com animação suave.
+- **Modos de Tema:** Tema claro e escuro com base na preferência do usuário.
 
 ---
 
 ## **🚀 Tecnologias Utilizadas**
 
-- **React.js:** Estrutura principal da aplicação.  
-- **Styled-Components:** Estilização dinâmica e reutilizável.  
-- **API The Dog API:** Integração de dados e imagens (apenas como exemplo técnico).  
-- **Vite:** Ferramenta de build rápida e eficiente.  
-- **Git/GitHub:** Controle de versão e repositório remoto.  
+- **React.js:** Estrutura principal da aplicação.
+- **Styled-Components:** Estilização dinâmica e reutilizável.
+- **JSON:** Integração de dados e imagens gerais.
+- **Reveal:** Animações de entrada e saída bem suaves.
+- **Context API:** Gerenciamento de estado global.
+- **React Router:** Navegação entre páginas.
+- **React Icons:** Icones personalizados.
+- **Vite:** Ferramenta de build rápida e eficiente.
+- **Git/GitHub:** Controle de versão e repositório remoto.
+- **Vercel:** Plataforma de hospedagem do projeto.
 
 ---
 
 ## **📂 Estrutura de Pastas**
 
 ```plaintext
+
+Nas pasta Componentes e Pages, haverá uma pasta pra cada página
+com seus respectivos arquivos sendo o jsx e o styled-component que sera o style.js.
+
+📁 public
+├── 📁 assets
+│   └── 📁 Front-End         # Imagens de tecnologias front-end
+│   └── 📁 Back-End          # Imagens de tecnologias back-end
+│   └── 📁 Other             # Imagens de outras tecnologias / softwares
+│   └── 📁 Contacts          # Imagens de contatos
+│   └── 📁 Menu-Mobile       # Imagens do menu mobile ao abrir
+├── 📁 data
+│    └── 📄 info.json        # Informações gerais do portfolio
+│
 📁 src
 ├── 📁 components
-│   ├── 📄 Cards.jsx       # Componente de exibição dos produtos
-│   ├── 📄 GoToTop.jsx     # Botão para rolar ao topo
-├── 📁 assets             # Imagens e recursos visuais
-├── 📁 styles             # Arquivos de estilização
-└── 📄 App.jsx            # Componente principal
+│   └── 📄 Header.jsx        # Componente de cabeçalho
+│   └── 📄 Footer.jsx        # Componente de rodapé
+│   └── 📄 GoToTop.jsx       # Botão para rolar ao topo
+├── 📁 Pages
+│   └── 📄 Home.jsx          # Página inicial
+│   └── 📄 Sobre.jsx         # Página Sobre
+│   └── 📄 Habilidades.jsx   # Página de habilideades / conhecimentos
+│   └── 📄 Projetos.jsx      # Página de projetos criados
+│   └── 📄 Contatos.jsx      # Página de contat0
+├── 📄 Router.jsx            # Componente de rotas
+└── 📄 App.jsx               # Componente principal
 ```
-
----
-
-## **🔧 Como Executar o Projeto**
-
-### **1. Clone o Repositório**
-```bash
-git clone https://github.com/seu-usuario/jordan-shoes.git
-```
-
-### **2. Instale as Dependências**
-```bash
-cd jordan-shoes
-npm install
-```
-
-### **3. Execute a Aplicação**
-```bash
-npm run dev
-```
-
-### **4. Acesse no Navegador**
-Abra o navegador e acesse: `http://localhost:3000`
-
----
-
-## **💻 Funcionalidades de Destaque**
-
-- **Detalhes do Produto:** Clique em **"Ver mais"** para visualizar informações detalhadas de cada tênis.  
-- **Rolagem Suave:** O botão **"Voltar ao Topo"** usa `window.scrollTo` com `behavior: smooth`.  
-- **Exibição Dinâmica:** Os cartões desaparecem ao selecionar um item e reaparecem ao clicar em "Voltar".  
-
----
-
-## **🌟 Contribuindo**
-
-Ficarei feliz em receber contribuições! Siga estas etapas:  
-
-1. **Faça um Fork do Repositório**  
-2. Clone o Fork:  
-   ```bash
-   git clone https://github.com/seu-usuario/jordan-shoes.git
-   ```  
-3. Crie uma Branch para suas Alterações:  
-   ```bash
-   git checkout -b minha-feature
-   ```  
-4. Faça Commit das Alterações:  
-   ```bash
-   git commit -m "Adiciona nova funcionalidade"
-   ```  
-5. Suba a Branch para o Repositório Remoto:  
-   ```bash
-   git push origin minha-feature
-   ```  
-6. Abra um Pull Request no Repositório Original.  
 
 ---
 
 ## **📷 Imagens do Projeto**
 
-> Adicione aqui capturas de tela da interface do projeto para destacar o design.
+![Portfólio](https://github.com/user-attachments/assets/c38a47e3-fb2b-4e3c-9809-1a9db591ab71)
+
+# **Portfolio**
+
+📅 Data: 14/12/2024
+
+> Meu novo portfolio atualizado utilizando React e Styled-Components.
 
 ---
 
-## **📄 Licença**
+## **📌 Sobre o Projeto**
 
-Este projeto está sob a licença [MIT](LICENSE). Sinta-se à vontade para usá-lo e modificá-lo!  
+Este projeto foi desenvolvido primeiramente com **Adobe XD** para criar o layout com o objetivo de demonstrar minhas habilidades em desenvolvimento web, seguido de uma implementação utilizando ReactJS.
+
+---
+
+## **🎨 Funcionalidades**
+
+- **Lista Dinâmicas:** Exibe o Sobre, Habilidades, Projetos com informações dinâmicas atraves de uma requisição JSON.
+- **"Paginas":** Cada página identifica um tema diferente com base na informação que o usuário clica.
+- **Navegação Suave:** Implementação de rolagem suave para melhorar a experiência do usuário em caso de dispositivos móveis.
+- **Responsividade:** Compatível com dispositivos móveis, tablets e desktops.
+- **Acessibilidade:** Botão "Voltar ao topo" com animação suave.
+- **Modos de Tema:** Tema claro e escuro com base na preferência do usuário.
+
+---
+
+## **🚀 Tecnologias Utilizadas**
+
+- **React.js:** Estrutura principal da aplicação.
+- **Styled-Components:** Estilização dinâmica e reutilizável.
+- **JSON:** Integração de dados e imagens gerais.
+- **Reveal:** Animações de entrada e saída bem suaves.
+- **Context API:** Gerenciamento de estado global.
+- **React Router:** Navegação entre páginas.
+- **React Icons:** Icones personalizados.
+- **Vite:** Ferramenta de build rápida e eficiente.
+- **Git/GitHub:** Controle de versão e repositório remoto.
+- **Vercel:** Plataforma de hospedagem do projeto.
+
+---
+
+## **📂 Estrutura de Pastas**
+
+```plaintext
+
+Nas pasta Componentes e Pages, haverá uma pasta pra cada página
+com seus respectivos arquivos sendo o jsx e o styled-component que sera o style.js.
+
+📁 public
+├── 📁 assets
+│   └── 📁 Front-End         # Imagens de tecnologias front-end
+│   └── 📁 Back-End          # Imagens de tecnologias back-end
+│   └── 📁 Other             # Imagens de outras tecnologias / softwares
+│   └── 📁 Contacts          # Imagens de contatos
+│   └── 📁 Menu-Mobile       # Imagens do menu mobile ao abrir
+├── 📁 data
+│    └── 📄 info.json        # Informações gerais do portfolio
+│
+📁 src
+├── 📁 components
+│   └── 📄 Header.jsx        # Componente de cabeçalho
+│   └── 📄 Footer.jsx        # Componente de rodapé
+│   └── 📄 GoToTop.jsx       # Botão para rolar ao topo
+├── 📁 Pages
+│   └── 📄 Home.jsx          # Página inicial
+│   └── 📄 Sobre.jsx         # Página Sobre
+│   └── 📄 Habilidades.jsx   # Página de habilideades / conhecimentos
+│   └── 📄 Projetos.jsx      # Página de projetos criados
+│   └── 📄 Contatos.jsx      # Página de contat0
+├── 📄 Router.jsx            # Componente de rotas
+└── 📄 App.jsx               # Componente principal
+```
+
+---
+
+## **📷 Imagens do Projeto**
+
+![Portfólio](https://github.com/user-attachments/assets/c38a47e3-fb2b-4e3c-9809-1a9db591ab71)
+
+# **Portfolio**
+
+📅 Data: 14/12/2024
+
+> Meu novo portfolio atualizado utilizando React e Styled-Components.
+
+---
+
+## **📌 Sobre o Projeto**
+
+Este projeto foi desenvolvido primeiramente com **Adobe XD** para criar o layout com o objetivo de demonstrar minhas habilidades em desenvolvimento web, seguido de uma implementação utilizando ReactJS.
+
+---
+
+## **🎨 Funcionalidades**
+
+- **Lista Dinâmicas:** Exibe o Sobre, Habilidades, Projetos com informações dinâmicas atraves de uma requisição JSON.
+- **"Paginas":** Cada página identifica um tema diferente com base na informação que o usuário clica.
+- **Navegação Suave:** Implementação de rolagem suave para melhorar a experiência do usuário em caso de dispositivos móveis.
+- **Responsividade:** Compatível com dispositivos móveis, tablets e desktops.
+- **Acessibilidade:** Botão "Voltar ao topo" com animação suave.
+- **Modos de Tema:** Tema claro e escuro com base na preferência do usuário.
+
+---
+
+## **🚀 Tecnologias Utilizadas**
+
+- **React.js:** Estrutura principal da aplicação.
+- **Styled-Components:** Estilização dinâmica e reutilizável.
+- **JSON:** Integração de dados e imagens gerais.
+- **Reveal:** Animações de entrada e saída bem suaves.
+- **Context API:** Gerenciamento de estado global.
+- **React Router:** Navegação entre páginas.
+- **React Icons:** Icones personalizados.
+- **Vite:** Ferramenta de build rápida e eficiente.
+- **Git/GitHub:** Controle de versão e repositório remoto.
+- **Vercel:** Plataforma de hospedagem do projeto.
+
+---
+
+## **📂 Estrutura de Pastas**
+
+```plaintext
+
+Nas pasta Componentes e Pages, haverá uma pasta pra cada página
+com seus respectivos arquivos sendo o jsx e o styled-component que sera o style.js.
+
+📁 public
+├── 📁 assets
+│   └── 📁 Front-End         # Imagens de tecnologias front-end
+│   └── 📁 Back-End          # Imagens de tecnologias back-end
+│   └── 📁 Other             # Imagens de outras tecnologias / softwares
+│   └── 📁 Contacts          # Imagens de contatos
+│   └── 📁 Menu-Mobile       # Imagens do menu mobile ao abrir
+├── 📁 data
+│    └── 📄 info.json        # Informações gerais do portfolio
+│
+📁 src
+├── 📁 components
+│   └── 📄 Header.jsx        # Componente de cabeçalho
+│   └── 📄 Footer.jsx        # Componente de rodapé
+│   └── 📄 GoToTop.jsx       # Botão para rolar ao topo
+├── 📁 Pages
+│   └── 📄 Home.jsx          # Página inicial
+│   └── 📄 Sobre.jsx         # Página Sobre
+│   └── 📄 Habilidades.jsx   # Página de habilideades / conhecimentos
+│   └── 📄 Projetos.jsx      # Página de projetos criados
+│   └── 📄 Contatos.jsx      # Página de contat0
+├── 📄 Router.jsx            # Componente de rotas
+└── 📄 App.jsx               # Componente principal
+```
+
+---
+
+## **📷 Imagens do Projeto**
+
+![Portfólio](https://github.com/user-attachments/assets/c38a47e3-fb2b-4e3c-9809-1a9db591ab71)
