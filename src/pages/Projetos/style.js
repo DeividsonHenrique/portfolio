@@ -260,6 +260,11 @@ export const Button = styled.button`
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 
+
+  &.ver{
+    left: 5px;
+  }
+
   &:hover {
     background-color: #07d100;
   }
