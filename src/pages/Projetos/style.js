@@ -263,6 +263,10 @@ export const Button = styled.button`
 
   &.ver{
     left: 5px;
+
+    @media (max-width: 991px) {
+      left: -45px;
+    }
   }
 
   &:hover {
@@ -271,25 +275,25 @@ export const Button = styled.button`
 
   @media (max-width: 480px) {
     font-size: 10px;
-    right: 50%;
+    right: 20%;
     transform: translateX(50%);
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
     font-size: 10px;
-    right: 50%;
+    right: 20%;
     transform: translateX(50%);
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
     font-size: 10px;
-    right: 50%;
+    right: 20%;
     transform: translateX(50%);
   }
 
   @media (min-width: 992px) and (max-width: 1260px) {
     font-size: 10px;
-    right: 50%;
+    right: 20%;
     transform: translateX(50%);
   }
 `;

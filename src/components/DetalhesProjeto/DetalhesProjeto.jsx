@@ -1,60 +1,99 @@
 /* eslint-disable react/prop-types */
-import { DetalhesContainer } from "./Style";
+import {
+  DetalhesContainer,
+  Container,
+  Descricao,
+  Subtitle,
+  DivButtons,
+  Sobre,
+  DivTechAndFunc,
+  Data,
+  VerticalLine,
+  DivImages,
+  Text,
+  LiList,
+} from "./Style";
+import { Title } from "../../pages/Projetos/style";
+//import { FaExternalLinkAlt } from "react-icons/fa";
+import { RiArrowGoBackFill } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
 
-function DetalhesProjeto({projeto,onVoltar}) {  
-    
+function DetalhesProjeto({ projeto, onVoltar }) {
   return (
     <DetalhesContainer>
-      <h1>Projeto {projeto.title}</h1>
-        <div className="container">
+      <Title className="titulo">Projeto {projeto.title}</Title>
+      <Container className="container">
+        <Descricao className="descricao">
+          <DivButtons className="botoes">
+            <button onClick={onVoltar}>
+              <RiArrowGoBackFill className="seta" /> Voltar
+            </button>
+            <button onClick={() => window.open(projeto.link, "_blank")}>
+              Github <FaGithub className="link" />
+            </button>
+          </DivButtons>
 
-          <div className="descricao">
+          <Sobre className="sobre">
+            <Subtitle>
+              <img src="/assets/Other/alfinete.svg" alt="" height={20} />
+              Sobre o projeto
+            </Subtitle>
+            <Text>{projeto.sobre}</Text>
+          </Sobre>
 
-            <div className="botoes">
-              <button onClick={onVoltar}>Voltar</button>
-              <button onClick={() => window.open(projeto.link, "_blank")}>Github</button>
-            </div>      
+          <DivTechAndFunc className="funcionalidades">
+            <Subtitle>
+              <img src="/assets/Other/paleta.svg" alt="" height={20} />
+              Funcionalidades
+            </Subtitle>
+            <ul>
+              {projeto.funcionalidades.map((funcionalidade, index) => {
+                const [titulo, descricao] = funcionalidade.split(":");
+                return (
+                  <LiList key={index}>
+                    <strong>{titulo}: </strong>
+                    {descricao}
+                  </LiList>
+                );
+              })}
+            </ul>
+          </DivTechAndFunc>
 
+          <DivTechAndFunc className="tecnologias">
+            <Subtitle>
+              <img src="/assets/Other/foguete.svg" alt="" height={20} />
+              Tecnologias
+            </Subtitle>
+            <ul>
+              {projeto.tecnologias.map((tecnologia, index) => {
+                const [titulo, descricao] = tecnologia.split(":");
+                return (
+                  <LiList key={index}>
+                    <strong>{titulo}: </strong>
+                    {descricao}
+                  </LiList>
+                );
+              })}
+            </ul>
+          </DivTechAndFunc>
 
-            <div className="sobre">
-              <h2><img src="/assets/Other/alfinete.svg" alt="" height={20} />Sobre o projeto</h2>
-              <p>{projeto.sobre}</p>
-            </div>
+          <Data className="data">
+            <img src="/assets/Other/calendario.svg" alt="" height={20} />
+            <strong>Data:</strong> {projeto.data}
+          </Data>
+        </Descricao>
 
-            <div className="funcionalidades">
-              <h2><img src="/assets/Other/paleta.svg" alt="" height={20} />Funcionalidades</h2>
-              <ul>
-                {projeto.funcionalidades.map((funcionalidade, index) => (
-                  <li key={index}>{funcionalidade}</li>
-                ))}
-              </ul>
-            </div>
+        {/* linha vertical */}
+        <VerticalLine className="line"></VerticalLine>
 
-            <div className="tecnologias">
-              <h2><img src="/assets/Other/foguete.svg" alt="" height={20} />Tecnologias</h2>
-              <ul>
-                {projeto.tecnologias.map((tecnologia, index) => (
-                  <li key={index}>{tecnologia}</li>
-                ))}
-              </ul>
-            </div>
-
-            <span className="data"><img src="/assets/Other/calendario.svg" alt="" height={20} />Data: {projeto.data}</span>
-
-          </div>
-
-          {/* linha vertical */}
-          <div className="line"></div>
-
-          <div className="imagens">
-            {projeto.imagens.map((img, index) => (
-              <img key={index} src={img} alt="" />
-            ))}
-          </div>
-
-        </div>
+        <DivImages className="imagens">
+          {projeto.imagens.map((img, index) => (
+            <img key={index} src={img} alt="" />
+          ))}
+        </DivImages>
+      </Container>
     </DetalhesContainer>
-  )
+  );
 }
 
-export default DetalhesProjeto
+export default DetalhesProjeto;

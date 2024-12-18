@@ -14,6 +14,7 @@ import { Title as TitleProjetos } from "./pages/Projetos/style";
 import { Title as TitleContato, Cards } from "./pages/Contato/style";
 import { Title as TitleSobre } from "./pages/Sobre/style";
 import { Title as TitleFooter } from "./components/Footer/Style";
+import { Subtitle as SubtitleDetalhes, Text as TextDetalhes, LiList, Data, DivButtons } from "./components/DetalhesProjeto/Style";
 import { Box } from "./components/GotoTop";
 
 const ChangeTheme = createContext();
@@ -38,6 +39,10 @@ const lightTheme = {
   color_menu: "#4A148C",
 
   header_color: "#E4E8ED",
+
+  strongText: "#000000",
+  colorBtn: "#191970",
+  btnHover: "#483a87",
 };
 
 const darkTheme = {
@@ -60,6 +65,10 @@ const darkTheme = {
   color_menu: "#e30606",
 
   header_color: "#181c27",
+
+  strongText: "#fff",
+  colorBtn: "#770000",  
+  btnHover: "#e30606",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -152,11 +161,15 @@ body{
         color: ${(props) => props.theme.color_Title};
     }
 
-    ${Text}{
+    ${Text}, ${TextDetalhes}, ${LiList}, ${Data}{
         color: ${(props) => props.theme.color_Text};
+
+        strong{
+            color: ${(props) => props.theme.strongText};
+        }
     }
 
-    ${AnoTitle}, ${ModuloTitle}, ${TitleSobre}, ${TitleFooter}{
+    ${AnoTitle}, ${ModuloTitle}, ${TitleSobre}, ${TitleFooter}, ${SubtitleDetalhes}{
         color: ${(props) => props.theme.color_Ano};
     }
 
@@ -190,6 +203,16 @@ body{
 
     ${MenuMobile}{
         color: ${(props) => props.theme.color_menu};
+    }
+
+    ${DivButtons}{
+        button{
+            background-color: ${(props) => props.theme.colorBtn};
+
+            &:hover{
+                background-color: ${(props) => props.theme.btnHover};
+            }
+        }
     }
   `;
 

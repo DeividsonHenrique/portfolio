@@ -249,11 +249,11 @@
       "githubUser": "DeividsonHenrique",	
       "githubRepo": "Pokemon",
 
-      "sobre": "",
-      "funcionalidades": ["", "", "",""],
-      "tecnologias": ["", "", "",""],
-      "imagens": ["","",""],
-      "data": ""
+      "sobre": "O Pokemon é uma aplicação desenvolvida para exibir informações e características dos Pokémon com base na API The pokemon API.",
+      "funcionalidades": ["Lista de Produtos: Exibe os Cards dos Pokémon.", "Clicar no Card: Detalhamento dos Pokémon, incluindo imagens, tamanho, peso e descrição.", "Navegação Suave: Implementação de rolagem suave para melhorar a experiência do usuário.","Responsividade: Compatível com dispositivos móveis, tablets e desktops."],
+      "tecnologias": ["React.js: Estrutura principal da aplicação.", "Styled-Components: Estilização dinâmica e reutilizável.", "Pokemon API: Integração de dados e imagens.","Vite: Ferramenta de build rápida e eficiente.", "Git/GitHub: Controle de versão e repositório remoto."],
+      "imagens": ["https://github.com/user-attachments/assets/8785f647-8ff4-4485-b858-ad9ed953d624","https://github.com/user-attachments/assets/acc14777-5d5b-4354-8415-b1e835e2ffd8","https://github.com/user-attachments/assets/8804c2fc-5842-430c-8843-bfadaf23c14d"],
+      "data": "08/10/2024"
     },
     {
       "id": 4,
@@ -265,11 +265,11 @@
       "githubUser": "DeividsonHenrique",	
       "githubRepo": "Dog-Api",
 
-      "sobre": "",
-      "funcionalidades": ["", "", "",""],
-      "tecnologias": ["", "", "",""],
-      "imagens": ["","",""],
-      "data": ""
+      "sobre": "O Dog API e uma aplicação web que utiliza a API do Dog API para exibir informações sobre diferentes raças de cachorros inspirado no site de imagens Pexels.",
+      "funcionalidades": ["Busca de Raças: O projeto oferece um campo de busca para facilitar a busca por raças específicas.", "Exibição de Cards: O projeto exibe uma lista de raças de cachorros com imagens e descrições breves.", "Detalhes da Raça: Ao clicar em 'Ver mais', o usuário pode visualizar detalhes sobre a raça do cachorro, como tamanho, peso, expectativa de vida, etc.","Rolar até o Card Selecionado: Quando um card é clicado para exibir seus detalhes, a rolagem da página é ajustada para exibir o card selecionado no centro da tela.", "Voltar para a Lista de Cards: O usuário pode voltar à visualização de todos os cards, mantendo a rolagem suave e a posição do card que estava visualizando.", "Botão de 'Voltar ao Topo': Um botão fixo permite ao usuário voltar ao topo da página com uma rolagem suave.", "Responsividade: O projeto se adapta adequadamente a diferentes tamanhos de tela, garantindo uma experiência fluida e agradavel aos usuários."],
+      "tecnologias": ["React: Biblioteca JavaScript para construção de interfaces de usuário.", "useState, useEffect: Hooks do React para gerenciar estado e efeitos.", "CSS (Styled-components): Utilizado para estilização personalizada.","API do Dog API: Para exibir informações sobre raças de cachorros."],
+      "imagens": ["https://github.com/user-attachments/assets/cf0d4091-d109-4638-8c3b-987210d842e9","https://github.com/user-attachments/assets/c239f9b8-c172-4888-91e5-bbd84ed534b2","https://github.com/user-attachments/assets/761a16dd-4c72-4a79-acb6-1c10e90106c3"],
+      "data": "15/11/2024"
     },
     {
       "id": 5,
@@ -281,7 +281,7 @@
       "githubUser": "DeividsonHenrique",	
       "githubRepo": "softwares-stores",
 
-      "sobre": "",
+      "sobre": " O Softwares Stores é uma aplicação desenvolvida para exibir um conjunto de informações como um e-commerce de software para comprar programas e ferramentas.",
       "funcionalidades": ["", "", "",""],
       "tecnologias": ["", "", "",""],
       "imagens": ["","",""],
