@@ -6,6 +6,7 @@ import Habilidades from "./pages/Habilidades/Habilidades";
 import Projetos from "./pages/Projetos/Projetos";
 import Contato from "./pages/Contato/Contato";
 import Footer from "./components/Footer/Footer";
+import DetalhesProjeto from "./components/DetalhesProjeto/DetalhesProjeto";
 
 function Router() {
   return (
@@ -17,6 +18,7 @@ function Router() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/habilidades" element={<Habilidades />} />
           <Route path="/projetos" element={<Projetos />} />
+          <Route path="/projetos/:id" element={<DetalhesProjeto />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
         <Footer />

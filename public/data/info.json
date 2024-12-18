@@ -214,7 +214,14 @@
       "subtitle": "O Jordan Shoes é uma aplicação desenvolvida para destacar a linha de tênis da marca Jordan. O projeto foca em uma interface moderna e responsiva, com detalhes minimalistas que destacam a qualidade do produto.",
       "link": "https://github.com/DeividsonHenrique/Jordan-Shoes",
       "githubUser": "DeividsonHenrique",	
-      "githubRepo": "Jordan-Shoes"
+      "githubRepo": "Jordan-Shoes",
+
+
+      "sobre": "O Jordan Shoes é uma aplicação desenvolvida para destacar a linha de tênis da marca Jordan. O projeto foca em uma interface moderna e responsiva, com detalhes minimalistas que destacam a qualidade do produto.",
+      "funcionalidades": ["Lista de Produtos: Exibe os modelos de tênis Jordan em um layout atraente e organizado.", "Ver Mais: Detalhamento de cada tênis, incluindo imagens, tamanho, peso e descrição.", "Navegação Suave: Implementação de rolagem suave para melhorar a experiência do usuário.","Responsividade: Compatível com dispositivos móveis, tablets e desktops.","Requisição de Dados: Integração com a API CEP para obter endereços e informações adicionais.","Carrinho de Compras: Função de adicionar e remover produtos do carrinho.","Tela de Login e Cadastro: Funções de login e cadastro de usuários."],
+      "tecnologias": ["React.js: Estrutura principal da aplicação.", "Styled-Components: Estilização dinâmica e reutilizável.", "Mapeamento de Dados: Integração de dados e imagens com arquivos JSON.","Vite: Ferramenta de build rápida e eficiente.","React-Reveal: Animações de rolagem suave."],
+      "imagens": ["https://github.com/user-attachments/assets/ebde5a38-4eec-485e-b82f-8a60f3416504","https://github.com/user-attachments/assets/422548d9-3782-4fec-9932-9dadafe17ef9","https://github.com/user-attachments/assets/91b5378a-3067-4e11-a2b8-fbb368a30424"],
+      "data": "10/10/2024"
     },
     {
       "id": 2,
@@ -224,7 +231,13 @@
       "subtitle": "O Dashboard é uma aplicação desenvolvida para exibir um conjunto de informações relevantes de graficos, cartões e noticias.",
       "link": "https://github.com/DeividsonHenrique/Dashboard",
       "githubUser": "DeividsonHenrique",	
-      "githubRepo": "Dashboard"
+      "githubRepo": "Dashboard",
+
+      "sobre": "O Dashboard é uma aplicação desenvolvida para exibir um conjunto de informações relevantes de graficos, cartões e noticias.",
+      "funcionalidades": ["Navegação Suave: Implementação de rolagem suave para melhorar a experiência do usuário.","Responsividade: Compatível com dispositivos móveis, tablets e desktops.","Acessibilidade: Botão 'Voltar ao topo' com animação suave."],
+      "tecnologias": ["React.js: Estrutura principal da aplicação.", "Styled-Components: Estilização dinâmica e reutilizável.", "Bootstrap: Estilização de componentes e layout.", "Vite: Ferramenta de build rápida e eficiente."],
+      "imagens": ["https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e","https://github.com/user-attachments/assets/85903e70-e4d8-481b-82e6-b2c8d0cb46e3"],
+      "data": "30/10/2024"
     },
     {
       "id": 3,
@@ -234,7 +247,13 @@
       "subtitle": "O Pokemon é uma aplicação desenvolvida para exibir informações e características dos Pokémon com base na API The pokemon API",
       "link": "https://github.com/DeividsonHenrique/Pokemon",
       "githubUser": "DeividsonHenrique",	
-      "githubRepo": "Pokemon"
+      "githubRepo": "Pokemon",
+
+      "sobre": "",
+      "funcionalidades": ["", "", "",""],
+      "tecnologias": ["", "", "",""],
+      "imagens": ["","",""],
+      "data": ""
     },
     {
       "id": 4,
@@ -244,7 +263,13 @@
       "subtitle": "O Dog API e uma aplicação web que utiliza a API do Dog API para exibir informações sobre diferentes raças de cachorros inspirado no site de imagens Pexels",
       "link": "https://github.com/DeividsonHenrique/Dog-Api",
       "githubUser": "DeividsonHenrique",	
-      "githubRepo": "Dog-Api"
+      "githubRepo": "Dog-Api",
+
+      "sobre": "",
+      "funcionalidades": ["", "", "",""],
+      "tecnologias": ["", "", "",""],
+      "imagens": ["","",""],
+      "data": ""
     },
     {
       "id": 5,
@@ -254,7 +279,13 @@
       "subtitle": "O Softwares Stores é uma aplicação desenvolvida para exibir um conjunto de informações como um e-commerce de software para comprar programas e ferramentas.",
       "link": "https://github.com/DeividsonHenrique/softwares-stores",
       "githubUser": "DeividsonHenrique",	
-      "githubRepo": "softwares-stores"
+      "githubRepo": "softwares-stores",
+
+      "sobre": "",
+      "funcionalidades": ["", "", "",""],
+      "tecnologias": ["", "", "",""],
+      "imagens": ["","",""],
+      "data": ""
     },
     {
       "id": 6,
@@ -264,7 +295,13 @@
       "subtitle": "projeto criado com HTML, CSS e um toque de JavaScript sá pra criar um efeito onclick e onblur. Desta vez uma simples tela de login, mantendo as praticas em css e css responsivo",
       "link": "https://github.com/DeividsonHenrique/Login",
       "githubUser": "DeividsonHenrique",	
-      "githubRepo": "Login"
+      "githubRepo": "Login",
+
+      "sobre": "",
+      "funcionalidades": ["", "", "",""],
+      "tecnologias": ["", "", "",""],
+      "imagens": ["","",""],
+      "data": ""
     },
     {
       "id": 7,
@@ -274,7 +311,13 @@
       "subtitle": "Uma aplicação desenvolvida para exibir uma area que contêm as principais formas de cálculos como (Soma, Divisão, Múltiplicação, Subtração e Resto da Divisão ou Modulo).",
       "link": "https://github.com/DeividsonHenrique/Area-de-Calculos",
       "githubUser": "DeividsonHenrique",	
-      "githubRepo": "Area-de-Calculos"
+      "githubRepo": "Area-de-Calculos",
+
+      "sobre": "",
+      "funcionalidades": ["", "", "",""],
+      "tecnologias": ["", "", "",""],
+      "imagens": ["","",""],
+      "data": ""
     }
   ],
 
