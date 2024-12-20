@@ -17,6 +17,19 @@ export const Container = styled.div`
   align-items: start;
   justify-content: space-between;
   padding-top: 50px;
+
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const Descricao = styled.div`
@@ -65,6 +78,18 @@ export const DivButtons = styled.div`
       margin-right: 5px;
     }
   }
+
+
+  @media (max-width: 480px) {
+    height: 70px;
+
+
+    button {
+      width: 100px;
+      height: 30px;
+      font-size: 12px;
+    }
+  }
 `;
 
 export const Sobre = styled.div`
@@ -81,6 +106,12 @@ export const Subtitle = styled.h2`
   img {
     margin-right: 10px;
   }
+
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+    
+  }
 `;
 
 export const DivTechAndFunc = styled.div`
@@ -95,6 +126,11 @@ export const Text = styled.p`
   line-height: 22px;
   transition: all 0.5s ease-in-out;
   text-indent: 10px;
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
 `;
 
 export const LiList = styled.li`
@@ -109,6 +145,11 @@ export const LiList = styled.li`
   strong {
     margin-right: 5px;
     transition: all 0.5s ease-in-out;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 20px;
   }
 `;
 
@@ -139,6 +180,12 @@ export const VerticalLine = styled.div`
   width: 1px;
   height: 100vh;
   background-color: #770000;
+
+  @media (max-width: 767px) {
+    width: 90%;
+    height: 1px;
+    margin-block: 10px;
+  }
 `;
 
 export const DivImages = styled.div`
