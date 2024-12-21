@@ -252,6 +252,11 @@ export const Perfil = styled.div`
   width: 350px;
   height: 350px;
 
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
   @keyframes float {
     0% {
       transform: translateY(0px);

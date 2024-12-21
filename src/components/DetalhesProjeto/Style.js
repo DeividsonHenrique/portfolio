@@ -18,17 +18,14 @@ export const Container = styled.div`
   justify-content: space-between;
   padding-top: 50px;
 
-
-  @media (max-width: 480px) {
+  @media (max-width: 991px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  @media (min-width: 481px) and (max-width: 767px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  @media (min-width: 992px) and (max-width: 1440px) {
+    justify-content: space-around;
   }
 `;
 
@@ -39,6 +36,14 @@ export const Descricao = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    max-width: 500px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    max-width: 600px;
+  }
 `;
 
 export const DivButtons = styled.div`
@@ -79,15 +84,35 @@ export const DivButtons = styled.div`
     }
   }
 
-
   @media (max-width: 480px) {
     height: 70px;
-
 
     button {
       width: 100px;
       height: 30px;
       font-size: 12px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 1260px) {
+    height: 70px;
+    justify-content: space-around;
+
+    button {
+      width: 100px;
+      height: 30px;
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    height: 70px;
+    justify-content: space-between;
+
+    button {
+      width: 100px;
+      height: 30px;
+      font-size: 13px;
     }
   }
 `;
@@ -107,10 +132,12 @@ export const Subtitle = styled.h2`
     margin-right: 10px;
   }
 
-
   @media (max-width: 480px) {
     font-size: 18px;
-    
+  }
+
+  @media (min-width: 481px) and (max-width: 1440px) {
+    font-size: 20px;
   }
 `;
 
@@ -131,6 +158,11 @@ export const Text = styled.p`
     font-size: 12px;
     line-height: 20px;
   }
+
+  @media (min-width: 481px) and (max-width: 1440px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
 `;
 
 export const LiList = styled.li`
@@ -148,6 +180,11 @@ export const LiList = styled.li`
   }
 
   @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @media (min-width: 481px) and (max-width: 1440px) {
     font-size: 12px;
     line-height: 20px;
   }
@@ -174,6 +211,16 @@ export const Data = styled.span`
   img {
     margin-right: 10px;
   }
+
+  @media (max-width: 480px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @media (min-width: 481px) and (max-width: 1260px) {
+    font-size: 12px;
+    line-height: 20px;
+  }
 `;
 
 export const VerticalLine = styled.div`
@@ -181,7 +228,7 @@ export const VerticalLine = styled.div`
   height: 100vh;
   background-color: #770000;
 
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     width: 90%;
     height: 1px;
     margin-block: 10px;
@@ -196,5 +243,13 @@ export const DivImages = styled.div`
     width: 100%;
     margin-block: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (min-width: 992px) and (max-width: 1260px) {
+    max-width: 450px;
+  }
+
+  @media (min-width: 1261px) and (max-width: 1440px) {
+    max-width: 550px;
   }
 `;

@@ -60,6 +60,7 @@ com seus respectivos arquivos sendo o jsx e o styled-component que sera o style.
 │   └── 📄 Header.jsx        # Componente de cabeçalho
 │   └── 📄 Footer.jsx        # Componente de rodapé
 │   └── 📄 GoToTop.jsx       # Botão para rolar ao topo
+│   └── 📄 Detalhes.jsx      # Componente de exibir detalhes do projeto.
 ├── 📁 Pages
 │   └── 📄 Home.jsx          # Página inicial
 │   └── 📄 Sobre.jsx         # Página Sobre
@@ -75,3 +76,5 @@ com seus respectivos arquivos sendo o jsx e o styled-component que sera o style.
 ## **📷 Imagens do Projeto**
 
 ![Portfólio](https://github.com/user-attachments/assets/c38a47e3-fb2b-4e3c-9809-1a9db591ab71)
+
+![Captura de tela 2024-12-20 215129](https://github.com/user-attachments/assets/caa1e908-f7d5-4278-b80d-fbe60aa652af)

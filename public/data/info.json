@@ -282,10 +282,10 @@
       "githubRepo": "softwares-stores",
 
       "sobre": " O Softwares Stores é uma aplicação desenvolvida para exibir um conjunto de informações como um e-commerce de software para comprar programas e ferramentas.",
-      "funcionalidades": ["", "", "",""],
-      "tecnologias": ["", "", "",""],
-      "imagens": ["","",""],
-      "data": ""
+      "funcionalidades": ["Ver Todos: Uma página onde todos os produtos são exibidos", "Campo de Pesquisa: O usuário pode digigitar o nome do software que ele procura e verificar se existe no site.", "Carrinho de Compras: Função de adicionar e remover produtos do carrinho. (será implementado futuramente).","Tela de Login e Cadastro: Funções de login e cadastro de usuários. (será implementado futuramente).", "Detalhes: Uma area onde detalha o produto selecionado."],
+      "tecnologias": ["React: Biblioteca JavaScript para construção de interfaces de usuário.", "useEffect: Hooks do React para gerenciar estado e efeitos.", "(Styled-components): Utilizado para estilização personalizada.","Json: Para exibir informações de produtos e informações adicionais."],
+      "imagens": ["https://github.com/DeividsonHenrique/softwares-stores/assets/109252541/9c7e67a3-c0c0-4896-8089-56dfb9fa9541","",""],
+      "data": "15/06/2024"
     },
     {
       "id": 6,
