@@ -260,11 +260,23 @@ export const Button = styled.button`
   font-weight: 600;
   transition: all 0.3s ease-in-out;
 
-
-  &.ver{
+  &.ver {
     left: 5px;
+    position: absolute;
 
-    @media (max-width: 991px) {
+    @media (max-width: 1260px) {
+      left: -40px;
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 990px) {
+    &.ver {
+      left: -35px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &.ver {
       left: -45px;
     }
   }

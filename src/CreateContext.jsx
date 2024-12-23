@@ -14,7 +14,13 @@ import { Title as TitleProjetos } from "./pages/Projetos/style";
 import { Title as TitleContato, Cards } from "./pages/Contato/style";
 import { Title as TitleSobre } from "./pages/Sobre/style";
 import { Title as TitleFooter } from "./components/Footer/Style";
-import { Subtitle as SubtitleDetalhes, Text as TextDetalhes, LiList, Data, DivButtons } from "./components/DetalhesProjeto/Style";
+import {
+  Subtitle as SubtitleDetalhes,
+  Text as TextDetalhes,
+  LiList,
+  Data,
+  DivButtons,
+} from "./components/DetalhesProjeto/Style";
 import { Box } from "./components/GotoTop";
 
 const ChangeTheme = createContext();
@@ -67,7 +73,7 @@ const darkTheme = {
   header_color: "#181c27",
 
   strongText: "#fff",
-  colorBtn: "#770000",  
+  colorBtn: "#770000",
   btnHover: "#e30606",
 };
 

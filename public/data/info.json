@@ -213,14 +213,31 @@
       "title": "Jordan Shoes",
       "subtitle": "O Jordan Shoes é uma aplicação desenvolvida para destacar a linha de tênis da marca Jordan. O projeto foca em uma interface moderna e responsiva, com detalhes minimalistas que destacam a qualidade do produto.",
       "link": "https://github.com/DeividsonHenrique/Jordan-Shoes",
-      "githubUser": "DeividsonHenrique",	
+      "githubUser": "DeividsonHenrique",
       "githubRepo": "Jordan-Shoes",
 
-
       "sobre": "O Jordan Shoes é uma aplicação desenvolvida para destacar a linha de tênis da marca Jordan. O projeto foca em uma interface moderna e responsiva, com detalhes minimalistas que destacam a qualidade do produto.",
-      "funcionalidades": ["Lista de Produtos: Exibe os modelos de tênis Jordan em um layout atraente e organizado.", "Ver Mais: Detalhamento de cada tênis, incluindo imagens, tamanho, peso e descrição.", "Navegação Suave: Implementação de rolagem suave para melhorar a experiência do usuário.","Responsividade: Compatível com dispositivos móveis, tablets e desktops.","Requisição de Dados: Integração com a API CEP para obter endereços e informações adicionais.","Carrinho de Compras: Função de adicionar e remover produtos do carrinho.","Tela de Login e Cadastro: Funções de login e cadastro de usuários."],
-      "tecnologias": ["React.js: Estrutura principal da aplicação.", "Styled-Components: Estilização dinâmica e reutilizável.", "Mapeamento de Dados: Integração de dados e imagens com arquivos JSON.","Vite: Ferramenta de build rápida e eficiente.","React-Reveal: Animações de rolagem suave."],
-      "imagens": ["https://github.com/user-attachments/assets/ebde5a38-4eec-485e-b82f-8a60f3416504","https://github.com/user-attachments/assets/422548d9-3782-4fec-9932-9dadafe17ef9","https://github.com/user-attachments/assets/91b5378a-3067-4e11-a2b8-fbb368a30424"],
+      "funcionalidades": [
+        "Lista de Produtos: Exibe os modelos de tênis Jordan em um layout atraente e organizado.",
+        "Ver Mais: Detalhamento de cada tênis, incluindo imagens, tamanho, peso e descrição.",
+        "Navegação Suave: Implementação de rolagem suave para melhorar a experiência do usuário.",
+        "Responsividade: Compatível com dispositivos móveis, tablets e desktops.",
+        "Requisição de Dados: Integração com a API CEP para obter endereços e informações adicionais.",
+        "Carrinho de Compras: Função de adicionar e remover produtos do carrinho.",
+        "Tela de Login e Cadastro: Funções de login e cadastro de usuários."
+      ],
+      "tecnologias": [
+        "React.js: Estrutura principal da aplicação.",
+        "Styled-Components: Estilização dinâmica e reutilizável.",
+        "Mapeamento de Dados: Integração de dados e imagens com arquivos JSON.",
+        "Vite: Ferramenta de build rápida e eficiente.",
+        "React-Reveal: Animações de rolagem suave."
+      ],
+      "imagens": [
+        "https://github.com/user-attachments/assets/ebde5a38-4eec-485e-b82f-8a60f3416504",
+        "https://github.com/user-attachments/assets/422548d9-3782-4fec-9932-9dadafe17ef9",
+        "https://github.com/user-attachments/assets/91b5378a-3067-4e11-a2b8-fbb368a30424"
+      ],
       "data": "10/10/2024"
     },
     {
@@ -230,13 +247,25 @@
       "title": "DashBoard",
       "subtitle": "O Dashboard é uma aplicação desenvolvida para exibir um conjunto de informações relevantes de graficos, cartões e noticias.",
       "link": "https://github.com/DeividsonHenrique/Dashboard",
-      "githubUser": "DeividsonHenrique",	
+      "githubUser": "DeividsonHenrique",
       "githubRepo": "Dashboard",
 
       "sobre": "O Dashboard é uma aplicação desenvolvida para exibir um conjunto de informações relevantes de graficos, cartões e noticias.",
-      "funcionalidades": ["Navegação Suave: Implementação de rolagem suave para melhorar a experiência do usuário.","Responsividade: Compatível com dispositivos móveis, tablets e desktops.","Acessibilidade: Botão 'Voltar ao topo' com animação suave."],
-      "tecnologias": ["React.js: Estrutura principal da aplicação.", "Styled-Components: Estilização dinâmica e reutilizável.", "Bootstrap: Estilização de componentes e layout.", "Vite: Ferramenta de build rápida e eficiente."],
-      "imagens": ["https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e","https://github.com/user-attachments/assets/85903e70-e4d8-481b-82e6-b2c8d0cb46e3"],
+      "funcionalidades": [
+        "Navegação Suave: Implementação de rolagem suave para melhorar a experiência do usuário.",
+        "Responsividade: Compatível com dispositivos móveis, tablets e desktops.",
+        "Acessibilidade: Botão 'Voltar ao topo' com animação suave."
+      ],
+      "tecnologias": [
+        "React.js: Estrutura principal da aplicação.",
+        "Styled-Components: Estilização dinâmica e reutilizável.",
+        "Bootstrap: Estilização de componentes e layout.",
+        "Vite: Ferramenta de build rápida e eficiente."
+      ],
+      "imagens": [
+        "https://github.com/user-attachments/assets/19d50d38-b2b7-4749-9dab-053eb358405e",
+        "https://github.com/user-attachments/assets/85903e70-e4d8-481b-82e6-b2c8d0cb46e3"
+      ],
       "data": "30/10/2024"
     },
     {
@@ -246,13 +275,28 @@
       "title": "Pokemon API",
       "subtitle": "O Pokemon é uma aplicação desenvolvida para exibir informações e características dos Pokémon com base na API The pokemon API",
       "link": "https://github.com/DeividsonHenrique/Pokemon",
-      "githubUser": "DeividsonHenrique",	
+      "githubUser": "DeividsonHenrique",
       "githubRepo": "Pokemon",
 
       "sobre": "O Pokemon é uma aplicação desenvolvida para exibir informações e características dos Pokémon com base na API The pokemon API.",
-      "funcionalidades": ["Lista de Produtos: Exibe os Cards dos Pokémon.", "Clicar no Card: Detalhamento dos Pokémon, incluindo imagens, tamanho, peso e descrição.", "Navegação Suave: Implementação de rolagem suave para melhorar a experiência do usuário.","Responsividade: Compatível com dispositivos móveis, tablets e desktops."],
-      "tecnologias": ["React.js: Estrutura principal da aplicação.", "Styled-Components: Estilização dinâmica e reutilizável.", "Pokemon API: Integração de dados e imagens.","Vite: Ferramenta de build rápida e eficiente.", "Git/GitHub: Controle de versão e repositório remoto."],
-      "imagens": ["https://github.com/user-attachments/assets/8785f647-8ff4-4485-b858-ad9ed953d624","https://github.com/user-attachments/assets/acc14777-5d5b-4354-8415-b1e835e2ffd8","https://github.com/user-attachments/assets/8804c2fc-5842-430c-8843-bfadaf23c14d"],
+      "funcionalidades": [
+        "Lista de Produtos: Exibe os Cards dos Pokémon.",
+        "Clicar no Card: Detalhamento dos Pokémon, incluindo imagens, tamanho, peso e descrição.",
+        "Navegação Suave: Implementação de rolagem suave para melhorar a experiência do usuário.",
+        "Responsividade: Compatível com dispositivos móveis, tablets e desktops."
+      ],
+      "tecnologias": [
+        "React.js: Estrutura principal da aplicação.",
+        "Styled-Components: Estilização dinâmica e reutilizável.",
+        "Pokemon API: Integração de dados e imagens.",
+        "Vite: Ferramenta de build rápida e eficiente.",
+        "Git/GitHub: Controle de versão e repositório remoto."
+      ],
+      "imagens": [
+        "https://github.com/user-attachments/assets/8785f647-8ff4-4485-b858-ad9ed953d624",
+        "https://github.com/user-attachments/assets/acc14777-5d5b-4354-8415-b1e835e2ffd8",
+        "https://github.com/user-attachments/assets/8804c2fc-5842-430c-8843-bfadaf23c14d"
+      ],
       "data": "08/10/2024"
     },
     {
@@ -262,13 +306,30 @@
       "title": "Dog API",
       "subtitle": "O Dog API e uma aplicação web que utiliza a API do Dog API para exibir informações sobre diferentes raças de cachorros inspirado no site de imagens Pexels",
       "link": "https://github.com/DeividsonHenrique/Dog-Api",
-      "githubUser": "DeividsonHenrique",	
+      "githubUser": "DeividsonHenrique",
       "githubRepo": "Dog-Api",
 
       "sobre": "O Dog API e uma aplicação web que utiliza a API do Dog API para exibir informações sobre diferentes raças de cachorros inspirado no site de imagens Pexels.",
-      "funcionalidades": ["Busca de Raças: O projeto oferece um campo de busca para facilitar a busca por raças específicas.", "Exibição de Cards: O projeto exibe uma lista de raças de cachorros com imagens e descrições breves.", "Detalhes da Raça: Ao clicar em 'Ver mais', o usuário pode visualizar detalhes sobre a raça do cachorro, como tamanho, peso, expectativa de vida, etc.","Rolar até o Card Selecionado: Quando um card é clicado para exibir seus detalhes, a rolagem da página é ajustada para exibir o card selecionado no centro da tela.", "Voltar para a Lista de Cards: O usuário pode voltar à visualização de todos os cards, mantendo a rolagem suave e a posição do card que estava visualizando.", "Botão de 'Voltar ao Topo': Um botão fixo permite ao usuário voltar ao topo da página com uma rolagem suave.", "Responsividade: O projeto se adapta adequadamente a diferentes tamanhos de tela, garantindo uma experiência fluida e agradavel aos usuários."],
-      "tecnologias": ["React: Biblioteca JavaScript para construção de interfaces de usuário.", "useState, useEffect: Hooks do React para gerenciar estado e efeitos.", "CSS (Styled-components): Utilizado para estilização personalizada.","API do Dog API: Para exibir informações sobre raças de cachorros."],
-      "imagens": ["https://github.com/user-attachments/assets/cf0d4091-d109-4638-8c3b-987210d842e9","https://github.com/user-attachments/assets/c239f9b8-c172-4888-91e5-bbd84ed534b2","https://github.com/user-attachments/assets/761a16dd-4c72-4a79-acb6-1c10e90106c3"],
+      "funcionalidades": [
+        "Busca de Raças: O projeto oferece um campo de busca para facilitar a busca por raças específicas.",
+        "Exibição de Cards: O projeto exibe uma lista de raças de cachorros com imagens e descrições breves.",
+        "Detalhes da Raça: Ao clicar em 'Ver mais', o usuário pode visualizar detalhes sobre a raça do cachorro, como tamanho, peso, expectativa de vida, etc.",
+        "Rolar até o Card Selecionado: Quando um card é clicado para exibir seus detalhes, a rolagem da página é ajustada para exibir o card selecionado no centro da tela.",
+        "Voltar para a Lista de Cards: O usuário pode voltar à visualização de todos os cards, mantendo a rolagem suave e a posição do card que estava visualizando.",
+        "Botão de 'Voltar ao Topo': Um botão fixo permite ao usuário voltar ao topo da página com uma rolagem suave.",
+        "Responsividade: O projeto se adapta adequadamente a diferentes tamanhos de tela, garantindo uma experiência fluida e agradavel aos usuários."
+      ],
+      "tecnologias": [
+        "React: Biblioteca JavaScript para construção de interfaces de usuário.",
+        "useState, useEffect: Hooks do React para gerenciar estado e efeitos.",
+        "CSS (Styled-components): Utilizado para estilização personalizada.",
+        "API do Dog API: Para exibir informações sobre raças de cachorros."
+      ],
+      "imagens": [
+        "https://github.com/user-attachments/assets/cf0d4091-d109-4638-8c3b-987210d842e9",
+        "https://github.com/user-attachments/assets/c239f9b8-c172-4888-91e5-bbd84ed534b2",
+        "https://github.com/user-attachments/assets/761a16dd-4c72-4a79-acb6-1c10e90106c3"
+      ],
       "data": "15/11/2024"
     },
     {
@@ -278,13 +339,28 @@
       "title": "Softwares Stores",
       "subtitle": "O Softwares Stores é uma aplicação desenvolvida para exibir um conjunto de informações como um e-commerce de software para comprar programas e ferramentas.",
       "link": "https://github.com/DeividsonHenrique/softwares-stores",
-      "githubUser": "DeividsonHenrique",	
+      "githubUser": "DeividsonHenrique",
       "githubRepo": "softwares-stores",
 
       "sobre": " O Softwares Stores é uma aplicação desenvolvida para exibir um conjunto de informações como um e-commerce de software para comprar programas e ferramentas.",
-      "funcionalidades": ["Ver Todos: Uma página onde todos os produtos são exibidos", "Campo de Pesquisa: O usuário pode digigitar o nome do software que ele procura e verificar se existe no site.", "Carrinho de Compras: Função de adicionar e remover produtos do carrinho. (será implementado futuramente).","Tela de Login e Cadastro: Funções de login e cadastro de usuários. (será implementado futuramente).", "Detalhes: Uma area onde detalha o produto selecionado."],
-      "tecnologias": ["React: Biblioteca JavaScript para construção de interfaces de usuário.", "useEffect: Hooks do React para gerenciar estado e efeitos.", "(Styled-components): Utilizado para estilização personalizada.","Json: Para exibir informações de produtos e informações adicionais."],
-      "imagens": ["https://github.com/DeividsonHenrique/softwares-stores/assets/109252541/9c7e67a3-c0c0-4896-8089-56dfb9fa9541","",""],
+      "funcionalidades": [
+        "Ver Todos: Uma página onde todos os produtos são exibidos",
+        "Campo de Pesquisa: O usuário pode digigitar o nome do software que ele procura e verificar se existe no site.",
+        "Carrinho de Compras: Função de adicionar e remover produtos do carrinho. (será implementado futuramente).",
+        "Tela de Login e Cadastro: Funções de login e cadastro de usuários. (será implementado futuramente).",
+        "Detalhes: Uma area onde detalha o produto selecionado."
+      ],
+      "tecnologias": [
+        "React: Biblioteca JavaScript para construção de interfaces de usuário.",
+        "useEffect: Hooks do React para gerenciar estado e efeitos.",
+        "(Styled-components): Utilizado para estilização personalizada.",
+        "Json: Para exibir informações de produtos e informações adicionais."
+      ],
+      "imagens": [
+        "https://github.com/DeividsonHenrique/softwares-stores/assets/109252541/9c7e67a3-c0c0-4896-8089-56dfb9fa9541",
+        "",
+        ""
+      ],
       "data": "15/06/2024"
     },
     {
@@ -294,14 +370,25 @@
       "title": "Tela de Login",
       "subtitle": "projeto criado com HTML, CSS e um toque de JavaScript sá pra criar um efeito onclick e onblur. Desta vez uma simples tela de login, mantendo as praticas em css e css responsivo",
       "link": "https://github.com/DeividsonHenrique/Login",
-      "githubUser": "DeividsonHenrique",	
+      "githubUser": "DeividsonHenrique",
       "githubRepo": "Login",
 
-      "sobre": "",
-      "funcionalidades": ["", "", "",""],
-      "tecnologias": ["", "", "",""],
-      "imagens": ["","",""],
-      "data": ""
+      "sobre": "Uma tela de login simples, mantendo as praticas em css e css responsivo.",
+      "funcionalidades": [
+        "Responsividade: Compatível com dispositivos móveis, tablets e desktops.",
+        "Design: efeitos hover e focus para melhorar a experiência do usuário."
+      ],
+      "tecnologias": [
+        "HTML5: Utilizado para estrutura e conteúdo da página.",
+        "CSS3: Utilizado para estilização personalizada.",
+        "JavaScript: Utilizado para adicionar interatividade e validação de formulários."
+      ],
+      "imagens": [
+        "https://github.com/DeividsonHenrique/Login/assets/109252541/123bd251-2ba5-476f-9d9f-93037c1aa068",
+        "",
+        ""
+      ],
+      "data": "13/04/2024"
     },
     {
       "id": 7,
@@ -310,14 +397,26 @@
       "title": "Área de Cálculos Matemáticos",
       "subtitle": "Uma aplicação desenvolvida para exibir uma area que contêm as principais formas de cálculos como (Soma, Divisão, Múltiplicação, Subtração e Resto da Divisão ou Modulo).",
       "link": "https://github.com/DeividsonHenrique/Area-de-Calculos",
-      "githubUser": "DeividsonHenrique",	
+      "githubUser": "DeividsonHenrique",
       "githubRepo": "Area-de-Calculos",
 
-      "sobre": "",
-      "funcionalidades": ["", "", "",""],
-      "tecnologias": ["", "", "",""],
-      "imagens": ["","",""],
-      "data": ""
+      "sobre": "Uma Área de Cálculos Matemáticos criada com intuito de manter as praticas em html, css e javascript no projeto.",
+      "funcionalidades": [
+        "Responsividade: Compatível com dispositivos móveis, tablets e desktops.",
+        "Variedade: Inclui uma variedade de cálculos matemáticos, como soma, divisão, múltiplicação, subtração e resto da divisão ou módulo.",
+        "Estilo: Um efeito de fundo que usa cores com animações."
+      ],
+      "tecnologias": [
+        "HTML5: Utilizado para estrutura e conteúdo da página.",
+        "CSS3: Utilizado para estilização personalizada.",
+        "JavaScript: Utilizado para adicionar interatividade e validação de formulários."
+      ],
+      "imagens": [
+        "https://github.com/DeividsonHenrique/Area-de-Calculos/assets/109252541/a95e82e3-76aa-4442-bd4f-8611234dd55c",
+        "",
+        ""
+      ],
+      "data": "11/04/2024"
     }
   ],
 

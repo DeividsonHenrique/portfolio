@@ -6,6 +6,7 @@ export const SobreContainer = styled.div`
   align-items: center;
   justify-content: center;
   height: auto;
+  padding-bottom: 70px;
 `;
 
 export const Tags = styled.div`
@@ -85,7 +86,31 @@ export const Card = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 480px) {
+  @media (max-width: 379px) {
+    width: 100%;
+    flex-direction: row;
+    align-items: start;
+    max-height: 400px;
+    padding-bottom: 50px;
+
+    &:nth-child(1) {
+      height: 350px;
+    }
+
+    &:nth-child(2) {
+      height: 385px;
+    }
+
+    &:nth-child(3) {
+      height: 340px;
+    }
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (min-width: 380px) and (max-width: 480px) {
     width: 100%;
     flex-direction: row;
     align-items: start;
