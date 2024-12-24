@@ -14,7 +14,7 @@ import {
   LiList,
 } from "./Style";
 import { Title } from "../../pages/Projetos/style";
-//import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { Fade, Bounce } from "react-awesome-reveal";
@@ -36,6 +36,9 @@ function DetalhesProjeto({ projeto, onVoltar }) {
             <Bounce triggerOnce delay={500} duration={750}>
               <button onClick={onVoltar}>
                 <RiArrowGoBackFill className="seta" /> Voltar
+              </button>
+              <button onClick={() => window.open(projeto.Site, "_blank")}>
+                Site <FaExternalLinkAlt className="site" />
               </button>
               <button onClick={() => window.open(projeto.link, "_blank")}>
                 Github <FaGithub className="link" />

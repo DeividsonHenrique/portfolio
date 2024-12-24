@@ -260,6 +260,7 @@ export const GlobalConfigProvider = ({ children }) => {
   const [contato] = useState(dados.Contato);
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [projetoSelecionado, setProjetoSelecionado] = useState(null);
 
   const logosFrontEnd = {
     html5: html5,
@@ -267,6 +268,14 @@ export const GlobalConfigProvider = ({ children }) => {
     react: react,
     bootstrap: bootstrap,
     javascript: javascript,
+  };
+
+  const handeleVerProjeto = (projeto) => {
+    setProjetoSelecionado(projeto);
+  };
+
+  const handleVoltar = () => {
+    setProjetoSelecionado(null);
   };
 
   useEffect(() => {
@@ -316,6 +325,9 @@ export const GlobalConfigProvider = ({ children }) => {
         handleToggle,
         handleClose,
         scrolled,
+        projetoSelecionado,
+        handeleVerProjeto,
+        handleVoltar,
       }}
     >
       {children}

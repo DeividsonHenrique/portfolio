@@ -216,6 +216,7 @@
       "githubUser": "DeividsonHenrique",
       "githubRepo": "Jordan-Shoes",
 
+      "Site": "https://jordan-shoes-zeta-henna.vercel.app/",
       "sobre": "O Jordan Shoes é uma aplicação desenvolvida para destacar a linha de tênis da marca Jordan. O projeto foca em uma interface moderna e responsiva, com detalhes minimalistas que destacam a qualidade do produto.",
       "funcionalidades": [
         "Lista de Produtos: Exibe os modelos de tênis Jordan em um layout atraente e organizado.",
@@ -250,6 +251,7 @@
       "githubUser": "DeividsonHenrique",
       "githubRepo": "Dashboard",
 
+      "Site": "https://dashboard-two-gamma-46.vercel.app/",
       "sobre": "O Dashboard é uma aplicação desenvolvida para exibir um conjunto de informações relevantes de graficos, cartões e noticias.",
       "funcionalidades": [
         "Navegação Suave: Implementação de rolagem suave para melhorar a experiência do usuário.",
@@ -278,6 +280,7 @@
       "githubUser": "DeividsonHenrique",
       "githubRepo": "Pokemon",
 
+      "Site": "https://pokemon-sigma-khaki.vercel.app/",
       "sobre": "O Pokemon é uma aplicação desenvolvida para exibir informações e características dos Pokémon com base na API The pokemon API.",
       "funcionalidades": [
         "Lista de Produtos: Exibe os Cards dos Pokémon.",
@@ -309,6 +312,7 @@
       "githubUser": "DeividsonHenrique",
       "githubRepo": "Dog-Api",
 
+      "Site": "https://dog-api-virid.vercel.app/",
       "sobre": "O Dog API e uma aplicação web que utiliza a API do Dog API para exibir informações sobre diferentes raças de cachorros inspirado no site de imagens Pexels.",
       "funcionalidades": [
         "Busca de Raças: O projeto oferece um campo de busca para facilitar a busca por raças específicas.",
@@ -342,6 +346,7 @@
       "githubUser": "DeividsonHenrique",
       "githubRepo": "softwares-stores",
 
+      "Site": "https://softwares-stores.vercel.app/",
       "sobre": " O Softwares Stores é uma aplicação desenvolvida para exibir um conjunto de informações como um e-commerce de software para comprar programas e ferramentas.",
       "funcionalidades": [
         "Ver Todos: Uma página onde todos os produtos são exibidos",
@@ -373,6 +378,7 @@
       "githubUser": "DeividsonHenrique",
       "githubRepo": "Login",
 
+      "Site": "https://deividsonhenrique.github.io/Login/",
       "sobre": "Uma tela de login simples, mantendo as praticas em css e css responsivo.",
       "funcionalidades": [
         "Responsividade: Compatível com dispositivos móveis, tablets e desktops.",
@@ -400,6 +406,7 @@
       "githubUser": "DeividsonHenrique",
       "githubRepo": "Area-de-Calculos",
 
+      "Site": "https://deividsonhenrique.github.io/Area-de-Calculos/",
       "sobre": "Uma Área de Cálculos Matemáticos criada com intuito de manter as praticas em html, css e javascript no projeto.",
       "funcionalidades": [
         "Responsividade: Compatível com dispositivos móveis, tablets e desktops.",

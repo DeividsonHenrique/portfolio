@@ -56,7 +56,7 @@ export const DivButtons = styled.div`
   display: flex;
   flex-direction: row;
   align-items: start;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   button {
     display: flex;
@@ -79,7 +79,8 @@ export const DivButtons = styled.div`
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     }
 
-    .link {
+    .link,
+    .site {
       margin-left: 5px;
     }
 

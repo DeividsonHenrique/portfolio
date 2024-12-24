@@ -14,20 +14,17 @@ import { UseConfig } from "../../CreateContext";
 import { Fade, Zoom as Z } from "react-awesome-reveal";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import { useState } from "react";
+
 import DetalhesProjeto from "../../components/DetalhesProjeto/DetalhesProjeto";
 
 function Projetos() {
-  const { projetos, logosFrontEnd } = UseConfig();
-  const [projetoSelecionado, setProjetoSelecionado] = useState(null);
-
-  const handeleVerProjeto = (projeto) => {
-    setProjetoSelecionado(projeto);
-  };
-
-  const handleVoltar = () => {
-    setProjetoSelecionado(null);
-  };
+  const {
+    projetos,
+    logosFrontEnd,
+    projetoSelecionado,
+    handeleVerProjeto,
+    handleVoltar,
+  } = UseConfig();
 
   return (
     <ProjectsContainer>
