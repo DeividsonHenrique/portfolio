@@ -23,6 +23,8 @@ import {
 } from "./components/DetalhesProjeto/Style";
 import { Box } from "./components/GotoTop";
 
+// Area de estilização
+
 const ChangeTheme = createContext();
 
 const lightTheme = {
