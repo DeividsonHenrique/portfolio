@@ -4,23 +4,12 @@ import { createGlobalStyle } from "styled-components";
 import { HeaderContainer, Links, MenuMobile } from "./components/Header/style";
 import { Title, Subtitle } from "./pages/Home/style";
 import { AnoTitle, Text, Ball } from "./pages/Sobre/style";
-import {
-  Icons,
-  ModuloBall,
-  ModuloTitle,
-  Details,
-} from "./pages/Habilidades/style";
+import { Icons, ModuloBall, ModuloTitle, Details } from "./pages/Habilidades/style";
 import { Title as TitleProjetos } from "./pages/Projetos/style";
 import { Title as TitleContato, Cards } from "./pages/Contato/style";
 import { Title as TitleSobre } from "./pages/Sobre/style";
 import { Title as TitleFooter } from "./components/Footer/Style";
-import {
-  Subtitle as SubtitleDetalhes,
-  Text as TextDetalhes,
-  LiList,
-  Data,
-  DivButtons,
-} from "./components/DetalhesProjeto/Style";
+import { Subtitle as SubtitleDetalhes, Text as TextDetalhes, LiList, Data, DivButtons} from "./components/DetalhesProjeto/Style";
 import { Box } from "./components/GotoTop";
 
 // Area de estilização
