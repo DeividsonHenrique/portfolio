@@ -233,7 +233,7 @@ export const UseTheme = () => {
   return useContext(ChangeTheme);
 };
 
-// configs adicionais e API json ---------------------------------------------------------------------
+// configs adicionais e API json --------------------------------------------------------------------
 
 import dados from "/public/data/info.json";
 import html5 from "/assets/Front-End/html5.svg";
