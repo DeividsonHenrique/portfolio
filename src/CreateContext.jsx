@@ -126,8 +126,7 @@ body{
             // marin-top: 80px;
             // min-height: 85vh;
         }
-}
-        
+}        
     
     ${HeaderContainer}{
         border-color: ${(props) => props.theme.color_line};
