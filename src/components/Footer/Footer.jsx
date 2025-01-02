@@ -7,7 +7,7 @@ function Footer() {
       <Fade triggerOnce duration={5000}>
         <FooterContainer>
           <Fade triggerOnce duration={1500} delay={100} direction="down">
-            <Title>Created by Deividson - 2024 </Title>
+            <Title>Created by Deividson - 2025 </Title>
           </Fade>
         </FooterContainer>
       </Fade>
