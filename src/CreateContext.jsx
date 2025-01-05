@@ -78,7 +78,6 @@ const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
 
-
         --cor-fonte1: #C0C0C0;
         --cor-fonte2: #FFD700;
         --cor-black: #000000;
