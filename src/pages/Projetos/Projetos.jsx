@@ -14,7 +14,6 @@ import { UseConfig } from "../../CreateContext";
 import { Fade, Zoom as Z } from "react-awesome-reveal";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-
 import DetalhesProjeto from "../../components/DetalhesProjeto/DetalhesProjeto";
 
 function Projetos() {
