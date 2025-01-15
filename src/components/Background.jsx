@@ -164,6 +164,49 @@ const BackgroundC = styled.div`
       transform: translateX(-50px) rotate(-20deg);
     }
   }
+
+
+
+
+  @media (max-width: 1024px) {
+    .yellow, .red, .blue, .green {
+      width: 70%;
+      height: 70%;
+    }
+
+    .ellipse {
+      width: 300px;
+      height: 150px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .yellow, .red, .blue, .green {
+      width: 50%;
+      height: 50%;
+    }
+
+    .ellipse {
+      width: 200px;
+      height: 100px;
+    }
+
+    .ellipse.one, .ellipse.two, .ellipse.three, .ellipse.four {
+      animation: none; /* Opcional para desativar animações em telas muito pequenas */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .yellow, .red, .blue, .green {
+      width: 40%;
+      height: 40%;
+    }
+
+    .ellipse {
+      width: 150px;
+      height: 75px;
+    }
+  }
 `;
 
 function Background() {
