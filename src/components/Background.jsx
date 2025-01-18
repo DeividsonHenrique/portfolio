@@ -6,205 +6,178 @@ const BackgroundC = styled.div`
   height: 100vh;
   overflow: hidden;
   left: 0;
-  opacity: 0.5;
+  opacity: 0.1;
 
   .shape {
     position: absolute;
     z-index: -1;
     border-radius: 50%;
-    filter: blur(150px);
+    filter: blur(100px);
     opacity: 0.6;
     animation: float 8s infinite alternate ease-in-out;
   }
 
   .yellow {
     background: radial-gradient(circle, #ffe700, #e4a700);
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     top: -150px;
     left: -400px;
     animation: yellow 12s infinite alternate ease-in-out;
+
+    @media (max-width: 480px) {
+      width: 250px;
+      height: 250px;
+      top: -100px;
+      left: -200px;
+    }
+
+    @media (min-width: 481px) and (max-width: 991px) {
+      width: 300px;
+      height: 300px;
+      top: -100px;
+      left: -200px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1600px) {
+      width: 400px;
+      height: 400px;
+      top: -100px;
+      left: -200px;
+    }
   }
 
   .red {
     background: radial-gradient(circle, #ff4e50, #ff0000);
-    width: 1000px;
-    height: 1000px;
-    top: 100px;
-    right: -500px;
+    width: 500px;
+    height: 500px;
+    top: 10px;
+    right: -400px;
     animation: red 14s infinite alternate ease-in-out;
+
+    @media (max-width: 480px) {
+      width: 250px;
+      height: 250px;
+      top: 50px;
+      right: -100px;
+    }
+
+    @media (min-width: 481px) and (max-width: 991px) {
+      width: 300px;
+      height: 300px;
+      top: 50px;
+      right: -100px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1600px) {
+      width: 400px;
+      height: 400px;
+      top: 50px;
+      right: -100px;
+    }
   }
 
   .blue {
     background: radial-gradient(circle, #4e91ff, #0014ff);
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
     bottom: -200px;
     left: -300px;
     animation: blue 10s infinite alternate ease-in-out;
+
+    @media (max-width: 480px) {
+      width: 250px;
+      height: 250px;
+      bottom: -100px;
+      left: -100px;
+    }
+
+    @media (min-width: 481px) and (max-width: 991px) {
+      width: 300px;
+      height: 300px;
+      bottom: -100px;
+      left: -100px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1600px) {
+      width: 400px;
+      height: 400px;
+      bottom: -100px;
+      left: -100px;
+    }
   }
 
   .green {
     background: radial-gradient(circle, #74ff89, #00e400);
-    width: 900px;
-    height: 900px;
-    bottom: 50px;
+    width: 600px;
+    height: 600px;
+    bottom: -20%;
     right: -400px;
     animation: green 13s infinite alternate ease-in-out;
-  }
 
-  .ellipse {
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0)
-    );
-    width: 400px;
-    height: 200px;
-    border-radius: 50% / 25%;
-    filter: blur(5px);
-    animation: float 8s infinite alternate ease-in-out;
-  }
+    @media (max-width: 480px) {
+      width: 250px;
+      height: 250px;
+      bottom: 50px;
+      right: -100px;
+    }
 
-  .ellipse.one {
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: ellipseOne 10s infinite alternate ease-in-out;
-  }
+    @media (min-width: 481px) and (max-width: 991px) {
+      width: 300px;
+      height: 300px;
+      bottom: 50px;
+      right: -100px;
+    }
 
-  .ellipse.two {
-    bottom: 150px;
-    right: 20%;
-    animation: ellipseTwo 12s infinite alternate ease-in-out;
-  }
-
-  .ellipse.three{
-    position: absolute;
-    bottom: 50px;
-    right: 0;
-    animation: ellipseThree 14s infinite alternate ease-in-out;
-  }
-
-  .ellipse.four{
-    position: absolute;
-    bottom: 300px;
-    right: 0;
-    animation: ellipseThree 14s infinite alternate ease-in-out;
+    @media (min-width: 992px) and (max-width: 1600px) {
+      width: 400px;
+      height: 400px;
+      bottom: 50px;
+      right: -100px;
+    }
   }
 
   @keyframes yellow {
     0% {
       transform: translateX(0) scale(1);
+      -webkit-transform: translateX(0) scale(1);
     }
     100% {
       transform: translateX(150px) scale(1.1);
+      -webkit-transform: translateX(150px) scale(1.1);
     }
   }
 
   @keyframes red {
     0% {
       transform: translateY(-50px) rotate(0deg);
+      -webkit-transform: translateY(-50px) rotate(0deg);
     }
     100% {
       transform: translateY(100px) rotate(15deg);
+      -webkit-transform: translateY(100px) rotate(15deg);
     }
   }
 
   @keyframes blue {
     0% {
       transform: translateX(-50px) rotate(0deg);
+      -webkit-transform: translateX(-50px) rotate(0deg);
     }
     100% {
       transform: translateX(100px) rotate(-15deg);
+      -webkit-transform: translateX(100px) rotate(-15deg);
     }
   }
 
   @keyframes green {
     0% {
       transform: translateY(0) scale(1);
+      -webkit-transform: translateY(0) scale(1);
     }
     100% {
       transform: translateY(-100px) scale(1.2);
-    }
-  }
-
-  @keyframes ellipseOne {
-    0% {
-      transform: translateX(-50%) translateY(0) rotate(0deg);
-    }
-    100% {
-      transform: translateX(-50%) translateY(-50px) rotate(20deg);
-    }
-  }
-
-  @keyframes ellipseTwo {
-    0% {
-      transform: translateY(0) rotate(0deg);
-    }
-    100% {
-      transform: translateY(50px) rotate(-20deg);
-    }
-  }
-
-  @keyframes ellipseThree {
-    0% {
-      transform: translateX(0) rotate(0deg);
-    }
-    100% {
-      transform: translateX(50px) rotate(20deg);
-    }
-  }
-
-  @keyframes ellipseFour {
-    0% {
-      transform: translateX(0) rotate(0deg);
-    }
-    100% {
-      transform: translateX(-50px) rotate(-20deg);
-    }
-  }
-
-
-
-
-  @media (max-width: 1024px) {
-    .yellow, .red, .blue, .green {
-      width: 70%;
-      height: 70%;
-    }
-
-    .ellipse {
-      width: 300px;
-      height: 150px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .yellow, .red, .blue, .green {
-      width: 50%;
-      height: 50%;
-    }
-
-    .ellipse {
-      width: 200px;
-      height: 100px;
-    }
-
-    .ellipse.one, .ellipse.two, .ellipse.three, .ellipse.four {
-      animation: none; /* Opcional para desativar animações em telas muito pequenas */
-    }
-  }
-
-  @media (max-width: 480px) {
-    .yellow, .red, .blue, .green {
-      width: 40%;
-      height: 40%;
-    }
-
-    .ellipse {
-      width: 150px;
-      height: 75px;
+      -webkit-transform: translateY(-100px) scale(1.2);
     }
   }
 `;
