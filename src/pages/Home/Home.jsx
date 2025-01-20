@@ -28,7 +28,7 @@ function Home() {
               <br />
               desenvolvidos até hoje durante meus dois anos e meio
               <br />
-              com aplicações interativas utilizando React e Node.js!
+              com aplicações interativas utilizando React JS!
             </Subtitle>
             <Button onClick={handleClick}>Saiba Mais</Button>
           </Fade>

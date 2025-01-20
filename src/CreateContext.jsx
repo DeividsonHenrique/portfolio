@@ -4,13 +4,25 @@ import { createGlobalStyle } from "styled-components";
 import { HeaderContainer, Links, MenuMobile } from "./components/Header/style";
 import { Title, Subtitle } from "./pages/Home/style";
 import { AnoTitle, Text, Ball } from "./pages/Sobre/style";
-import { Icons, ModuloBall, ModuloTitle, Details } from "./pages/Habilidades/style";
+import {
+  Icons,
+  ModuloBall,
+  ModuloTitle,
+  Details,
+} from "./pages/Habilidades/style";
 import { Title as TitleProjetos } from "./pages/Projetos/style";
 import { Title as TitleContato, Cards } from "./pages/Contato/style";
 import { Title as TitleSobre } from "./pages/Sobre/style";
 import { Title as TitleFooter } from "./components/Footer/Style";
-import { Subtitle as SubtitleDetalhes, Text as TextDetalhes, LiList, Data, DivButtons} from "./components/DetalhesProjeto/Style";
+import {
+  Subtitle as SubtitleDetalhes,
+  Text as TextDetalhes,
+  LiList,
+  Data,
+  DivButtons,
+} from "./components/DetalhesProjeto/Style";
 import { Box } from "./components/GotoTop";
+import { BackgroundC } from "./components/Background";
 
 // Area de estilização
 
@@ -40,10 +52,13 @@ const lightTheme = {
   strongText: "#000000",
   colorBtn: "#191970",
   btnHover: "#483a87",
+
+  boxLightPurple: "0px 0px 5px 0px purple, 0px 0px 5px 0px purple",
+  boxLightRed: "0px 0px 5px 0px red, 0px 0px 5px 0px red",
 };
 
 const darkTheme = {
-  background: "#120000",
+  background: "#0c0000",
   color_link_header: "#C0C0C0",
   color_link_active: "#FFD700",
   color_line: "#e30606",
@@ -66,6 +81,9 @@ const darkTheme = {
   strongText: "#fff",
   colorBtn: "#770000",
   btnHover: "#e30606",
+
+  boxLightPurple: "0px 0px 10px 0px purple, 0px 0px 10px 0px purple",
+  boxLightRed: "0px 0px 10px 0px red, 0px 0px 10px 0px red",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -126,6 +144,17 @@ body{
             // min-height: 85vh;
         }
 }        
+
+
+    ${BackgroundC}{
+      .purple{
+        box-shadow: ${(props) => props.theme.boxLightPurple} }
+
+      .red{
+        box-shadow: ${(props) => props.theme.boxLightRed};
+      }
+    }
+    
     
     ${HeaderContainer}{
         border-color: ${(props) => props.theme.color_line};
