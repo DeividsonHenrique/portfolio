@@ -1,6 +1,6 @@
 # **Portfolio**
 
-📅 Data: 14/12/2024
+📅 Data: 17/01/2025
 
 > Meu novo portfolio atualizado utilizando React e Styled-Components.
 
@@ -20,6 +20,7 @@ Este projeto foi desenvolvido primeiramente com **Adobe XD** para criar o layout
 - **Responsividade:** Compatível com dispositivos móveis, tablets e desktops.
 - **Acessibilidade:** Botão "Voltar ao topo" com animação suave.
 - **Modos de Tema:** Tema claro e escuro com base na preferência do usuário.
+- **Fundo animado:** Pra não ficar um site totalmente estático eu decidi adicionar um efeito suave de bolhas flutuantes no background.
 
 ---
 
@@ -60,6 +61,7 @@ com seus respectivos arquivos sendo o jsx e o styled-component que sera o style.
 │   └── 📄 Header.jsx        # Componente de cabeçalho
 │   └── 📄 Footer.jsx        # Componente de rodapé
 │   └── 📄 GoToTop.jsx       # Botão para rolar ao topo
+│   └── 📄 Background.jsx     # Fundo com efeito usado no projeto geral.
 │   └── 📄 Detalhes.jsx      # Componente de exibir detalhes do projeto.
 ├── 📁 Pages
 │   └── 📄 Home.jsx          # Página inicial
