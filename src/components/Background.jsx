@@ -88,7 +88,6 @@ function Background() {
       );
     }
     return circles;
-    
   };
   return <BackgroundC>{generateCircles()}</BackgroundC>;
 }
