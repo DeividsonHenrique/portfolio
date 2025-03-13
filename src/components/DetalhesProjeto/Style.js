@@ -59,7 +59,6 @@ export const DivButtons = styled.div`
   justify-content: space-evenly;
 
   
-  
   button {
     display: flex;
     align-items: center;
